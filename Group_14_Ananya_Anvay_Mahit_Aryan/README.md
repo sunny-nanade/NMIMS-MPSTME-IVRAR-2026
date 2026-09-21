@@ -37,16 +37,12 @@ This project implements an **Immersive Virtual Reality Teleoperation Platform wi
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name                      Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-I003      Ananya Baweja                     Tele-Robotics & Digital Twin Lead          feat/i003-tele-robotics-digita
-I006      Anvay Borade                      XR Systems Architect                       feat/i006-xr-systems-architect
-I010      Mahit Naresh Daswani Chanchlani   Latency & Network Simulation Specialist    feat/i010-latency-network-simu
-I041      Aryan Oberoi                      Human Factors & Teleoperation QA Lead      feat/i041-human-factors-teleop
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `I003` | **Ananya Baweja** | B.Tech / MBA (Tech) | Tele-Robotics & Digital Twin Lead | `feat/i003-tele-robotics-digita` |
+| `I006` | **Anvay Borade** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/i006-xr-systems-architect` |
+| `I010` | **Mahit Naresh Daswani Chanchlani** | B.Tech / MBA (Tech) | Latency & Network Simulation Specialist | `feat/i010-latency-network-simu` |
+| `I041` | **Aryan Oberoi** | B.Tech / MBA (Tech) | Human Factors & Teleoperation QA Lead | `feat/i041-human-factors-teleop` |
 
 ---
 

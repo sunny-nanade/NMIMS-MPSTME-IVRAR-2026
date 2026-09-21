@@ -37,16 +37,12 @@ This project implements a **Continuous Behavioral Biometric Authentication Syste
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-I001      Kartik Agrawal    Biometric Authentication Lead              feat/i001-biometric-authentica
-I007      Soha Chand        XR Systems Architect                       feat/i007-xr-systems-architect
-I013      Atharv Dixit      Kinematic Telemetry Specialist             feat/i013-kinematic-telemetry-
-I019      Ojaswi Gondalia   Security QA & Threat Analyst               feat/i019-security-qa-threat-a
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `I001` | **Kartik Agrawal** | B.Tech / MBA (Tech) | Biometric Authentication Lead | `feat/i001-biometric-authentica` |
+| `I007` | **Soha Chand** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/i007-xr-systems-architect` |
+| `I013` | **Atharv Dixit** | B.Tech / MBA (Tech) | Kinematic Telemetry Specialist | `feat/i013-kinematic-telemetry-` |
+| `I019` | **Ojaswi Gondalia** | B.Tech / MBA (Tech) | Security QA & Threat Analyst | `feat/i019-security-qa-threat-a` |
 
 ---
 

@@ -39,15 +39,11 @@ This project develops an immersive, gamified **VR Cybersecurity Escape Room** in
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name          Assigned Engineering Role                      Git Feature Branch
-===================================================================================================
-K068      Rishi Vishwakarma     Cyber Threat Modeling & Telemetry Engine Arch  feat/k068-cyber-vulnerability-
-K075      Rahul Behera          XR Systems Architect & OpenXR Physics Lead     feat/k075-xr-systems-architect
-K081      Srinidi Subramaniam   Human Factors, Workload & Security QA Lead     feat/k081-human-factors-securi
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `K068` | **Rishi Vishwakarma** | B.Tech / MBA (Tech) | Cyber Threat Modeling & Telemetry Engine Architect | `feat/k068-cyber-vulnerability-engine` |
+| `K075` | **Rahul Behera** | B.Tech / MBA (Tech) | XR Systems Architect & OpenXR Physical Interaction Lead | `feat/k075-xr-systems-architect` |
+| `K081` | **Srinidi Subramaniam** | B.Tech / MBA (Tech) | Human Factors, Cognitive Workload & Security QA Lead | `feat/k081-human-factors-security-qa` |
 
 ---
 

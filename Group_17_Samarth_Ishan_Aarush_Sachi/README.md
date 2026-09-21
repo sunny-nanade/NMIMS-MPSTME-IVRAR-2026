@@ -37,16 +37,12 @@ This project delivers an **Interactive Virtual Reality Physical Security Audit S
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name        Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-B069      Samarth Pande       Physical Security Controls Lead            feat/b069-physical-security-co
-B148      Ishan Choudhary     XR Systems Architect                       feat/b148-xr-systems-architect
-B155      Aarush Mishra       Breach Telemetry & Audit Specialist        feat/b155-breach-telemetry-aud
-K031      Sachi Kumar         Security QA & Compliance Lead              feat/k031-security-qa-complian
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `B069` | **Samarth Pande** | B.Tech / MBA (Tech) | Physical Security Controls Lead | `feat/b069-physical-security-co` |
+| `B148` | **Ishan Choudhary** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/b148-xr-systems-architect` |
+| `B155` | **Aarush Mishra** | B.Tech / MBA (Tech) | Breach Telemetry & Audit Specialist | `feat/b155-breach-telemetry-aud` |
+| `K031` | **Sachi Kumar** | B.Tech / MBA (Tech) | Security QA & Compliance Lead | `feat/k031-security-qa-complian` |
 
 ---
 

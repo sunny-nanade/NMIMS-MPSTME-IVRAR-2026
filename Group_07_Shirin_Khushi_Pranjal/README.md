@@ -39,15 +39,11 @@ This project develops an interactive **VR Spatial Crime Scene Reconstruction Fra
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name        Program               Assigned Engineering Role             Git Feature Branch
-===================================================================================================
-N094      Shirin Sharma       MBA Tech Computer     Spatial Forensics & Photogrammetry    feat/n094-spatial-forensics-photogrammetry
-N101      Khushi Srivastava   MBA Tech Computer     XR Systems Architect                  feat/n101-xr-systems-architect
-N106      Pranjal Thakur      MBA Tech Computer     Forensic Chain-of-Custody Specialist  feat/n106-forensic-chain-of-custody
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `N094` | **Shirin Sharma** | B.Tech / MBA (Tech) | Spatial Forensics & Photogrammetry Lead | `feat/n094-spatial-forensics-photogrammetry` |
+| `N101` | **Khushi Srivastava** | B.Tech / MBA (Tech) | XR Systems Architect & Evidence Interaction Lead | `feat/n101-xr-systems-architect` |
+| `N106` | **Pranjal Thakur** | B.Tech / MBA (Tech) | Forensic Chain-of-Custody & Timeline Analytics Specialist | `feat/n106-forensic-chain-of-custody` |
 
 ---
 

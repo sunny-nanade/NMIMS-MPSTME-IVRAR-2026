@@ -37,16 +37,12 @@ This project develops a high-fidelity, multi-user VR emergency evacuation simula
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Degree Programme              Assigned Role              Git Feature Branch
-===================================================================================================
-C068      Yashika Patil     B.Tech Comp Engg Integrated   Spatial AI & Crowd Nav     feat/c068-spatial-ai-crowd-nav
-C107      Moksh Shah        B.Tech Comp Engg Integrated   XR Systems Architect       feat/c107-xr-systems-architect
-C078      Bhavi Doshi       B.Tech Comp Engg Integrated   Human Factors & Usability  feat/c078-human-factors-usabil
-C067      Preet Shah        B.Tech Comp Engg Integrated   Systems & Network Lead     feat/c067-network-coordination
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `C068` | **Yashika Patil** | B.Tech (Comp. Engg.) (Integrated) | Spatial AI & Crowd Navigation Lead | `feat/c068-spatial-ai-crowd-nav` |
+| `C107` | **Moksh Shah** | B.Tech (Comp. Engg.) (Integrated) | XR Systems Architect | `feat/c107-xr-systems-architect` |
+| `C078` | **Bhavi Doshi** | B.Tech (Comp. Engg.) (Integrated) | Human Factors & Usability Engineer | `feat/c078-human-factors-usabil` |
+| `C067` | **Preet Shah** | B.Tech (Comp. Engg.) (Integrated) | Systems Performance & Network Lead | `feat/c067-network-coordination` |
 
 ---
 

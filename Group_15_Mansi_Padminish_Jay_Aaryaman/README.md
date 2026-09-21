@@ -37,16 +37,12 @@ This project delivers an **Automated Closed-Loop Bio-Adaptive VR Exposure Therap
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name        Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-B011      Mansi Bansal        Bio-Adaptive State Machine Lead            feat/b011-bio-adaptive-state-m
-B122      Padminish Bakshi    XR Systems Architect                       feat/b122-xr-systems-architect
-B124      Jay Gandhi          Gaze & Head Tremor Telemetry Specialist    feat/b124-gaze-head-tremor-tel
-B130      Aaryaman Gehani     Human Factors & Clinical Usability Lead    feat/b130-human-factors-clinic
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `B011` | **Mansi Bansal** | B.Tech / MBA (Tech) | Bio-Adaptive State Machine Lead | `feat/b011-bio-adaptive-state-m` |
+| `B122` | **Padminish Bakshi** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/b122-xr-systems-architect` |
+| `B124` | **Jay Gandhi** | B.Tech / MBA (Tech) | Gaze & Head Tremor Telemetry Specialist | `feat/b124-gaze-head-tremor-tel` |
+| `B130` | **Aaryaman Gehani** | B.Tech / MBA (Tech) | Human Factors & Clinical Usability Lead | `feat/b130-human-factors-clinic` |
 
 ---
 

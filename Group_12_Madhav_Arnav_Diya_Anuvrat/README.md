@@ -37,16 +37,12 @@ This project delivers an **Immersive Virtual Reality Cybersecurity Training Simu
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-D021      Madhav Gaonkar    Phishing Threat Modeling Lead              feat/d021-phishing-threat-mode
-D030      Arnav Jain        XR Systems Architect                       feat/d030-xr-systems-architect
-D065      Diya Shah         Eye-Gaze & Attention Tracking Specialist   feat/d065-eye-gaze-attention-t
-I080      Anuvrat Tripathi  Human Factors & Retention Analyst          feat/i080-human-factors-retent
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `D021` | **Madhav Gaonkar** | B.Tech / MBA (Tech) | Phishing Threat Modeling Lead | `feat/d021-phishing-threat-mode` |
+| `D030` | **Arnav Jain** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/d030-xr-systems-architect` |
+| `D065` | **Diya Shah** | B.Tech / MBA (Tech) | Eye-Gaze & Attention Tracking Specialist | `feat/d065-eye-gaze-attention-t` |
+| `I080` | **Anuvrat Tripathi** | B.Tech / MBA (Tech) | Human Factors & Retention Analyst | `feat/i080-human-factors-retent` |
 
 ---
 

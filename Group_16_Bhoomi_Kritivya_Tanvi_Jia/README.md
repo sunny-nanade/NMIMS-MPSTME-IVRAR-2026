@@ -37,16 +37,12 @@ This project delivers an **AI-Driven Immersive Virtual Reality Mass-Casualty Tri
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name        Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-I004      Bhoomi Bhandari     Triage Clinical Protocol Lead              feat/i004-triage-clinical-prot
-I037      Kritivya Mishra     XR Systems Architect                       feat/i037-xr-systems-architect
-I044      Tanvi Paithankar    Spatial Telemetry & Confusion Matrix Spec  feat/i044-spatial-telemetry-co
-I069      Jia Jadhav          Human Factors & Usability Engineer         feat/i069-human-factors-usabil
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `I004` | **Bhoomi Bhandari** | B.Tech / MBA (Tech) | Triage Clinical Protocol Lead | `feat/i004-triage-clinical-prot` |
+| `I037` | **Kritivya Mishra** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/i037-xr-systems-architect` |
+| `I044` | **Tanvi Paithankar** | B.Tech / MBA (Tech) | Spatial Telemetry & Confusion Matrix Specialist | `feat/i044-spatial-telemetry-co` |
+| `I069` | **Jia Jadhav** | B.Tech / MBA (Tech) | Human Factors & Usability Engineer | `feat/i069-human-factors-usabil` |
 
 ---
 

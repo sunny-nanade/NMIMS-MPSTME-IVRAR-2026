@@ -39,16 +39,12 @@ This project implements a hybrid **AR Visual-Marker Indoor Navigation System** i
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Program                           Assigned Engineering Role             Git Feature Branch
-===================================================================================================
-C136      Mishika Shah      B.Tech Computer Engg (Integrated) Computer Vision & ArUco Lead          feat/c136-spatial-vision-ar-le
-C172      Parva Gaglani     B.Tech Computer Engg (Integrated) XR Systems Architect & VIO Lead       feat/c172-xr-systems-architect
-C139      Vansh Panchal     B.Tech Computer Engg (Integrated) 3D Multi-Floor A* Graph Specialist    feat/c139-graph-algorithms-nav
-C174      Triesha Shah      B.Tech Computer Engg (Integrated) Human Factors & Usability Engineer    feat/c174-human-factors-usabil
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `C136` | **Mishika Shah** | B.Tech / MBA (Tech) | Computer Vision & ArUco Pose Estimation Lead | `feat/c136-spatial-vision-ar-lead` |
+| `C172` | **Parva Gaglani** | B.Tech / MBA (Tech) | XR Systems Architect & VIO Drift Calibration Lead | `feat/c172-xr-systems-architect` |
+| `C139` | **Vansh Panchal** | B.Tech / MBA (Tech) | 3D Multi-Floor A* Graph & Pathfinding Specialist | `feat/c139-graph-algorithms-nav` |
+| `C174` | **Triesha Shah** | B.Tech / MBA (Tech) | Human Factors, AR UI/UX & Telemetry Engineer | `feat/c174-human-factors-usability` |
 
 ---
 

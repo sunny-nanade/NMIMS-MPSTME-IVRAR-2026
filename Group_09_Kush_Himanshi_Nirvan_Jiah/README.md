@@ -37,16 +37,12 @@ This project implements an **AI-Adaptive VR Social-Engineering Simulation** deve
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name        Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-I074      Kush Keswani        Conversational AI & Dialogue Lead          feat/i074-conversational-ai-di
-R002      Himanshi Agarwal    XR Systems Architect                       feat/r002-xr-systems-architect
-R008      Nirvan Chhajed      Eye-Gaze & Behavioral Telemetry Lead       feat/r008-eye-gaze-behavioral-
-R033      Jiah Kothari        Human Factors & Security QA Engineer       feat/r033-human-factors-securi
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `I074` | **Kush Keswani** | B.Tech / MBA (Tech) | Conversational AI & Dialogue Lead | `feat/i074-conversational-ai-di` |
+| `R002` | **Himanshi Agarwal** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/r002-xr-systems-architect` |
+| `R008` | **Nirvan Chhajed** | B.Tech / MBA (Tech) | Eye-Gaze & Behavioral Telemetry Lead | `feat/r008-eye-gaze-behavioral-` |
+| `R033` | **Jiah Kothari** | B.Tech / MBA (Tech) | Human Factors & Security QA Engineer | `feat/r033-human-factors-securi` |
 
 ---
 

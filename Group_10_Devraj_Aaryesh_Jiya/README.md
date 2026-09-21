@@ -37,15 +37,11 @@ This project implements an ultra-low-latency **OpenCV-Based Optical Color and Fi
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-R014      Devraj Ghumare    Computer Vision Pipeline Lead              feat/r014-computer-vision-pipe
-R045      Aaryesh Pathare   XR Systems Architect                       feat/r045-xr-systems-architect
-R054      Jiya Saxena       Gesture Recognition Specialist             feat/r054-gesture-recognition-
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `R014` | **Devraj Ghumare** | B.Tech / MBA (Tech) | Computer Vision Pipeline Lead | `feat/r014-computer-vision-pipe` |
+| `R045` | **Aaryesh Pathare** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/r045-xr-systems-architect` |
+| `R054` | **Jiya Saxena** | B.Tech / MBA (Tech) | Gesture Recognition Specialist | `feat/r054-gesture-recognition-` |
 
 ---
 

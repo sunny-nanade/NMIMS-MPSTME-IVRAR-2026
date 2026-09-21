@@ -37,15 +37,11 @@ This project implements a **Hybrid Smart AR Kiosk and Mobile WebXR Handoff Syste
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Assigned Engineering Role                  Git Feature Branch
-===================================================================================================
-R057      Jaineel Shah      Smart Kiosk & WebXR Lead                   feat/r057-smart-kiosk-webxr-le
-S014      Dev Garg          Mobile AR & Navigation Specialist          feat/s014-mobile-ar-navigation
-S021      Nimitt Jain       Sustainability & Usability Analyst         feat/s021-sustainability-usabi
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `R057` | **Jaineel Shah** | B.Tech / MBA (Tech) | Smart Kiosk & WebXR Lead | `feat/r057-smart-kiosk-webxr-le` |
+| `S014` | **Dev Garg** | B.Tech / MBA (Tech) | Mobile AR & Navigation Specialist | `feat/s014-mobile-ar-navigation` |
+| `S021` | **Nimitt Jain** | B.Tech / MBA (Tech) | Sustainability & Usability Analyst | `feat/s021-sustainability-usabi` |
 
 ---
 

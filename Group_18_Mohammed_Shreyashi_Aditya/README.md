@@ -37,15 +37,11 @@ This project delivers an **Authoritative Networked Multiplayer Virtual Reality C
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name                 Assigned Engineering Role             Git Feature Branch
-===================================================================================================
-B077      Mohammed Saquib Rakhangi     Multiplayer Networking Architect      feat/b077-multiplayer-networki
-B112      Shreyashi Srivastava         XR Systems Architect                  feat/b112-xr-systems-architect
-B118      Aditya Verma                 Spatial Voice & Audio Specialist      feat/b118-spatial-voice-audio-
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `B077` | **Mohammed Saquib Rakhangi** | B.Tech / MBA (Tech) | Multiplayer Networking Architect | `feat/b077-multiplayer-networki` |
+| `B112` | **Shreyashi Srivastava** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/b112-xr-systems-architect` |
+| `B118` | **Aditya Verma** | B.Tech / MBA (Tech) | Spatial Voice & Audio Specialist | `feat/b118-spatial-voice-audio-` |
 
 ---
 

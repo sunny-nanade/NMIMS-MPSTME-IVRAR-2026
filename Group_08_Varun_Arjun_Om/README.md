@@ -39,15 +39,11 @@ This project implements an interactive **Gamified Mobile AR Checkpoint Discovery
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Program                           Assigned Engineering Role             Git Feature Branch
-===================================================================================================
-F050      Varun Iyer        B.Tech IT (Integrated)            Mobile AR & Visual Tracking Lead      feat/f050-mobile-ar-lead
-F049      Arjun Salunke     B.Tech IT (Integrated)            XR Systems Architect & Geofencing     feat/f049-xr-systems-architect
-F014      Om Kadam          B.Tech IT (Integrated)            Gamification & Telemetry Specialist   feat/f014-gamification-telemetry
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `F050` | **Varun Iyer** | B.Tech / MBA (Tech) | Mobile AR & Visual Anchor Binding Lead | `feat/f050-mobile-ar-lead` |
+| `F049` | **Arjun Salunke** | B.Tech / MBA (Tech) | XR Systems Architect & Geofencing Specialist | `feat/f049-xr-systems-architect` |
+| `F014` | **Om Kadam** | B.Tech / MBA (Tech) | Gamification Logic & SBSOD Telemetry Lead | `feat/f014-gamification-telemetry` |
 
 ---
 

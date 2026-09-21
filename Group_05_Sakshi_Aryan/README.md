@@ -39,14 +39,10 @@ According to the **W3C WebXR Accessibility User Requirements (XAUR)** and **ISO 
 
 ## Student Engineering Team & Task Matrix
 
-```
-===================================================================================================
-Roll No   Student Name      Program               Assigned Engineering Role             Git Feature Branch
-===================================================================================================
-A057      Sakshi Sharma     B.Tech IT             XR Systems Architect & Gaze Lead      feat/a057-xr-systems-architect
-I077      Aryan Kanungo     B.Tech AI             Spatial NLP & Ergonomics Lead         feat/i077-spatial-nlp-accessib
-===================================================================================================
-```
+| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
+| :--- | :--- | :--- | :--- | :--- |
+| `A057` | **Sakshi Sharma** | B.Tech / MBA (Tech) | XR Systems Architect & OpenXR Gaze Binding Lead | `feat/a057-xr-systems-architect` |
+| `I077` | **Aryan Kanungo** | B.Tech / MBA (Tech) | Spatial NLP Engine & Ergonomic Telemetry Lead | `feat/i077-spatial-nlp-accessibility` |
 
 ---
 
