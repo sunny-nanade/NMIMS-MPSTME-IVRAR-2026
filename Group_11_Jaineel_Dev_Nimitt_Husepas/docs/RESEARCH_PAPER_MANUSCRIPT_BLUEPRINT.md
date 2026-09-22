@@ -5,7 +5,7 @@
 ---
 
 ### Authorized Research Title
-**"How can a hybrid smart AR kiosk and mobile handoff system reduce transit time and paper map waste for campus visitors navigating complex university facilities?"**
+**"How can an AR-based Smart Campus Wayfinding System help first-time visitors navigate SVKM's NMIMS campus while improving navigation efficiency and reducing reliance on printed directional signage?"**
 
 ---
 
@@ -21,6 +21,7 @@ University campuses and large-scale public facilities host thousands of visitors
 | **R057** | Jaineel Shah | Smart Kiosk & WebXR Lead | Section III.A (Kiosk UI & Path Algorithm), Section IV.A (Handoff Latency) | `feat/r057-smart-kiosk-webxr-le` |
 | **S014** | Dev Garg | Mobile AR & Navigation Specialist | Section III.B (Mobile WebXR Client), Section IV.B (Transit Duration & Errors) | `feat/s014-mobile-ar-navigation` |
 | **S021** | Nimitt Jain | Sustainability & Usability Analyst | Section I (Problem Formulation), Section V (Sustainability & Technoeconomics) | `feat/s021-sustainability-usabi` |
+| **J032** | Husepas Marfatia | Spatial Analytics & Wayfinding Telemetry Lead | Section III.C (Topological Routing), Section IV.C (Telemetry Benchmark & Statistical Tests) | `feat/j032-spatial-telemetry-an` |
 
 ---
 

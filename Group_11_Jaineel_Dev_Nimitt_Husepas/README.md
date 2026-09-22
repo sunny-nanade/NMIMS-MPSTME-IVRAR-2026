@@ -1,11 +1,11 @@
-# IVRAR Group 11: Hybrid Smart AR Kiosk and Mobile WebXR Handoff System
+# IVRAR Group 11: Sustainable Smart Campus Wayfinding & Kiosk
 **Course:** Introduction to Virtual Reality & Augmented Reality (IVRAR - Course Code: 702COI002)  
 **Academic Term:** Academic Year 2026–2027 | Semester V  
 **Institution:** SVKM's NMIMS MPSTME, Mumbai  
 
 
 ## Authorized Research Title
-> **"How can a hybrid smart AR kiosk and mobile handoff system reduce transit time and paper map waste for campus visitors navigating complex university facilities?"**
+> **"How can an AR-based Smart Campus Wayfinding System help first-time visitors navigate SVKM's NMIMS campus while improving navigation efficiency and reducing reliance on printed directional signage?"**
 
 ---
 
@@ -39,15 +39,16 @@ This project implements a **Hybrid Smart AR Kiosk and Mobile WebXR Handoff Syste
 
 | Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
 | :--- | :--- | :--- | :--- | :--- |
-| `R057` | **Jaineel Shah** | B.Tech / MBA (Tech) | Smart Kiosk & WebXR Lead | `feat/r057-smart-kiosk-webxr-le` |
-| `S014` | **Dev Garg** | B.Tech / MBA (Tech) | Mobile AR & Navigation Specialist | `feat/s014-mobile-ar-navigation` |
-| `S021` | **Nimitt Jain** | B.Tech / MBA (Tech) | Sustainability & Usability Analyst | `feat/s021-sustainability-usabi` |
+| `R057` | **Jaineel Shah** | MBA (Tech) (Artificial Intelligence) | Smart Kiosk & WebXR Lead | `feat/r057-smart-kiosk-webxr-le` |
+| `S014` | **Dev Garg** | MBA (Tech) (Data Science) | Mobile AR & Navigation Specialist | `feat/s014-mobile-ar-navigation` |
+| `S021` | **Nimitt Jain** | MBA (Tech) (Data Science) | Sustainability & Usability Analyst | `feat/s021-sustainability-usabi` |
+| `J032` | **Husepas Marfatia** | B.Tech (Data Science) | Spatial Analytics & Wayfinding Telemetry Lead | `feat/j032-spatial-telemetry-an` |
 
 ---
 
 
 ### Student Engineering Commendation & Acknowledgments
-SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to Jaineel Shah (R057), Dev Garg (S014), Nimitt Jain (S021) for their disciplined commitment, late-night debugging, and technical craftsmanship throughout Semester V. Your rigorous engineering inquiry and dedication to immersive XR environments exemplify the highest standards of undergraduate technical research.
+SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to Jaineel Shah (R057), Dev Garg (S014), Nimitt Jain (S021), and Husepas Marfatia (J032) for their disciplined commitment, late-night debugging, and technical craftsmanship throughout Semester V. Your rigorous engineering inquiry and dedication to immersive XR environments exemplify the highest standards of undergraduate technical research.
 
 > *"Scientists discover the world that exists; engineers create the world that never was."*  
 > — **Theodore von Kármán**
@@ -59,11 +60,12 @@ SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to Jain
 
 ## Core System Architecture & Egress Telemetry
 
-The platform comprises four interconnected software modules:
+The platform comprises five interconnected software modules:
 1. **Interactive Kiosk & QR Serialization Engine (`Assets/Scripts/SmartKioskHandoffManager.cs`, `R057 - Jaineel Shah`):** High-throughput touch UI directory, topological graph pathfinding, dynamic QR code matrix generation, and 45-second automated session timeout cleanup.
 2. **Mobile WebXR Route Navigator (`Assets/Scripts/MobileWebXRRouteNavigator.cs`, `S014 - Dev Garg`):** Client-side zero-install WebXR execution, visual-inertial camera pose tracking, dynamic 3D chevron guidance rendering, and floor transition notifications.
 3. **Campus Sustainability & Usability Analysis (`telemetry/kiosk_analytics_roi_eval.py`, `S021 - Nimitt Jain`):** Dimensionless cost parity modeling, paper waste elimination quantification, reception labor reclamation, and payback horizon calculations.
 4. **Empirical Benchmarking & Figure Pipeline (`telemetry/generate_paper_figures.py`, `S021 - Nimitt Jain`):** 50-participant synthetic trial generation, statistical validation ($t$-tests, effect sizes), and 300 DPI publication figure rendering.
+5. **Spatial Analytics & Wayfinding Telemetry Pipeline (`telemetry/kiosk_handoff_benchmark.csv`, `J032 - Husepas Marfatia`):** Spatial trajectory analytics, topological path optimization modeling, and empirical disorientation reduction benchmarks.
 
 ### Publication-Grade Figures (300 DPI)
 - `docs/figures/figure1_system_architecture.png`: Multi-tier system architecture showing Kiosk Layer, Optical Handoff Layer, and Mobile WebXR AR Layer.
@@ -72,14 +74,12 @@ The platform comprises four interconnected software modules:
 
 ---
 
----
-
 ## Project Demonstration & Academic Showcase (LinkedIn)
 
 [![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
 
 * **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
-* **Student Presenters:** **Jaineel Shah** (R057), **Dev Garg** (S014), **Nimitt Jain** (S021)
+* **Student Presenters:** **Jaineel Shah** (R057), **Dev Garg** (S014), **Nimitt Jain** (S021), **Husepas Marfatia** (J032)
 * **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
 * **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.
 

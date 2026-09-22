@@ -1,8 +1,8 @@
 {
   "group_id": "IVRAR_GROUP_11",
-  "folder_name": "Group_11_Jaineel_Dev_Nimitt",
+  "folder_name": "Group_11_Jaineel_Dev_Nimitt_Husepas",
   "batch": "Batch B2",
-  "authorized_title": "How can a hybrid smart AR kiosk and mobile handoff system reduce transit time and paper map waste for campus visitors navigating complex university facilities?",
+  "authorized_title": "How can an AR-based Smart Campus Wayfinding System help first-time visitors navigate SVKM's NMIMS campus while improving navigation efficiency and reducing reliance on printed directional signage?",
   "members": [
     {
       "roll_no": "R057",
@@ -26,6 +26,14 @@
       "name": "Nimitt Jain",
       "role": "Sustainability & Usability Analyst",
       "assigned_branch": "feat/s021-sustainability-usabi",
+      "github_username": ""
+    },
+    {
+      "roll_no": "J032",
+      "sap_id": "70092400004",
+      "name": "Husepas Marfatia",
+      "role": "Spatial Analytics & Wayfinding Telemetry Lead",
+      "assigned_branch": "feat/j032-spatial-telemetry-an",
       "github_username": ""
     }
   ],
@@ -79,7 +87,7 @@
       "doi": "10.3390/app12062969"
     }
   ],
-  "domain": "Hybrid Smart AR Kiosk & Mobile Handoff for Complex Facility Wayfinding",
+  "domain": "SUSTAINABLE SMART CAMPUS WAYFINDING & KIOSK",
   "project_showcase": {
     "platform": "LinkedIn Video",
     "linkedin_url": "PENDING_SUBMISSION",
