@@ -1,0 +1,55 @@
+ID,file,stage,voice,source_anchor
+R001,Assets/_Project/Audio/R001.wav,Setup,Rose,Setup calibration: first line
+R002,Assets/_Project/Audio/R002.wav,Setup,Rose,Setup calibration: second line
+R003,Assets/_Project/Audio/R003.wav,Setup,Rose,Setup calibration: last line
+R010,Assets/_Project/Audio/R010.wav,Awakening,Rose,Enter SCN_MedicalBay
+R011,Assets/_Project/Audio/R011.wav,Awakening,Rose,Cup tray reachable
+R012,Assets/_Project/Audio/R012.wav,Awakening,Rose,5 s after R011
+R030,Assets/_Project/Audio/R030.wav,EarCheck,Rose,Start of Ear Check
+R031,Assets/_Project/Audio/R031.wav,EarCheck,Rose,After each Ear Check trial (cycle 3 variants)
+R032,Assets/_Project/Audio/R032.wav,EarCheck,Rose,End of Ear Check
+R040,Assets/_Project/Audio/R040.wav,EarCheck,Rose,Start of keypad
+R041,Assets/_Project/Audio/R041.wav,EarCheck,Rose,Keypad idle 30 s
+R043,Assets/_Project/Audio/R043.wav,KeypadSolved,Rose,Terminal boot
+R050,Assets/_Project/Audio/R050.wav,KeypadSolved,Rose,Trail fades in
+R052,Assets/_Project/Audio/R052.wav,TrailFollowed,Rose,Service door opens
+R150,Assets/_Project/Audio/R150.wav,Block2,Rose,Arrive at rack (CoreRoomSpawn)
+R151,Assets/_Project/Audio/R151.wav,Block2,Rose,10 s after R150
+R153,Assets/_Project/Audio/R153.wav,CoolantRouted,Rose,Rack solved
+R160,Assets/_Project/Audio/R160.wav,CoolantRouted,Rose,Blast doors start
+R140,Assets/_Project/Audio/R140.wav,Block1,Rose,Questionnaire opens
+R161,Assets/_Project/Audio/R161.wav,Questionnaire,Rose,End of debrief
+R201,Assets/_Project/Audio/R201.wav,Block2,Rose,Block beacon call every 4 s (3 variants)
+R202,Assets/_Project/Audio/R202.wav,Block2,Rose,Junction call: turn (block only)
+R203,Assets/_Project/Audio/R203.wav,Block2,Rose,Junction call: turn (block only)
+R204,Assets/_Project/Audio/R204.wav,Block2,Rose,Junction call: turn (block only)
+R205,Assets/_Project/Audio/R205.wav,Block2,Rose,Dead end (block only)
+R207,Assets/_Project/Audio/R207.wav,Block2,Rose,Idle nudge 20 s (block only)
+R208,Assets/_Project/Audio/R208.wav,Block2,Rose,Near exit (block only)
+R209,Assets/_Project/Audio/R209.wav,Block2,Rose,Finish (block only)
+R210,Assets/_Project/Audio/R210.wav,Block2,Rose,Block timeout (block only)
+H001,Assets/_Project/Audio/H001.wav,Awakening,HALCYON,Enter SCN_MedicalBay
+H002,Assets/_Project/Audio/H002.wav,Awakening,HALCYON,20 s after H001
+H004,Assets/_Project/Audio/H004.wav,EarCheck,HALCYON,Wrong keypad sequence (max once per 30 s)
+H007,Assets/_Project/Audio/H007.wav,CoolantRouted,HALCYON,Lever
+H008,Assets/_Project/Audio/H008.wav,CoolantRouted,HALCYON,Lever
+S001,Assets/_Project/Audio/S001.mp3,EarCheck,SFX,Ear Check ping
+S002,Assets/_Project/Audio/S002.mp3,Setup,SFX,Calibration tones
+S020,Assets/_Project/Audio/S020.mp3,Block2,SFX,Wall contact
+S021,Assets/_Project/Audio/S021.mp3,Block2,SFX,Footsteps on smooth move
+S022,Assets/_Project/Audio/S022.mp3,Block2,SFX,Exit door
+S040,Assets/_Project/Audio/S040.mp3,EarCheck,SFX,Key press (9 pitches)
+S041,Assets/_Project/Audio/S041.mp3,EarCheck,SFX,Wrong keypad sequence
+S042,Assets/_Project/Audio/S042.mp3,KeypadSolved,SFX,Terminal boot
+S050,Assets/_Project/Audio/S050.mp3,TrailFollowed,SFX,Service door
+S060,Assets/_Project/Audio/S060.mp3,CoolantRouted,SFX,Plug / unplug
+S062,Assets/_Project/Audio/S062.mp3,CoolantRouted,SFX,Wrong plug
+S063,Assets/_Project/Audio/S063.mp3,CoolantRouted,SFX,Rack solved and lever
+S080,Assets/_Project/Audio/S080.mp3,Escaped,SFX,Blast doors
+S090,Assets/_Project/Audio/S090.mp3,Questionnaire,SFX,Teleport
+S091,Assets/_Project/Audio/S091.mp3,Questionnaire,SFX,UI
+A001,Assets/_Project/Audio/A001.mp3,Awakening,Ambience,SCN_MedicalBay and SCN_HallwayDebrief
+A004,Assets/_Project/Audio/A004.mp3,Block2,Ambience,SCN_SmokeRoom (identical in both ears)
+A006,Assets/_Project/Audio/A006.wav,Block2,Ambience,SCN_SmokeRoom (identical in both ears)
+A005,Assets/_Project/Audio/A005.wav,Questionnaire,Ambience,SCN_HallwayDebrief
+R060,Assets/_Project/Audio/R060.wav,none,Rose,unused (no trigger)

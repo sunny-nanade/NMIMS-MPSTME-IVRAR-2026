@@ -1,0 +1,219 @@
+{
+ "name": "A",
+ "grid": 6,
+ "cellSize": 2.0,
+ "start": {
+  "c": 3,
+  "r": 0,
+  "side": "S"
+ },
+ "exit": {
+  "c": 4,
+  "r": 5,
+  "side": "N"
+ },
+ "cells": [
+  3,
+  10,
+  9,
+  2,
+  10,
+  9,
+  5,
+  3,
+  14,
+  9,
+  3,
+  13,
+  7,
+  14,
+  9,
+  7,
+  12,
+  5,
+  5,
+  0,
+  5,
+  7,
+  8,
+  4,
+  7,
+  10,
+  12,
+  4,
+  0,
+  0,
+  6,
+  10,
+  10,
+  10,
+  8,
+  0
+ ],
+ "path": [
+  {
+   "c": 3,
+   "r": 0
+  },
+  {
+   "c": 4,
+   "r": 0
+  },
+  {
+   "c": 5,
+   "r": 0
+  },
+  {
+   "c": 5,
+   "r": 1
+  },
+  {
+   "c": 4,
+   "r": 1
+  },
+  {
+   "c": 4,
+   "r": 2
+  },
+  {
+   "c": 3,
+   "r": 2
+  },
+  {
+   "c": 3,
+   "r": 1
+  },
+  {
+   "c": 2,
+   "r": 1
+  },
+  {
+   "c": 1,
+   "r": 1
+  },
+  {
+   "c": 1,
+   "r": 2
+  },
+  {
+   "c": 0,
+   "r": 2
+  },
+  {
+   "c": 0,
+   "r": 3
+  },
+  {
+   "c": 0,
+   "r": 4
+  },
+  {
+   "c": 0,
+   "r": 5
+  },
+  {
+   "c": 1,
+   "r": 5
+  },
+  {
+   "c": 2,
+   "r": 5
+  },
+  {
+   "c": 3,
+   "r": 5
+  },
+  {
+   "c": 4,
+   "r": 5
+  }
+ ],
+ "shortestSteps": 18,
+ "shortestMeters": 36.0,
+ "junctions": [
+  {
+   "c": 5,
+   "r": 1,
+   "index": 3,
+   "correct": "W",
+   "wrong": [
+    "N"
+   ],
+   "misleading": false
+  },
+  {
+   "c": 3,
+   "r": 2,
+   "index": 6,
+   "correct": "S",
+   "wrong": [
+    "N"
+   ],
+   "misleading": true
+  },
+  {
+   "c": 2,
+   "r": 1,
+   "index": 8,
+   "correct": "W",
+   "wrong": [
+    "S"
+   ],
+   "misleading": false
+  },
+  {
+   "c": 1,
+   "r": 2,
+   "index": 10,
+   "correct": "W",
+   "wrong": [
+    "E"
+   ],
+   "misleading": true
+  },
+  {
+   "c": 0,
+   "r": 2,
+   "index": 11,
+   "correct": "N",
+   "wrong": [
+    "S"
+   ],
+   "misleading": false
+  },
+  {
+   "c": 0,
+   "r": 4,
+   "index": 13,
+   "correct": "N",
+   "wrong": [
+    "E"
+   ],
+   "misleading": false
+  }
+ ],
+ "deadEnds": [
+  {
+   "c": 3,
+   "r": 4
+  },
+  {
+   "c": 4,
+   "r": 3
+  },
+  {
+   "c": 5,
+   "r": 3
+  }
+ ],
+ "metrics": {
+  "turns": 10,
+  "longestStraight": 4,
+  "left": 5,
+  "right": 5,
+  "loops": 2,
+  "usedCells": 32,
+  "branchDepth": 4,
+  "misleading": 2
+ }
+}
