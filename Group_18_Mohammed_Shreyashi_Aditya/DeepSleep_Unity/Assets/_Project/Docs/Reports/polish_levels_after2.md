@@ -1,0 +1,55 @@
+# Check report: polish_levels
+
+Date: 2026-10-17 00:03:41
+Result: 6 passed, 0 failed. Console during run: 0 errors, 0 warnings.
+
+- Master limiter: on (ceiling -3 dBFS)
+- **Rose comms (Medical Bay)**
+- R001: active RMS -17.5 dBFS, peak -5.7 dBFS
+- R002: active RMS -19.2 dBFS, peak -5.7 dBFS
+- R003: active RMS -18.7 dBFS, peak -5.7 dBFS
+- R010: active RMS -19.3 dBFS, peak -5.7 dBFS
+- R011: active RMS -20.6 dBFS, peak -5.7 dBFS
+- R012: active RMS -19.7 dBFS, peak -5.7 dBFS
+- R030: active RMS -19.3 dBFS, peak -5.7 dBFS
+- R031: active RMS -20.1 dBFS, peak -5.7 dBFS
+- R032: active RMS -18.9 dBFS, peak -5.7 dBFS
+- R040: active RMS -20.5 dBFS, peak -5.7 dBFS
+- R041: active RMS -19.2 dBFS, peak -5.7 dBFS
+- R043: active RMS -17.4 dBFS, peak -5.7 dBFS
+- R050: active RMS -20.3 dBFS, peak -5.7 dBFS
+- R052: active RMS -19.6 dBFS, peak -5.7 dBFS
+- R140: active RMS -19.3 dBFS, peak -5.7 dBFS
+- R150: active RMS -19.3 dBFS, peak -5.7 dBFS
+- R151: active RMS -20.1 dBFS, peak -5.7 dBFS
+- R153: active RMS -17.0 dBFS, peak -5.7 dBFS
+- R160: active RMS -18.1 dBFS, peak -5.7 dBFS
+- R161: active RMS -18.0 dBFS, peak -5.7 dBFS
+- **HALCYON (ceiling speaker)**
+- H001: active RMS -17.2 dBFS, peak -5.2 dBFS
+- H002: active RMS -17.4 dBFS, peak -5.2 dBFS
+- H004: active RMS -17.3 dBFS, peak -5.2 dBFS
+- H007: active RMS -17.3 dBFS, peak -5.2 dBFS
+- H008: active RMS -16.5 dBFS, peak -5.2 dBFS
+- **Rose guidance S spatial**
+- 2 m: active RMS -17.8 dBFS, peak -3.0 dBFS
+- 5 m: active RMS -18.8 dBFS, peak -3.0 dBFS
+- 9 m: active RMS -19.3 dBFS, peak -3.0 dBFS
+- 14 m: active RMS -19.4 dBFS, peak -3.9 dBFS
+- 20 m: active RMS -21.3 dBFS, peak -3.9 dBFS
+- **Rose guidance M stereo**
+- 2 m: active RMS -17.9 dBFS, peak -4.3 dBFS
+- 5 m: active RMS -17.6 dBFS, peak -4.9 dBFS
+- 9 m: active RMS -19.3 dBFS, peak -5.7 dBFS
+- 14 m: active RMS -20.0 dBFS, peak -6.5 dBFS
+- 20 m: active RMS -20.3 dBFS, peak -7.7 dBFS
+- SUMMARY rose_comms_mean_active_rms=-19.1 peak_min=-5.7 peak_max=-5.7
+- SUMMARY halcyon_mean_active_rms=-17.1 peak_min=-5.2 peak_max=-5.2
+- SUMMARY smoke_S_mean_active_rms=-19.3 peak_max=-3.0
+- SUMMARY smoke_M_mean_active_rms=-19.0 peak_max=-4.3
+- [PASS] Levels measured for 35 rows
+- [PASS] Rose comms peaks between -6 and -3 dBFS (-5.7 to -5.7)
+- [PASS] HALCYON peaks between -6 and -3 dBFS (-5.2 to -5.2)
+- [PASS] Rose comms mean active RMS about -20 dBFS (-19.1)
+- [PASS] Smoke-room Rose (S -19.3, M -19.0) is within 2 dB of Rose elsewhere (-19.1) or louder
+- [PASS] S and M are level-matched (-19.3 vs -19.0 dBFS)

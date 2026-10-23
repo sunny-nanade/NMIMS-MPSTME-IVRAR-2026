@@ -1,0 +1,71 @@
+# Check report: phase3
+
+Date: 2026-10-17 00:16:18
+Result: 64 passed, 0 failed. Console during run: 0 errors, 0 warnings.
+
+- [PASS] SCN_Setup has the rig and SetupController
+- [PASS] Temporary test area is gone
+- [PASS] Camera height 1.650 m in SCN_Setup
+- [PASS] Setup starts on the consent page
+- DIAG src=Scripted hi=True hover=True hit=True Btn_Continue origin=(0.00, 1.35, 0.00) dir=(0.00, -0.15, 0.99) btn=(0.00, 1.13, 1.49) layer=9 col=True
+- [PASS] Ray click on the button moves to the height page
+- [PASS] No low-height warning at standing eye height
+- [PASS] Audio check page
+- [PASS] R001 played during the consent and height pages (it starts with the scene, not with a button)
+- [PASS] R002 played when the tone check started, before the first tone
+- [PASS] All four tones confirmed by facing + trigger (4); wrong-direction pull ignored
+- [PASS] R003 played right after the fourth tone was confirmed
+- [PASS] Comfort page reached
+- [PASS] Volume slider set by ray (75)
+- [PASS] SCN_MedicalBay loaded after Start
+- [PASS] Stage is Awakening
+- [PASS] Camera height 1.650 m in SCN_MedicalBay
+- [PASS] R010 and H001 requested on arrival
+- [PASS] Main door 0.90 x 2.10 m
+- [PASS] Service door 0.90 x 2.10 m
+- [PASS] Bed height 0.90 m
+- [PASS] Table height 0.90 m
+- [PASS] Ceiling at 3.00 m
+- [PASS] Medical bay footprint 8.3 x 6.2 m
+- [PASS] Keypad centre at 1.10 m
+- [PASS] Terminal 1.00 m high
+- [PASS] Oxygen counts down (19:53)
+- [PASS] Emergency light pulses over a 2 s period (intensity 0.36 to 1.20)
+- [PASS] R011 requested when near the tray
+- [PASS] Teleport alone does not finish Awakening
+- [PASS] Cup can be grabbed
+- [PASS] Awakening completes (cup + teleport) and advances to EarCheck
+- H002 timing (20 s) not waited in this run
+- [PASS] EarCheckController, ThermalKeypad and BreachTrail are in SCN_MedicalBay
+- [PASS] Stage is EarCheck at the start of Phase 3
+- [PASS] Keypad stays inactive until the Ear Check is finished
+- [PASS] R030 requested at the start of the Ear Check
+- [PASS] Ear Check trials start after standing on the ring
+- [PASS] All six beacons sit at the specified azimuth, elevation and 2.5 m (6/6)
+- [PASS] Six Ear Check trials completed
+- [PASS] Correct answers turn the beacon blue and incorrect ones red
+- [PASS] Errors recorded (trial 3 miss 42 deg, others about 8)
+- [PASS] R031 after trials and R032 at the end
+- [PASS] Ear Check error and reaction time are logged
+- [PASS] Keypad becomes ready and R040 plays
+- [PASS] Press order coolest to hottest is 7, 3, 5
+- [PASS] Wrong key locks the keypad
+- [PASS] Presses are ignored during the 2 s lockout
+- [PASS] Lockout ends after 2 s
+- [PASS] Three wrong attempts counted
+- [PASS] Glowing keys pulse after three failures (emission 0.00 to 4.49)
+- [PASS] H004 plays after a wrong sequence
+- [PASS] Pressing 7, 3, 5 solves the keypad
+- [PASS] Stage advances to KeypadSolved
+- [PASS] R043 plays at terminal boot
+- [PASS] keypad_time_s and keypad_wrong_attempts logged
+- [PASS] Trail is visible after the keypad is solved
+- [PASS] Trail has 10 decals (max 24)
+- [PASS] R050 plays when the trail fades in
+- [PASS] All decals have faded in
+- [PASS] Every decal lies on the single waypoint route (no forks)
+- [PASS] Arriving at the panel opens it and shows the pull handle
+- [PASS] Pull handle at 1.00 m
+- [PASS] Pulling the handle opens the service door and advances to TrailFollowed
+- [PASS] R052 plays when the door opens
+- [PASS] trail_time_s logged

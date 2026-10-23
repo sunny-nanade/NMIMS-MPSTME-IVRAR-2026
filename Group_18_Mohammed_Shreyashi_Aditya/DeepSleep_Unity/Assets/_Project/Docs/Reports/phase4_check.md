@@ -1,0 +1,52 @@
+# Check report: phase4
+
+Date: 2026-10-17 00:25:26
+Result: 46 passed, 0 failed. Console during run: 0 errors, 0 warnings.
+
+- [PASS] Participant 4 has order S-A then M-B
+- [PASS] Jumping to TrailFollowed reloads the bay with the service door open
+- [PASS] Walking into the entry zone loads SCN_SmokeRoom and starts Block 1
+- [PASS] SCN_SmokeRoom is the active scene
+- [PASS] Stage is Block1
+- [PASS] Block 1 plan is layout A, spatial
+- [PASS] Camera height 1.650 m in the smoke room
+- [PASS] Smooth move on and teleport off in the smoke room
+- [PASS] Exponential-squared fog is on
+- [PASS] Fog gives about 2 m visibility (2.00 m)
+- [PASS] Helmet lamp is on with 1.5 m range
+- [PASS] Oxygen is paused in the smoke room
+- [PASS] Spatial condition: 3D source with the spatializer on
+- [PASS] Rose's clips are mono for both conditions
+- [PASS] Layout A verifies in C#: 18 steps, 6 junctions, 3 dead ends, 2 misleading
+- [PASS] Shortest path is 36 m
+- [PASS] Rose's source sits at the exit door
+- [PASS] Head-turn latency measured after turning away (1 samples, 863 ms)
+- [PASS] A dead-end branch exists next to the shortest path
+- [PASS] Reaching the exit zone ends the block
+- [PASS] One wrong turn counted (1)
+- [PASS] Dead-end entry counted (1)
+- [PASS] Backtrack counted (1)
+- [PASS] Path length 40.2 m, efficiency 0.89
+- [PASS] Evacuation time 33.2 s
+- [PASS] Rose called 6 times from the exit door (every 4 s)
+- [PASS] Near-exit (R208) and finish (R209) lines played
+- Block 1 head-turn latency: 4 samples, mean 1749 ms
+- [PASS] Block 1 telemetry row has time, wrong turns, condition S and layout A
+- [PASS] Efficiency, frame rate and timeout flag logged
+- [PASS] Back in SCN_MedicalBay with the smoke room unloaded
+- [PASS] Player is at CoreRoomSpawn
+- [PASS] Oxygen resumes after the block
+- [PASS] Stage stays Block1 until the questionnaire is answered
+- [PASS] The block 1 questionnaire opens after the return (R140)
+- [PASS] Block 2 stage reached
+- [PASS] Block 2 starts through the same entry zone
+- [PASS] Block 2 plan is layout B, stereo
+- [PASS] Stereo condition: 2D source, centred, spatializer off
+- [PASS] Same distance gain function applies in both conditions
+- [PASS] Layout B verifies and is active
+- [PASS] Block times out
+- [PASS] Idle nudge R207 after 20 s without moving
+- [PASS] Timeout line R210 plays
+- [PASS] Idle time recorded (24.0 s)
+- [PASS] Block 2 telemetry row: timeout 1, condition M, layout B
+- [PASS] The block 2 questionnaire opens after the return

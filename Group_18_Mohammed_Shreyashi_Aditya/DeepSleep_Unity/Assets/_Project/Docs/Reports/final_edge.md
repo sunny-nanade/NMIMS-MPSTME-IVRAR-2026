@@ -1,0 +1,51 @@
+# Check report: final_edge
+
+Date: 2026-10-20 00:09:36
+Result: 45 passed, 0 failed. Console during run: 0 errors, 0 warnings.
+
+- [PASS] Pause mid-line freezes R010 (clip time 8.50 to 8.50 s while paused, timeScale 0)
+- [PASS] Resume continues the same line (clip time 8.50 to 9.53 s)
+- [PASS] R010 played once, H001 followed it, no overlap (0 overlapping frames)
+- [PASS] Restart mid-line: Setup, no voice playing (), queues empty
+- [PASS] After the restart: one rig, one AudioListener (rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 3, materials 343, persistent roots 8, voice subscribers 7, sfx subscribers 2, SceneArrived 3, StageChanged 2)
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the restart
+- [PASS] Jump to Block2: stage Block2, scenes 1, fog True, oxygen paused True, active rigs 1, active listeners 1, stale voices []
+- [PASS] Jump to EarCheck: stage EarCheck, scenes 1, fog False, oxygen paused False, active rigs 1, active listeners 1, stale voices []
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to EarCheck
+- [PASS] Jump to CoolantRouted: stage CoolantRouted, scenes 1, fog False, oxygen paused False, active rigs 1, active listeners 1, stale voices []
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to CoolantRouted
+- [PASS] Jump to Awakening: stage Awakening, scenes 1, fog False, oxygen paused False, active rigs 1, active listeners 1, stale voices []
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to Awakening
+- [PASS] Jump to Escaped: stage Questionnaire, scenes 1, fog False, oxygen paused False, active rigs 1, active listeners 1, stale voices []
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to Escaped
+- [PASS] Jump to TrailFollowed: stage TrailFollowed, scenes 1, fog False, oxygen paused False, active rigs 1, active listeners 1, stale voices []
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to TrailFollowed
+- [PASS] Jump to Block1: stage Block1, scenes 1, fog True, oxygen paused True, active rigs 1, active listeners 1, stale voices []
+- [PASS] Jump to Setup: stage Setup, scenes 1, fog False, oxygen paused False, active rigs 1, active listeners 1, stale voices []
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to Setup
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to EarCheck
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to CoolantRouted
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to Awakening
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to Escaped
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to TrailFollowed
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the jump to Setup
+- [PASS] Two full jump cycles leave no stale objects or listeners (rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 3, materials 327, persistent roots 8, voice subscribers 7, sfx subscribers 2, SceneArrived 3, StageChanged 2 | rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 3, materials 327, persistent roots 8, voice subscribers 7, sfx subscribers 2, SceneArrived 3, StageChanged 2)
+- [PASS] Keypad idle: R041 requested 30.1 s after the keypad opened (expected 30)
+- [PASS] Wrong plug during R153: S062 raised, lockout active, 1 wrong plug(s)
+- [PASS] Lockout ended after about 3 s (measured 3.9 s including the grab)
+- [PASS] The voice line was not cut or repeated by the wrong plug (R153 played 1 time)
+- [PASS] After the lockout the correct plug (red to 2) works
+- [PASS] Reload 1 of SCN_MedicalBay: one rig, one listener, one AwakeningController/ThermalKeypad/CoolantRack (1/1/1)
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after reload 1
+- [PASS] Reload 2 of SCN_MedicalBay: one rig, one listener, one AwakeningController/ThermalKeypad/CoolantRack (1/1/1)
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after reload 2
+- [PASS] Second reload equals the first (rigs 1, listeners 1, eventSystems 0, audioSources 12, lights 3, materials 395, persistent roots 8, voice subscribers 7, sfx subscribers 2, SceneArrived 3, StageChanged 4 | rigs 1, listeners 1, eventSystems 0, audioSources 12, lights 3, materials 395, persistent roots 8, voice subscribers 7, sfx subscribers 2, SceneArrived 3, StageChanged 4)
+- [PASS] Block timeout is 240 s (240)
+- [PASS] Idle player: block ends by timeout after 240.0 game s (expected 240)
+- [PASS] Timeout block played the idle nudge R207 and the timeout line R210
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after the timeout
+- [PASS] Timeout block wrote its telemetry row with the timeout flag
+- [PASS] Telemetry flushed twice: 2 CSV row(s) for participant 4, 2 block row(s) in memory
+- [PASS] Session export twice writes the same single file
+- [PASS] Rose and HALCYON never spoke at the same time during the edge cases (0 frames)
+- Timeline errors 0, warnings (ours) 0

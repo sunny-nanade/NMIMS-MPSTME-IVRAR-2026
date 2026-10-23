@@ -1,0 +1,71 @@
+# Check report: audit_flow
+
+Date: 2026-10-16 21:03:44
+Result: 53 passed, 0 failed. Console during run: 0 errors, 3 warnings.
+
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) in SCN_Setup
+- PERF SCN_Setup: draw calls 78, SetPass calls 24, triangles 285480, vertices 183120, Editor frame time mean 18.2 ms, worst 31.6 ms (165 frames)
+- [PASS] Skipping a stage is rejected
+- [PASS] Repeating the current stage is rejected
+- [PASS] The next stage is accepted
+- [PASS] The same stage twice is rejected
+- [PASS] TryAdvance to the current stage does nothing
+- [PASS] Jumping back and repeating a jump leaves a consistent stage
+- [PASS] ResetSession clears the stage and history
+- [PASS] A pause during a scene load and a double load request end in a normal, unpaused bay (scene SCN_MedicalBay, idle True, timeScale 1, paused False)
+- [PASS] After the double load: one rig, one AudioListener, 0 EventSystem (rigs 1, listeners 1, eventSystems 0, audioSources 17, lights 7, materials 253, persistent roots 6, voice subscribers 6, sfx subscribers 1, SceneArrived 2, StageChanged 3)
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) in SCN_MedicalBay
+- PERF SCN_MedicalBay: draw calls 124, SetPass calls 32, triangles 240599, vertices 179699, Editor frame time mean 14.5 ms, worst 66.7 ms (208 frames)
+- [PASS] Medical Bay: teleport on, smooth move off
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after a teleport
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after snap turns
+- [PASS] A teleport onto the bed top is refused (floor level only)
+- [PASS] A teleport into the terminal footprint is refused (never inside a prop)
+- [PASS] A teleport through the west wall is refused
+- [PASS] A normal floor teleport still works (at least one of five open floor points accepted)
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after a respawn (PlaceAt)
+- [PASS] Rig stays on the floor
+- [PASS] Keys do nothing before the Ear Check has finished
+- [PASS] The trail is not visible before the keypad is solved
+- [PASS] A key held down counts as one press (1 wrong attempts)
+- [PASS] The 2 s lockout ends by itself
+- [PASS] Solving happens once and extra presses are ignored (solved events 1, KeypadSolved entered 1 time)
+- [PASS] The pull handle is not usable before the panel is open
+- [PASS] Pulling where the handle will be, before the panel opens, does nothing
+- [PASS] Standing in the smoke-room entry zone at the wrong stage launches nothing
+- [PASS] A single long jump to the end of the trail from the far side of the room does not open the panel (out of teleport range)
+- trail diag: teleports accepted 1, head (3.20, 1.65, -0.58), stand point (3.20, 0.00, -0.58), last waypoint (3.35, 0.00, 0.00), state PanelOpen
+- [PASS] The service door opens once and pulling again changes nothing (TrailFollowed entered 1 time, trail state DoorOpen, stage TrailFollowed, history Awakening>EarCheck>KeypadSolved>TrailFollowed)
+- [PASS] The rack waits until both blocks are done
+- [PASS] A cable cannot be plugged before the rack is active
+- [PASS] A cable and the cup thrown far away respawn at their start
+- [PASS] A wrong plug locks the rack
+- [PASS] The lockout ends even after a pause
+- [PASS] The three correct plugs solve the rack
+- [PASS] The lever works once; Escaped entered once and the hallway loaded once (1 arrival)
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) in SCN_HallwayDebrief
+- [PASS] Hallway: teleport on, smooth move off
+- PERF SCN_HallwayDebrief: draw calls 52, SetPass calls 17, triangles 70267, vertices 52480, Editor frame time mean 13.9 ms, worst 18.9 ms (217 frames)
+- [PASS] The experimenter menu opens and pauses the game
+- [PASS] Restart returns to SCN_Setup at stage Setup, unpaused
+- [PASS] Restart clears queued voice lines, completed blocks and the oxygen timer
+- [PASS] Restart clears the telemetry rows
+- [PASS] After the restart: one rig and one AudioListener (rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 2, materials 237, persistent roots 7, voice subscribers 6, sfx subscribers 1, SceneArrived 2, StageChanged 1)
+- [PASS] Smoke room: smooth move on, teleport off
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) in SCN_SmokeRoom
+- PERF SCN_SmokeRoom: draw calls 61, SetPass calls 12, triangles 81263, vertices 67005, Editor frame time mean 14.2 ms, worst 59.4 ms (211 frames)
+- [PASS] Pushing against the wall for 4 s: head z 1.68 stays inside the start cell (wall at 2.0) and the rig stays on the floor
+- [PASS] Camera height 1.650 m and rig on the floor (y 0.000) after pushing against a wall
+- [PASS] Restart in the middle of a block unloads the smoke room (1 scene loaded) and the fog is gone
+- cycle 1 (Setup, Bay, Smoke, Bay, Hallway, Setup): rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 2, materials 237, persistent roots 7, voice subscribers 6, sfx subscribers 1, SceneArrived 2, StageChanged 1; managed memory 1313 MB
+- cycle 2 (Setup, Bay, Smoke, Bay, Hallway, Setup): rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 2, materials 237, persistent roots 7, voice subscribers 6, sfx subscribers 1, SceneArrived 2, StageChanged 1; managed memory 1313 MB
+- cycle 3 (Setup, Bay, Smoke, Bay, Hallway, Setup): rigs 1, listeners 1, eventSystems 0, audioSources 11, lights 2, materials 237, persistent roots 7, voice subscribers 6, sfx subscribers 1, SceneArrived 2, StageChanged 1; managed memory 1313 MB
+- [PASS] After three full reload cycles: one rig, one AudioListener, at most one EventSystem
+- [PASS] Audio sources (11 to 11), lights (2 to 2) and persistent objects (7 to 7) do not grow between cycles 2 and 3
+- [PASS] Event subscribers do not pile up (voice 6/6, sfx 1/1, SceneArrived 2/2, StageChanged 1/1)
+- [PASS] Material objects do not leak per cycle (237 to 237)
+
+## Warnings seen (distinct)
+- [DeepSleep] Stage skip rejected: Setup -> Block1
+- [DeepSleep] Stage skip rejected: Setup -> Setup
+- [DeepSleep] Stage skip rejected: Awakening -> Awakening
