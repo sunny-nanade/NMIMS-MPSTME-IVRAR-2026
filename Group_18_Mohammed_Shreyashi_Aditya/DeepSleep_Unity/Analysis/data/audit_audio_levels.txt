@@ -1,0 +1,75 @@
+[medical bay] source 'Sfx_3' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'Sfx_5' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'HalcyonSpeakerSource' group=Voice_Halcyon clip=H002 spatialBlend=1.0 spatialize=False playing=False
+[medical bay] source 'ToneSource' group=SFX clip=- spatialBlend=1.0 spatialize=False playing=False
+[medical bay] source 'Sfx_2' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'Sfx_1' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'RoseComms' group=Voice_Rose clip=R030 spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'Amb_A001' group=Ambience clip=A001 spatialBlend=0.0 spatialize=False playing=True
+[medical bay] source 'Sfx_7' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'Sfx_0' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'Sfx_4' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+[medical bay] source 'Sfx_6' group=SFX clip=- spatialBlend=0.0 spatialize=False playing=False
+Group levels while silent:  VolMaster=0.0 dB VolRose=15.0 dB VolHalcyon=5.5 dB VolSFX=0.0 dB VolAmbience=0.0 dB VolUI=0.0 dB 
+Group levels while Rose talks: VolMaster=0.0 dB VolRose=15.0 dB VolHalcyon=5.5 dB VolSFX=-10.0 dB VolAmbience=-8.0 dB VolUI=-10.0 dB 
+Group levels after the line: VolMaster=0.0 dB VolRose=15.0 dB VolHalcyon=5.5 dB VolSFX=0.0 dB VolAmbience=0.0 dB VolUI=0.0 dB 
+[bay] ambience A001 ducked (-8 dB group): RMS 2.22E-003 (-53.1 dBFS)
+[bay] SFX KeyPress (S040) ducked (-10 dB group) at 1 m: RMS 9.34E-003 (-40.6 dBFS)
+[bay] SFX WrongSequence (S041) ducked (-10 dB group) at 1 m: RMS 1.40E-002 (-37.1 dBFS)
+[bay] SFX TerminalBoot (S042) ducked (-10 dB group) at 1 m: RMS 1.40E-002 (-37.1 dBFS)
+[bay] SFX ServiceDoor (S050) ducked (-10 dB group) at 1 m: RMS 1.37E-002 (-37.2 dBFS)
+[bay] SFX Plug (S060) ducked (-10 dB group) at 1 m: RMS 1.22E-002 (-38.3 dBFS)
+[bay] SFX WrongPlug (S062) ducked (-10 dB group) at 1 m: RMS 1.41E-002 (-37.0 dBFS)
+[bay] SFX RackSolved (S063) ducked (-10 dB group) at 1 m: RMS 7.07E-003 (-43.0 dBFS)
+[bay] SFX BlastDoor (S080) ducked (-10 dB group) at 1 m: RMS 1.39E-002 (-37.1 dBFS)
+[bay] SFX Teleport (S090) ducked (-10 dB group) at 1 m: RMS 1.01E-002 (-39.9 dBFS)
+[bay] bed = ambience + loudest SFX (S062): RMS 1.43E-002 (-36.9 dBFS)
+[bay] loudest listener peak while any voice line played: 0.52
+[bay] quietest Rose line R031: RMS 6.61E-002 (-23.6 dBFS); quietest HALCYON line H004: RMS 1.14E-001 (-18.9 dBFS)
+[bay] voice over bed: Rose 13.3 dB, HALCYON 18.0 dB
+[smoke room] source 'Sfx_3' group=SFX clip=S050 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Sfx_5' group=SFX clip=S062 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'HalcyonSpeakerSource' group=Voice_Halcyon clip=H008 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Amb_A004' group=Ambience clip=A004_mono spatialBlend=0.0 spatialize=False playing=True
+[smoke room] source 'ToneSource' group=SFX clip=- spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Sfx_2' group=SFX clip=S042 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Sfx_1' group=SFX clip=S041 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'RoseComms' group=Voice_Rose clip=R161 spatialBlend=0.0 spatialize=False playing=False
+[smoke room] source 'RoseGuidanceSource' group=Voice_Rose clip=R201 spatialBlend=1.0 spatialize=True playing=True
+[smoke room] source 'Amb_A001' group=Ambience clip=A001 spatialBlend=0.0 spatialize=False playing=True
+[smoke room] source 'Sfx_7' group=SFX clip=S080 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Sfx_0' group=SFX clip=S090 spatialBlend=0.0 spatialize=False playing=False
+[smoke room] source 'Sfx_4' group=SFX clip=S060 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Sfx_6' group=SFX clip=S063 spatialBlend=1.0 spatialize=False playing=False
+[smoke room] source 'Amb_A006' group=Ambience clip=A006_mono spatialBlend=0.0 spatialize=False playing=True
+[smoke] active scene SCN_Main; RenderSettings.fog=True mode=ExponentialSquared density=0.989 color=RGBA(0.240, 0.200, 0.160, 1.000) -> visibility 2.00 m
+[smoke] ambience A004 + A006 ducked: RMS 5.70E-003 (-44.9 dBFS)
+[smoke] SFX Footstep (S021) ducked at 0.8 m: RMS 1.16E-003 (-58.7 dBFS)
+[smoke] SFX WallContact (S020) ducked at 0.8 m: RMS 1.49E-002 (-36.5 dBFS)
+[smoke] SFX ExitDoor (S022) ducked at 0.8 m: RMS 1.44E-002 (-36.8 dBFS)
+[smoke] bed = ambience + loudest SFX (S020): RMS 1.60E-002 (-35.9 dBFS)
+[smoke] condition S: spatialBlend 1.0, spatialize True, group Voice_Rose
+[smoke] Rose R201 condition S at 3 m: RMS 8.11E-002 (-21.8 dBFS), 14.1 dB over the bed
+[smoke] Rose R201 condition S at 8 m: RMS 7.40E-002 (-22.6 dBFS), 13.3 dB over the bed
+[smoke] Rose R201 condition S at 15 m: RMS 7.06E-002 (-23.0 dBFS), 12.9 dB over the bed
+[smoke] condition M: spatialBlend 0.0, spatialize False, group Voice_Rose
+[smoke] Rose R201 condition M at 3 m: RMS 9.04E-002 (-20.9 dBFS), 15.1 dB over the bed
+[smoke] Rose R201 condition M at 8 m: RMS 7.38E-002 (-22.6 dBFS), 13.3 dB over the bed
+[smoke] Rose R201 condition M at 15 m: RMS 6.90E-002 (-23.2 dBFS), 12.7 dB over the bed
+[smoke] worst voice margin over the bed: 10.8 dB (M R209 at 15 m)
+[bay again] RenderSettings.fog=False mode=ExponentialSquared active scene SCN_Main
+[hallway] source 'Sfx_3' group=SFX clip=S022 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Sfx_5' group=SFX clip=S062 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'HalcyonSpeakerSource' group=Voice_Halcyon clip=H008 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Amb_A005' group=Ambience clip=A005 spatialBlend=0.0 spatialize=False playing=True
+[hallway] source 'ToneSource' group=SFX clip=- spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Sfx_2' group=SFX clip=S020 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Sfx_1' group=SFX clip=S021 spatialBlend=0.0 spatialize=False playing=False
+[hallway] source 'RoseComms' group=Voice_Rose clip=R140 spatialBlend=0.0 spatialize=False playing=False
+[hallway] source 'Sfx_7' group=SFX clip=S080 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Sfx_0' group=SFX clip=S090 spatialBlend=0.0 spatialize=False playing=False
+[hallway] source 'Sfx_4' group=SFX clip=S022 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Sfx_6' group=SFX clip=S063 spatialBlend=1.0 spatialize=False playing=False
+[hallway] source 'Amb_A001' group=Ambience clip=A001 spatialBlend=0.0 spatialize=False playing=True
+[hallway] ambience A001 + A005 ducked: RMS 4.96E-003 (-46.1 dBFS); UI click 9.22E-003; bed 1.05E-002 (-39.6 dBFS)
+[hallway] quietest HALCYON -18.9 dBFS (20.7 dB over bed), quietest Rose -21.9 dBFS (17.7 dB over bed)

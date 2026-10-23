@@ -1,0 +1,8 @@
+{
+  "stereo_gain_trim_db": -8.17,
+  "distances_m": [1.0, 3.0, 6.0, 10.0, 15.0, 20.0],
+  "trim_db": [-8.13, -7.90, -8.23, -8.35, -8.23, -8.19],
+  "audio_available": true,
+  "spatializer": "Meta XR Audio",
+  "clip": "R201", "azimuths_deg": [0, 90, 180, -90]
+}
