@@ -1,0 +1,25 @@
+{
+  "name": "Fractured_Final.Editor",
+  "rootNamespace": "Fractured_Final",
+  "references": [
+    "Fractured_Final.Runtime",
+    "Oculus.VR",
+    "Unity.Recorder.Editor",
+    "Unity.Recorder.Base",
+    "Unity.InputSystem",
+    "Unity.TextMeshPro",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "UnityEditor.TestRunner",
+    "UnityEngine.TestRunner"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

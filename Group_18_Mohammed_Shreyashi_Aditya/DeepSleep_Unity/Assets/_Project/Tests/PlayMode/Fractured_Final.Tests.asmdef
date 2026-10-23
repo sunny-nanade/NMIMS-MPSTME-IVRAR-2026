@@ -1,0 +1,21 @@
+{
+  "name": "Fractured_Final.Tests",
+  "rootNamespace": "Fractured_Final.Tests",
+  "references": [
+    "Fractured_Final.Runtime",
+    "Fractured_Final.Editor",
+    "UnityEngine.TestRunner",
+    "UnityEditor.TestRunner",
+    "Oculus.VR",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll"],
+  "autoReferenced": false,
+  "defineConstraints": ["UNITY_INCLUDE_TESTS"],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
