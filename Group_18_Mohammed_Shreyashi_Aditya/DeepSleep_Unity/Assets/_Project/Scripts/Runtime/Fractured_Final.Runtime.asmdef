@@ -1,0 +1,19 @@
+{
+  "name": "Fractured_Final.Runtime",
+  "rootNamespace": "Fractured_Final",
+  "references": [
+    "Oculus.VR",
+    "Unity.InputSystem",
+    "Unity.TextMeshPro",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
