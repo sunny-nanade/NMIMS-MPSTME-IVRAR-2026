@@ -1,0 +1,4 @@
+<linker>
+  <!-- Bootstrap creates its system objects by class name (Type.GetType), which IL2CPP stripping cannot see. Keep the whole runtime assembly. -->
+  <assembly fullname="Fractured_Final.Runtime" preserve="all"/>
+</linker>
