@@ -2,49 +2,57 @@
   "group_id": "IVRAR_GROUP_18",
   "folder_name": "Group_18_Mohammed_Shreyashi_Aditya",
   "batch": "Batch B1",
-  "authorized_title": "How does real-time spatial voice communication and 3D physical puzzle manipulation in networked multiplayer VR impact task completion time and collaborative verbal coordination among engineering student pairs?",
+  "authorized_title": "Can spatial (HRTF) voice guidance cut evacuation time and wrong turns in smoke-filled, low-visibility egress? A single-player VR escape-room study for Mumbai Fire Brigade evacuation training.",
   "members": [
     {
       "roll_no": "B077",
       "sap_id": "70022400201",
       "name": "Mohammed Saquib Rakhangi",
-      "role": "Multiplayer Networking Architect",
+      "role": "Interactive C# & Physics Scripting Lead",
       "assigned_branch": "feat/b077-multiplayer-networki",
-      "github_username": ""
+      "github_username": "saquib-r"
     },
     {
       "roll_no": "B112",
       "sap_id": "70022400261",
       "name": "Shreyashi Srivastava",
-      "role": "XR Systems Architect",
+      "role": "Spatial Architecture & Ergonomics Lead",
       "assigned_branch": "feat/b112-xr-systems-architect",
-      "github_username": ""
+      "github_username": "shreyashi2609"
     },
     {
       "roll_no": "B118",
       "sap_id": "70022400249",
       "name": "Aditya Verma",
-      "role": "Spatial Voice & Audio Specialist",
+      "role": "Usability Problem & Payback Analyst",
       "assigned_branch": "feat/b118-spatial-voice-audio-",
-      "github_username": ""
+      "github_username": "Axitya-767"
     }
   ],
   "foundational_papers": [
     {
-      "citation_key": "Widestrom2000",
-      "title": "The collaborative cube puzzle: a manipulation task for collaborative virtual environments",
-      "authors": "J. Widestrom, A.-S. Axelsson, R. Schroeder, A. Nilsson, I. Heldal, A. Abelin",
-      "year": 2000,
-      "journal": "Proceedings of the third international conference on Collaborative virtual environments, pp. 149-158",
-      "doi": "10.1145/351006.351035"
+      "citation_key": "Aida2023",
+      "title": "Voice evacuation guidance system in VR space",
+      "authors": "Aida, Osumi, Ito",
+      "year": 2023,
+      "journal": "INTER-NOISE 2023",
+      "doi": "10.3397/in_2023_0585"
     },
     {
-      "citation_key": "Ruddle2002",
-      "title": "Verbal communication during cooperative object manipulation",
-      "authors": "R. A. Ruddle, J. C. Savage, D. M. Jones",
-      "year": 2002,
-      "journal": "Proceedings of the 4th international conference on Collaborative virtual environments, pp. 120-127",
-      "doi": "10.1145/571878.571897"
+      "citation_key": "Lower2004",
+      "title": "Localization of sound",
+      "authors": "M. Lower",
+      "year": 2004,
+      "journal": "FAA fire safety conference",
+      "doi": null
+    },
+    {
+      "citation_key": "Gaab",
+      "title": "Evaluation of Smart Underground Mine Evacuation Efficiency through Virtual Reality",
+      "authors": "S. J. Gaab",
+      "year": null,
+      "journal": "Thesis, University of Nevada, Reno",
+      "doi": null
     },
     {
       "citation_key": "Luberadzka2025",
@@ -53,33 +61,9 @@
       "year": 2025,
       "journal": "Frontiers in Virtual Reality, vol. 5, art. no. 1442774, pp. 1-15",
       "doi": "10.3389/frvir.2024.1442774"
-    },
-    {
-      "citation_key": "GhasempourYousefdeh2024",
-      "title": "Investigating co-presence and collaboration dynamics in realtime virtual reality user interactions",
-      "authors": "S. A. Ghasempour Yousefdeh, S. S. Oyelere",
-      "year": 2024,
-      "journal": "Frontiers in Virtual Reality, vol. 5, art. no. 1478481, pp. 1-17",
-      "doi": "10.3389/frvir.2024.1478481"
-    },
-    {
-      "citation_key": "Tserenchimed2024",
-      "title": "Viewpoint-sharing method with reduced motion sickness in object-based VR/AR collaborative virtual environment",
-      "authors": "T. Tserenchimed, H. Kim",
-      "year": 2024,
-      "journal": "Virtual Reality, vol. 28, art. no. 110, pp. 1-14",
-      "doi": "10.1007/s10055-024-01005-z"
-    },
-    {
-      "citation_key": "Liu2023",
-      "title": "Manipulation Guidance Field for Collaborative Object Manipulation in VR",
-      "authors": "X. Liu, S. Luan, L. Wang, C.-T. Lam",
-      "year": 2023,
-      "journal": "2023 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), pp. 493-496",
-      "doi": "10.1109/vrw58643.2023.00199"
     }
   ],
-  "domain": "Networked Multiplayer VR with Real-Time Spatial HRTF Voice & 3D Puzzle Manipulation",
+  "domain": "Single-Player VR Escape Room with Spatial HRTF Voice Guidance for Low-Visibility Egress",
   "project_showcase": {
     "platform": "LinkedIn Video",
     "linkedin_url": "PENDING_SUBMISSION",
