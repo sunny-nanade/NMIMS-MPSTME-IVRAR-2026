@@ -1,0 +1,32 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.pidb
+*.booproj
+*.apk
+!/Final Build APK/*.apk
+*.aab
+crashlytics-buildid.txt
+/Reference/frames/
+RuntimeActionBindings.json
+/Assets/StreamingAssets/
+/Assets/StreamingAssets.meta
+Assets/_Recovery*
+
+# Android/CMake build cache
+/.utmp/
+

@@ -1,0 +1,235 @@
+{
+ "lines": [
+  {
+   "key": "menu_welcome",
+   "speaker": "Maya (SOC lead)",
+   "text": "Welcome to Northwind security. When you're ready, pick a chapter and press Play.",
+   "file": "menu_welcome_0",
+   "spoken": "Welcome to Northwind security. When you're ready, pick a chapter and press Play."
+  },
+  {
+   "key": "intro_ch1",
+   "speaker": "Maya (SOC lead)",
+   "text": "Hey, it's Maya, your SOC lead. Welcome to your first night shift at Northwind.",
+   "file": "intro_ch1_0",
+   "spoken": "Hey, it's Maya, your SOC lead. Welcome to your first night shift at Northwind."
+  },
+  {
+   "key": "intro_ch1",
+   "speaker": "Maya (SOC lead)",
+   "text": "Quick tour while it's quiet. Point your controller at things and pull the trigger to use them. Squeeze the grip to grab.",
+   "file": "intro_ch1_1",
+   "spoken": "Quick tour while it's quiet. Point your controller at things and pull the trigger to use them. Squeeze the grip to grab."
+  },
+  {
+   "key": "SOC_Badge",
+   "speaker": "Maya (SOC lead)",
+   "text": "First things first: grab your access badge from the desk. You'll need it to get around the building.",
+   "file": "SOC_Badge_0",
+   "spoken": "First things first: grab your access badge from the desk. You'll need it to get around the building."
+  },
+  {
+   "key": "SOC_OpenAlert",
+   "speaker": "Maya (SOC lead)",
+   "text": "Hold on. The SIEM just raised a critical alert. Point at the red alert on your console and pull the trigger to open it.",
+   "file": "SOC_OpenAlert_0",
+   "spoken": "Hold on. The SIEM just raised a critical alert. Point at the red alert on your console and pull the trigger to open it."
+  },
+  {
+   "key": "SOC_FindHost",
+   "speaker": "Maya (SOC lead)",
+   "text": "Read the log lines carefully. Which machine is sending all that data out?",
+   "file": "SOC_FindHost_0",
+   "spoken": "Read the log lines carefully. Which machine is sending all that data out?"
+  },
+  {
+   "key": "SOC_Classify",
+   "speaker": "Maya (SOC lead)",
+   "text": "Right, Fred's PC. Now, what kind of attack are we looking at?",
+   "file": "SOC_Classify_0",
+   "spoken": "Right, Fred's PC. Now, what kind of attack are we looking at?"
+  },
+  {
+   "key": "SOC_Escalate",
+   "speaker": "Maya (SOC lead)",
+   "text": "That's a data exfiltration in progress. Declare a critical incident so the response plan kicks in.",
+   "file": "SOC_Escalate_0",
+   "spoken": "That's a data exfiltration in progress. Declare a critical incident so the response plan kicks in."
+  },
+  {
+   "key": "SOC_Exit",
+   "speaker": "Maya (SOC lead)",
+   "text": "Incident declared. Fred's office is on floor 3. Hold your badge against the reader by the door and go. I'll stay on the radio.",
+   "file": "SOC_Exit_0",
+   "spoken": "Incident declared. Fred's office is on floor three. Hold your badge against the reader by the door and go. I'll stay on the radio."
+  },
+  {
+   "key": "outro_ch1",
+   "speaker": "Maya (SOC lead)",
+   "text": "Door's open. Go, and remember: every minute counts.",
+   "file": "outro_ch1_0",
+   "spoken": "Door's open. Go, and remember: every minute counts."
+  },
+  {
+   "key": "intro_ch2",
+   "speaker": "Maya (SOC lead)",
+   "text": "You're in Fred's office. The attacker is still on his workstation, uploading Project AURORA. Contain it before the upload finishes.",
+   "file": "intro_ch2_0",
+   "spoken": "You're in Fred's office. The attacker is still on his workstation, uploading Project Aurora. Contain it before the upload finishes."
+  },
+  {
+   "key": "intro_ch2",
+   "speaker": "Maya (SOC lead)",
+   "text": "Every area you secure reveals one digit of the door code on the containment board.",
+   "file": "intro_ch2_1",
+   "spoken": "Every area you secure reveals one digit of the door code on the containment board."
+  },
+  {
+   "key": "LockWorkstation",
+   "speaker": "Maya (SOC lead)",
+   "text": "Start with the obvious. His screen is unlocked and the attacker is live on it. Kill that session.",
+   "file": "LockWorkstation_0",
+   "spoken": "Start with the obvious. His screen is unlocked and the attacker is live on it. Kill that session."
+  },
+  {
+   "key": "EvidencePrintout",
+   "speaker": "Maya (SOC lead)",
+   "text": "Someone printed something at 1:58 AM. Check the printer and bag that page as evidence.",
+   "file": "EvidencePrintout_0",
+   "spoken": "Someone printed something at one fifty eight A M. Check the printer and bag that page as evidence."
+  },
+  {
+   "key": "EvidenceNote",
+   "speaker": "Maya (SOC lead)",
+   "text": "Attackers love rubbish bins. Check the waste bin for anything interesting.",
+   "file": "EvidenceNote_0",
+   "spoken": "Attackers love rubbish bins. Check the waste bin for anything interesting."
+  },
+  {
+   "key": "ShredDocs",
+   "speaker": "Maya (SOC lead)",
+   "text": "There are confidential papers lying on Fred's desk. Feed them to the shredder.",
+   "file": "ShredDocs_0",
+   "spoken": "There are confidential papers lying on Fred's desk. Feed them to the shredder."
+  },
+  {
+   "key": "QuarantineUSB",
+   "speaker": "Maya (SOC lead)",
+   "text": "Fred's briefcase is on the sideboard under the window. Open it and see what's inside.",
+   "file": "QuarantineUSB_0",
+   "spoken": "Fred's briefcase is on the sideboard under the window. Open it and see what's inside."
+  },
+  {
+   "key": "FredLogin",
+   "speaker": "Maya (SOC lead)",
+   "text": "To lock the attacker out, sign in as Fred. He loves using personal details. Have a look at his photo frame.",
+   "file": "FredLogin_0",
+   "spoken": "To lock the attacker out, sign in as Fred. He loves using personal details. Have a look at his photo frame."
+  },
+  {
+   "key": "NewPassword",
+   "speaker": "Maya (SOC lead)",
+   "text": "You're in. Now set a strong new password. Follow the rules on the poster.",
+   "file": "NewPassword_0",
+   "spoken": "You're in. Now set a strong new password. Follow the rules on the poster."
+  },
+  {
+   "key": "Enable2FA",
+   "speaker": "Maya (SOC lead)",
+   "text": "Turn on two-factor authentication. Fred's hardware token is in his briefcase.",
+   "file": "Enable2FA_0",
+   "spoken": "Turn on two factor authentication. Fred's hardware token is in his briefcase."
+  },
+  {
+   "key": "PhishingTriage",
+   "speaker": "Maya (SOC lead)",
+   "text": "His inbox is full of bait. Report every phishing email and keep the real ones.",
+   "file": "PhishingTriage_0",
+   "spoken": "His inbox is full of bait. Report every phishing email and keep the real ones."
+  },
+  {
+   "key": "SocialEngineering",
+   "speaker": "Maya (SOC lead)",
+   "text": "Someone is messaging Fred in TeamChat. Careful with this one.",
+   "file": "SocialEngineering_0",
+   "spoken": "Someone is messaging Fred in Team Chat. Careful with this one."
+  },
+  {
+   "key": "EncryptData",
+   "speaker": "Maya (SOC lead)",
+   "text": "Everything else is contained. Open the SOC console tab and encrypt Project AURORA.",
+   "file": "EncryptData_0",
+   "spoken": "Everything else is contained. Open the SOC console tab and encrypt Project Aurora."
+  },
+  {
+   "key": "Escape",
+   "speaker": "Maya (SOC lead)",
+   "text": "Brilliant. The containment board shows your override code. Enter it on the keypad by the door.",
+   "file": "Escape_0",
+   "spoken": "Brilliant. The containment board shows your override code. Enter it on the keypad by the door."
+  },
+  {
+   "key": "outro_ch2",
+   "speaker": "Maya (SOC lead)",
+   "text": "AURORA is encrypted and the attacker is locked out. But they got in from somewhere. Head down to the server room.",
+   "file": "outro_ch2_0",
+   "spoken": "Aurora is encrypted and the attacker is locked out. But they got in from somewhere. Head down to the server room."
+  },
+  {
+   "key": "intro_ch3",
+   "speaker": "Maya (SOC lead)",
+   "text": "Welcome to the server room. The attacker's traffic is still coming from inside this room. Something here doesn't belong.",
+   "file": "intro_ch3_0",
+   "spoken": "Welcome to the server room. The attacker's traffic is still coming from inside this room. Something here doesn't belong."
+  },
+  {
+   "key": "SRV_Find",
+   "speaker": "Maya (SOC lead)",
+   "text": "Walk along the racks and look for a device that isn't ours. Point at it and pull the trigger to inspect it.",
+   "file": "SRV_Find_0",
+   "spoken": "Walk along the racks and look for a device that isn't ours. Point at it and pull the trigger to inspect it."
+  },
+  {
+   "key": "SRV_Unplug",
+   "speaker": "Maya (SOC lead)",
+   "text": "That's a rogue implant, a tiny computer someone planted in our rack. Pull out its network cable to cut the connection.",
+   "file": "SRV_Unplug_0",
+   "spoken": "That's a rogue implant, a tiny computer someone planted in our rack. Pull out its network cable to cut the connection."
+  },
+  {
+   "key": "SRV_Bag",
+   "speaker": "Maya (SOC lead)",
+   "text": "Now grab the implant and put it in the evidence bag on the cart. Forensics will want it.",
+   "file": "SRV_Bag_0",
+   "spoken": "Now grab the implant and put it in the evidence bag on the cart. Forensics will want it."
+  },
+  {
+   "key": "SRV_Isolate",
+   "speaker": "Maya (SOC lead)",
+   "text": "Let's make sure nothing else on that segment is infected. On the switch console, move the port to the quarantine VLAN.",
+   "file": "SRV_Isolate_0",
+   "spoken": "Let's make sure nothing else on that segment is infected. On the switch console, move the port to the quarantine V LAN."
+  },
+  {
+   "key": "SRV_Restore",
+   "speaker": "Maya (SOC lead)",
+   "text": "The file server was tampered with tonight. Restore it from the last clean backup, from before the breach at 1:58.",
+   "file": "SRV_Restore_0",
+   "spoken": "The file server was tampered with tonight. Restore it from the last clean backup, from before the breach at one fifty eight."
+  },
+  {
+   "key": "SRV_Report",
+   "speaker": "Maya (SOC lead)",
+   "text": "Last thing. File the incident report at the terminal. Be honest about what went wrong.",
+   "file": "SRV_Report_0",
+   "spoken": "Last thing. File the incident report at the terminal. Be honest about what went wrong."
+  },
+  {
+   "key": "outro_ch3",
+   "speaker": "Maya (SOC lead)",
+   "text": "Report filed. Incident closed. You contained a real breach on your very first night. Welcome to the team.",
+   "file": "outro_ch3_0",
+   "spoken": "Report filed. Incident closed. You contained a real breach on your very first night. Welcome to the team."
+  }
+ ]
+}
