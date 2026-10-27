@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<robot name="perseverance_surrogate">
+  <material name="body_white"><color rgba="0.82 0.84 0.82 1"/></material>
+  <material name="arm_dark"><color rgba="0.22 0.24 0.24 1"/></material>
+  <material name="wheel_gray"><color rgba="0.30 0.31 0.31 1"/></material>
+  <material name="mast_gold"><color rgba="0.72 0.52 0.16 1"/></material>
+  <material name="camera_black"><color rgba="0.08 0.08 0.08 1"/></material>
+
+  <!-- Geometry is an intentionally simplified research surrogate, not the NASA flight CAD.
+       Approximate overall proportions and 0.525 m wheel diameter follow NASA-published specs. -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="820"/>
+      <inertia ixx="310" ixy="0" ixz="0" iyy="410" iyz="0" izz="520"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.18"/>
+      <geometry><box size="1.95 1.35 0.42"/></geometry>
+      <material name="body_white"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.18"/>
+      <geometry><box size="1.95 1.35 0.42"/></geometry>
+    </collision>
+  </link>
+
+  <link name="deck_link">
+    <visual><origin xyz="0.05 0 0.18"/><geometry><box size="1.55 1.15 0.12"/></geometry><material name="body_white"/></visual>
+  </link>
+  <joint name="deck_fixed" type="fixed"><parent link="base_link"/><child link="deck_link"/><origin xyz="0 0 0.55"/></joint>
+
+  <link name="mast_link">
+    <visual><origin xyz="0 0 0.45"/><geometry><cylinder radius="0.055" length="0.90"/></geometry><material name="mast_gold"/></visual>
+  </link>
+  <joint name="mast_fixed" type="fixed"><parent link="base_link"/><child link="mast_link"/><origin xyz="0.45 0 0.62"/></joint>
+
+  <link name="camera_head">
+    <visual><origin xyz="0 0 0"/><geometry><box size="0.36 0.20 0.16"/></geometry><material name="camera_black"/></visual>
+  </link>
+  <joint name="camera_fixed" type="fixed"><parent link="mast_link"/><child link="camera_head"/><origin xyz="0.05 0 0.94"/></joint>
+
+  <link name="rtg_link">
+    <visual><origin xyz="0 0 0" rpy="0 1.5707963 0"/><geometry><cylinder radius="0.20" length="0.58"/></geometry><material name="arm_dark"/></visual>
+  </link>
+  <joint name="rtg_fixed" type="fixed"><parent link="base_link"/><child link="rtg_link"/><origin xyz="-1.10 0 0.42"/></joint>
+
+  <!-- LEFT ROCKER / BOGIE -->
+  <link name="left_rocker">
+    <inertial><origin xyz="0 0 0"/><mass value="30"/><inertia ixx="0.6" ixy="0" ixz="0" iyy="8.0" iyz="0" izz="8.0"/></inertial>
+    <visual><origin xyz="0.10 0 0"/><geometry><box size="1.75 0.09 0.09"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.92 0 -0.125"/><geometry><box size="0.09 0.09 0.25"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.92 0.15 -0.25"/><geometry><box size="0.09 0.30 0.09"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="-0.42 0 -0.025"/><geometry><sphere radius="0.11"/></geometry><material name="arm_dark"/></visual>
+    <collision><origin xyz="0.10 0 0"/><geometry><box size="1.75 0.09 0.09"/></geometry></collision>
+  </link>
+  <joint name="left_rocker_joint" type="revolute">
+    <parent link="base_link"/><child link="left_rocker"/><origin xyz="0 0.73 -0.02"/>
+    <axis xyz="0 1 0"/><limit lower="-0.50" upper="0.50" effort="2500" velocity="1.5"/><dynamics damping="18" friction="3"/>
+  </joint>
+
+  <link name="left_bogie">
+    <inertial><origin xyz="-0.22 0 0"/><mass value="20"/><inertia ixx="0.4" ixy="0" ixz="0" iyy="3.5" iyz="0" izz="3.5"/></inertial>
+    <visual><origin xyz="-0.28 0 0"/><geometry><box size="1.15 0.08 0.08"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.18 0 -0.10"/><geometry><box size="0.08 0.08 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.18 0.20 -0.20"/><geometry><box size="0.08 0.40 0.08"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="-0.84 0 -0.10"/><geometry><box size="0.08 0.08 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="-0.84 0.15 -0.20"/><geometry><box size="0.08 0.30 0.08"/></geometry><material name="arm_dark"/></visual>
+    <collision><origin xyz="-0.28 0 0"/><geometry><box size="1.15 0.08 0.08"/></geometry></collision>
+  </link>
+  <joint name="left_bogie_joint" type="revolute">
+    <parent link="left_rocker"/><child link="left_bogie"/><origin xyz="-0.42 0 -0.05"/>
+    <axis xyz="0 1 0"/><limit lower="-0.65" upper="0.65" effort="1800" velocity="1.5"/><dynamics damping="14" friction="2"/>
+  </joint>
+
+  <!-- RIGHT ROCKER / BOGIE -->
+  <link name="right_rocker">
+    <inertial><origin xyz="0 0 0"/><mass value="30"/><inertia ixx="0.6" ixy="0" ixz="0" iyy="8.0" iyz="0" izz="8.0"/></inertial>
+    <visual><origin xyz="0.10 0 0"/><geometry><box size="1.75 0.09 0.09"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.92 0 -0.125"/><geometry><box size="0.09 0.09 0.25"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.92 -0.15 -0.25"/><geometry><box size="0.09 0.30 0.09"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="-0.42 0 -0.025"/><geometry><sphere radius="0.11"/></geometry><material name="arm_dark"/></visual>
+    <collision><origin xyz="0.10 0 0"/><geometry><box size="1.75 0.09 0.09"/></geometry></collision>
+  </link>
+  <joint name="right_rocker_joint" type="revolute">
+    <parent link="base_link"/><child link="right_rocker"/><origin xyz="0 -0.73 -0.02"/>
+    <axis xyz="0 1 0"/><limit lower="-0.50" upper="0.50" effort="2500" velocity="1.5"/><dynamics damping="18" friction="3"/>
+  </joint>
+
+  <link name="right_bogie">
+    <inertial><origin xyz="-0.22 0 0"/><mass value="20"/><inertia ixx="0.4" ixy="0" ixz="0" iyy="3.5" iyz="0" izz="3.5"/></inertial>
+    <visual><origin xyz="-0.28 0 0"/><geometry><box size="1.15 0.08 0.08"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.18 0 -0.10"/><geometry><box size="0.08 0.08 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0.18 -0.20 -0.20"/><geometry><box size="0.08 0.40 0.08"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="-0.84 0 -0.10"/><geometry><box size="0.08 0.08 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="-0.84 -0.15 -0.20"/><geometry><box size="0.08 0.30 0.08"/></geometry><material name="arm_dark"/></visual>
+    <collision><origin xyz="-0.28 0 0"/><geometry><box size="1.15 0.08 0.08"/></geometry></collision>
+  </link>
+  <joint name="right_bogie_joint" type="revolute">
+    <parent link="right_rocker"/><child link="right_bogie"/><origin xyz="-0.42 0 -0.05"/>
+    <axis xyz="0 1 0"/><limit lower="-0.65" upper="0.65" effort="1800" velocity="1.5"/><dynamics damping="14" friction="2"/>
+  </joint>
+
+  <!-- STEERING KNUCKLES -->
+  <link name="fl_knuckle"><inertial><mass value="5"/><inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/></inertial>
+    <visual><geometry><box size="0.12 0.12 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0 0.05 0" rpy="1.5707963 0 0"/><geometry><cylinder radius="0.075" length="0.18"/></geometry><material name="arm_dark"/></visual>
+  </link>
+  <joint name="fl_steer_joint" type="revolute"><parent link="left_rocker"/><child link="fl_knuckle"/><origin xyz="0.92 0.30 -0.25"/><axis xyz="0 0 1"/><limit lower="-0.70" upper="0.70" effort="1000" velocity="2.0"/></joint>
+
+  <link name="fr_knuckle"><inertial><mass value="5"/><inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/></inertial>
+    <visual><geometry><box size="0.12 0.12 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0 -0.05 0" rpy="1.5707963 0 0"/><geometry><cylinder radius="0.075" length="0.18"/></geometry><material name="arm_dark"/></visual>
+  </link>
+  <joint name="fr_steer_joint" type="revolute"><parent link="right_rocker"/><child link="fr_knuckle"/><origin xyz="0.92 -0.30 -0.25"/><axis xyz="0 0 1"/><limit lower="-0.70" upper="0.70" effort="1000" velocity="2.0"/></joint>
+
+  <link name="rl_knuckle"><inertial><mass value="5"/><inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/></inertial>
+    <visual><geometry><box size="0.12 0.12 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0 0.05 0" rpy="1.5707963 0 0"/><geometry><cylinder radius="0.075" length="0.18"/></geometry><material name="arm_dark"/></visual>
+  </link>
+  <joint name="rl_steer_joint" type="revolute"><parent link="left_bogie"/><child link="rl_knuckle"/><origin xyz="-0.84 0.30 -0.20"/><axis xyz="0 0 1"/><limit lower="-0.70" upper="0.70" effort="1000" velocity="2.0"/></joint>
+
+  <link name="rr_knuckle"><inertial><mass value="5"/><inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/></inertial>
+    <visual><geometry><box size="0.12 0.12 0.20"/></geometry><material name="arm_dark"/></visual>
+    <visual><origin xyz="0 -0.05 0" rpy="1.5707963 0 0"/><geometry><cylinder radius="0.075" length="0.18"/></geometry><material name="arm_dark"/></visual>
+  </link>
+  <joint name="rr_steer_joint" type="revolute"><parent link="right_bogie"/><child link="rr_knuckle"/><origin xyz="-0.84 -0.30 -0.20"/><axis xyz="0 0 1"/><limit lower="-0.70" upper="0.70" effort="1000" velocity="2.0"/></joint>
+
+  <!-- SIX WHEELS: 0.525 m diameter.  +Y wheel axes make positive motor speed propel +X (rover-forward). -->
+  <link name="fl_wheel"><inertial><mass value="10"/><inertia ixx="0.35" ixy="0" ixz="0" iyy="0.55" iyz="0" izz="0.35"/></inertial><visual><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry><material name="wheel_gray"/></visual><collision><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry></collision></link>
+  <joint name="fl_wheel_joint" type="continuous"><parent link="fl_knuckle"/><child link="fl_wheel"/><origin xyz="0 0.10 0"/><axis xyz="0 1 0"/><dynamics damping="0.4" friction="0.02"/></joint>
+
+  <link name="fr_wheel"><inertial><mass value="10"/><inertia ixx="0.35" ixy="0" ixz="0" iyy="0.55" iyz="0" izz="0.35"/></inertial><visual><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry><material name="wheel_gray"/></visual><collision><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry></collision></link>
+  <joint name="fr_wheel_joint" type="continuous"><parent link="fr_knuckle"/><child link="fr_wheel"/><origin xyz="0 -0.10 0"/><axis xyz="0 1 0"/><dynamics damping="0.4" friction="0.02"/></joint>
+
+  <link name="ml_wheel"><inertial><mass value="10"/><inertia ixx="0.35" ixy="0" ixz="0" iyy="0.55" iyz="0" izz="0.35"/></inertial><visual><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry><material name="wheel_gray"/></visual><collision><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry></collision></link>
+  <joint name="ml_wheel_joint" type="continuous"><parent link="left_bogie"/><child link="ml_wheel"/><origin xyz="0.18 0.40 -0.20"/><axis xyz="0 1 0"/><dynamics damping="0.4" friction="0.02"/></joint>
+
+  <link name="mr_wheel"><inertial><mass value="10"/><inertia ixx="0.35" ixy="0" ixz="0" iyy="0.55" iyz="0" izz="0.35"/></inertial><visual><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry><material name="wheel_gray"/></visual><collision><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry></collision></link>
+  <joint name="mr_wheel_joint" type="continuous"><parent link="right_bogie"/><child link="mr_wheel"/><origin xyz="0.18 -0.40 -0.20"/><axis xyz="0 1 0"/><dynamics damping="0.4" friction="0.02"/></joint>
+
+  <link name="rl_wheel"><inertial><mass value="10"/><inertia ixx="0.35" ixy="0" ixz="0" iyy="0.55" iyz="0" izz="0.35"/></inertial><visual><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry><material name="wheel_gray"/></visual><collision><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry></collision></link>
+  <joint name="rl_wheel_joint" type="continuous"><parent link="rl_knuckle"/><child link="rl_wheel"/><origin xyz="0 0.10 0"/><axis xyz="0 1 0"/><dynamics damping="0.4" friction="0.02"/></joint>
+
+  <link name="rr_wheel"><inertial><mass value="10"/><inertia ixx="0.35" ixy="0" ixz="0" iyy="0.55" iyz="0" izz="0.35"/></inertial><visual><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry><material name="wheel_gray"/></visual><collision><origin rpy="1.5707963 0 0"/><geometry><cylinder radius="0.2625" length="0.18"/></geometry></collision></link>
+  <joint name="rr_wheel_joint" type="continuous"><parent link="rr_knuckle"/><child link="rr_wheel"/><origin xyz="0 -0.10 0"/><axis xyz="0 1 0"/><dynamics damping="0.4" friction="0.02"/></joint>
+</robot>

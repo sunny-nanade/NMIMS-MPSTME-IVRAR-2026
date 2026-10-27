@@ -1,0 +1,24 @@
+{
+  "source": "C:\\Users\\Anvay Borade\\OneDrive\\Desktop\\mars_rover_phase1\\data\\phase2\\train\\jezero_medium_train_04.npz",
+  "original_shape_yx": [
+    129,
+    129
+  ],
+  "crop_origin_xy": [
+    0,
+    0
+  ],
+  "crop_source_shape_yx": [
+    129,
+    129
+  ],
+  "heightmap_resolution": 513,
+  "meters_per_pixel_source": 1.00966,
+  "unity_size_x_m": 129.23648,
+  "unity_size_z_m": 129.23648,
+  "unity_size_y_m": 4.981689453125,
+  "elevation_min_m": 0.0,
+  "elevation_max_m": 4.981689453125,
+  "raw_endianness": "little",
+  "raw_bit_depth": 16
+}

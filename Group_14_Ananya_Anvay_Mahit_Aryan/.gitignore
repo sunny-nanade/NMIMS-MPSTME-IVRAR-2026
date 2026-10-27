@@ -1,0 +1,60 @@
+# Group 14 only: put this file in Group_14_Ananya_Anvay_Mahit_Aryan/
+# Preserve actual Unity assets AND all corresponding .meta files.
+
+# Unity generated/cache/editor/build files
+Phase1/Unity/[Ll]ibrary/
+Phase1/Unity/[Tt]emp/
+Phase1/Unity/[Oo]bj/
+Phase1/Unity/[Ll]ogs/
+Phase1/Unity/[Uu]ser[Ss]ettings/
+Phase1/Unity/[Bb]uild/
+Phase1/Unity/[Bb]uilds/
+Phase1/Unity/.vs/
+Phase1/Unity/*.csproj
+Phase1/Unity/*.sln
+Phase1/Unity/*.slnx
+Phase1/Unity/*.user
+Phase1/Unity/*.userprefs
+Phase1/Unity/*.suo
+
+# Python virtual environments, build metadata, caches
+Phase1/Python/.venv/
+Phase1/Python/venv/
+Phase1/Python/**/__pycache__/
+Phase1/Python/**/*.pyc
+Phase1/Python/**/*.pyo
+Phase1/Python/**/.pytest_cache/
+Phase1/Python/**/.mypy_cache/
+Phase1/Python/**/.ipynb_checkpoints/
+Phase1/Python/*.egg-info/
+Phase1/Python/mars_rover_pbl.egg-info/
+
+# Historical archives/patch bundles and generated training logs
+Phase1/Python/archive/
+Phase1/Python/logs/
+Phase1/Python/runs/
+Phase1/Python/*.zip
+Phase1/Python/*.log
+
+# Historical baseline checkpoints (keep their code/results instead)
+Phase1/Python/checkpoints/d3qn/
+Phase1/Python/checkpoints/ppo/
+Phase1/Python/checkpoints/sac/
+
+# Redundant SAC v1.5f stage snapshots, bulky full training resume and replay
+Phase1/Python/checkpoints/sac_v15f/seed_71/best_stage*/
+Phase1/Python/checkpoints/sac_v15f/seed_71/resume/
+Phase1/Python/checkpoints/sac_v15f/seed_71/replay_buffer_final.pkl
+Phase1/Python/checkpoints/sac_v15f/seed_71/sac_*_steps*.zip
+
+# The professor's repository might ignore *.zip globally.
+# Exempt ONLY these selected deployable/training weights.
+!Phase1/Python/checkpoints/sac_v15f/seed_71/best/best_model.zip
+!Phase1/Python/checkpoints/sac_v15f/seed_71/bc_bootstrap_model.zip
+!Phase1/Python/checkpoints/sac_v15f/seed_71/sac_1000000_steps_final.zip
+
+# Local-only credentials, scratch files
+Phase1/Python/.env
+Phase1/Python/.env.*
+Phase1/Python/Thumbs.db
+Phase1/Unity/Thumbs.db

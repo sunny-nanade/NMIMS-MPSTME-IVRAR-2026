@@ -1,0 +1,24 @@
+# Group 14 only: large reproducibility assets, restricted to Phase1/
+# LFS rules must exist BEFORE git add of the binary files.
+Phase1/Python/**/*.npz filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.npy filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.pkl filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.pt filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.pth filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.zip filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.raw filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.tif filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.tiff filter=lfs diff=lfs merge=lfs -text
+Phase1/Python/**/*.glb filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.raw filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.glb filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.obj filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.png filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.tga filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.psd filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.wav filter=lfs diff=lfs merge=lfs -text
+Phase1/Unity/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+# .unity scenes, .prefab, .asset, .mat, .meta are kept as normal Git text when text-serialized.

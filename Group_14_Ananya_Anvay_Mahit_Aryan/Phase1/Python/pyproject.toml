@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mars-rover-pbl"
+version = "0.2.0"
+description = "Planetary rover path planning and reinforcement-learning research simulator"
+requires-python = ">=3.10,<3.14"
+
+[tool.setuptools.packages.find]
+include = ["mars_rover*"]

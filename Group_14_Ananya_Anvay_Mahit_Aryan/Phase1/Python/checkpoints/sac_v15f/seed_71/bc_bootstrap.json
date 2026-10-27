@@ -1,0 +1,7 @@
+{
+  "initial_val_mse": 0.12184890080243349,
+  "final_val_mse": 0.0003610517032939242,
+  "relative_improvement": 0.9970368899438876,
+  "epochs": 6,
+  "transitions": 20000
+}
