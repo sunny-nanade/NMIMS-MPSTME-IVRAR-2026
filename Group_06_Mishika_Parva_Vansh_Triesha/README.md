@@ -115,3 +115,14 @@ For convenient faculty review and individual contribution assessment, four self-
 - `Mishika.zip` (5.8 KB)
 - `Vansh.zip` (20.0 KB)
 - `Triesha.zip` (29.6 KB)
+
+---
+
+## Project Demonstration & Academic Showcase (LinkedIn)
+
+[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://lnkd.in/p/d-QEAKRh)
+
+* **Project Demonstration:** [Watch the SmartCampus Wayfinding XR Showcase on LinkedIn](https://lnkd.in/p/d-QEAKRh) *(Click thumbnail above to open LinkedIn post)*
+* **Student Presenters:** **Mishika Shah** (C136), **Parva Gaglani** (C172), **Vansh Panchal** (C139), **Triesha Shah** (C174)
+* **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
+* **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in docs/TEAM_ROSTER.json under "linkedin_url", and submit a pull request to update this project dossier and the cohort dashboard.
