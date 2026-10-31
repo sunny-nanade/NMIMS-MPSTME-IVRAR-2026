@@ -1,100 +1,80 @@
-# Research Paper Manuscript Blueprint: Predictive Ghost-Avatar Digital Twin in High-Latency Teleoperation
+# Research Paper Manuscript Blueprint: Autonomous Mars Rover Navigation (Phase 1)
 
-## Authorized Research Title
-> **"To what extent does a predictive ghost-avatar digital twin in Unity VR mitigate teleoperation path tracking error and collision frequency for planetary rover operators under simulated high-latency (1.5-second to 5-second) transmission delays?"**
+## Authorized Research Title (faculty-issued; unchanged)
+> To what extent does a predictive ghost-avatar digital twin in Unity VR mitigate teleoperation path tracking error and collision frequency for planetary rover operators under simulated high-latency (1.5-second to 5-second) transmission delays?
 
----
-
-## Abstract
-Planetary surface exploration rovers operate over interplanetary communication links characterized by severe one-way transmission delays ranging from 1.5 to 5.0 seconds. Under uncompensated latency, manual teleoperation induces severe operator-induced oscillations, forcing reliance on discontinuous, highly conservative "move-and-wait" stop-and-go driving. This protocol constrains rover traverse velocity to under $0.04\text{ m/s}$ and leaves human operators idle for over 70% of operational shifts. This paper presents an immersive Virtual Reality (VR) teleoperation platform integrating an instantaneous **Predictive Ghost-Avatar Digital Twin** in Unity 2022.3 LTS. By executing real-time forward differential-drive kinematic extrapolation ($[x(t+\tau), z(t+\tau), \theta(t+\tau)]$) paired with a prospective 3D trajectory ribbon, the platform provides instantaneous visual feedback of projected vehicle states while the delayed physical telemetry updates asynchronously. In a controlled empirical study ($N = 50$ operator trials across simulated Martian boulder fields under $1.5\text{s}$ to $5.0\text{s}$ latency), the predictive ghost avatar reduced mean path tracking root-mean-square error (RMSE) from $1.15 \pm 0.24\text{ m}$ (delayed baseline) to $0.19 \pm 0.05\text{ m}$ ($p < 0.001$, Cohen's $d = 3.12$). Hazard rock collisions were reduced by $88.5\%$, while mean effective traverse velocity increased from $0.038\text{ m/s}$ to $0.165\text{ m/s}$ ($4.34 \times$ throughput enhancement). NASA-TLX operator workload dropped by $53.0\%$ ($72.8 \to 34.2$). Technoeconomic modeling across a 300-sol operational year indicates that the predictive system yields an additional 823.0 km of exploration traverse, reclaims 4,590.0 hours of idle operator wait time, avoids 31.9 severe rock collisions, achieves a dimensionless cost parity ratio of $\kappa = 0.21$, and recovers capital deployment costs within 15.19 operating months.
-
-**Keywords:** Planetary Teleoperation, Predictive Display, Virtual Reality Digital Twin, High-Latency Robotics, Forward Kinematics, Space Telerobotics.
+**Actual Phase 1 implementation title (not an approved replacement):** Terrain-Aware Mars Rover Navigation Using A*-Guided SAC-CNN and Unity–Python Integration.
 
 ---
 
-## Section I: Introduction & Problem Statement
-Teleoperating unmanned mobile robots on extraterrestrial surfaces—such as the Moon or Mars—presents extraordinary control hurdles due to light-speed propagation delays and orbital relay latency (`Sheridan1993`). Typical round-trip communications introduce transmission delays spanning between 1.5 and 5.0 seconds. When operators attempt direct real-time teleoperation over delayed video feeds, the disconnect between motor command dispatch and visual feedback causes severe closed-loop phase lag (`Fong2005`). Operators repeatedly overcorrect heading angles, causing the rover to oscillate violently ("hunting") and collide with terrain hazards.
-
-To prevent catastrophic vehicle damage, space agencies rely on the "move-and-wait" paradigm: an operator issues a short steering increment (1 to 2 meters), ceases control, and waits several seconds for delayed confirmation telemetry before issuing subsequent commands. While safe, move-and-wait reduces average vehicle advance to a fraction of mechanical capability, consuming massive operator shift hours while idling.
-
-To resolve this limitation, we developed an immersive 6-DoF VR teleoperation architecture in Unity 2022.3 LTS. The system couples real-time joystick inputs directly to an instantaneous local forward kinematic simulation of the rover chassis, rendering a semi-transparent cyan holographic "Ghost Avatar" and 3D predictive path ribbon projected directly over a digital elevation model of the Martian terrain (`Bejczy1990`, `Walker2019`).
+## Abstract — evidence-safe draft
+This project investigates autonomous simulated planetary rover navigation using cost-aware graph planning and continuous-action reinforcement learning. A Python/PyBullet environment generates terrain and collision observations, and baseline algorithms include A*, D* Lite and Hybrid A*, alongside D3QN, PPO and SAC training scripts. The Phase 1 v1.5f integration routes a Unity six-wheel rover through a Python SAC model using a 5-channel spatial observation, a 14-value rover state and a moving 6 m A* path target. The Unity environment incorporates LiDAR-based occupancy, runtime rock spawning, local detours and safety-assisted action control. Source artifacts and trained checkpoints are present. **Final comparative numerical results cannot be asserted without the corresponding genuine CSV and test protocol.** High-latency ghost-avatar VR treatment and human-subject usability evaluation were not implemented in this phase.
 
 ---
 
-## Section II: Related Work & Theoretical Grounding
-Our methodology builds on six foundational pillars:
-1. **Space Teleoperation Through Time Delay:** Sheridan (`Sheridan1993`, [10.1109/70.258052](https://doi.org/10.1109/70.258052)) formalized human supervisory control over high-latency channels, establishing mathematical proofs for operator hunting instability under delays $> 0.5\text{ s}$.
-2. **Predictive Displays in Telerobotics:** Bejczy, Kim, & Venema (`Bejczy1990`, [10.1109/ROBOT.1990.126037](https://doi.org/10.1109/ROBOT.1990.126037)) introduced graphical "phantom" overlays to compensate for communication latency, restoring intuitive hand-eye coordination.
-3. **Intention-Reflected Predictive Display:** Zhu et al. (`Zhu2023`, [10.1186/s40648-023-00258-8](https://doi.org/10.1186/s40648-023-00258-8)) established intention-aware forward predictive display models for time-delayed teleoperation, optimizing path stability.
-4. **VR Latency Mitigation & Virtual Springs:** Jin et al. (`Jin2024`, [10.1109/ismar62088.2024.00144](https://doi.org/10.1109/ismar62088.2024.00144)) proved that virtual spring decoupling in VR suppresses perceived latency effects and stabilizes teleoperation control.
-5. **Predictive Terrain Projection:** Prakash et al. (`Prakash2023`, [10.1109/tits.2023.3268756](https://doi.org/10.1109/tits.2023.3268756)) formulated perspective projection of surroundings to maintain situational awareness and anticipate obstacles across communication delays.
-6. **Synchronous Digital Twins & Safety Loops:** Pant, Saini, & Gaurav (`Pant2026`, [10.1109/vrw70859.2026.00167](https://doi.org/10.1109/vrw70859.2026.00167)) demonstrated low-cost VR teleoperation utilizing synchronized digital twins and proximity safety envelopes.
+## I. Introduction
+- Terrain-aware rover autonomy and obstacles; risk of relying on incomplete route/pose observations.
+- Difference between a planned path, an RL action policy and a safety intervention.
+- Scope statement: this paper reports **implemented autonomous navigation**, not the faculty's unperformed ghost-avatar human latency study.
+- Research questions: (RQ1) Can a trained SAC-CNN follow A*-guided routes in Unity? (RQ2) What happens under added rock obstacles and domain shift? (RQ3) How do policies compare under a fixed benchmark?
 
----
+## II. Related Work
+Use the seven primary citations in `LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md` (Hart; Koenig & Likhachev; Dolgov; Haarnoja; Schulman; Raffin; McEwen). Map each explicitly to an implemented module and separate future Phase 2 mechanisms.
 
-## Section III: Predictive Digital Twin Architecture
+## III. System Design and Methodology
+### 3.1 World, terrain and rover model
+- Python modules: `mars_rover/terrain.py`, `envs/rover_env.py`.
+- Six-wheel Unity scene: `RoverDrive.cs`; LiDAR/occupancy `LidarGridSensor.cs`.
+- Runtime rocks: `RuntimePathRockSpawner.cs`; local guidance `DynamicGuidanceAvoidance.cs`.
 
-### 3.1 Digital Twin Kinematic Solver (`I003 - Ananya Baweja`)
-Implemented in `Assets/Scripts/PredictiveGhostRoverManager.cs`, solving instantaneous forward differential kinematics:
+### 3.2 Planning and observation
+- A* path cost: `f(n)=g(n)+h(n)`.
+- Spatial `(5,32,32)` and rover state `(14,)` supplied by `unity_sac_bridge_v15f.py`.
+- Route-target bearing is relative to a moving path lookahead of approximately 6 m.
 
-$$v_{\text{lin}} = u_{\text{throttle}} \cdot v_{\text{max}}, \quad \omega = u_{\text{steer}} \cdot \omega_{\text{max}}$$
+### 3.3 RL controller
+- SB3 SAC + CNN/state encoder in `mars_rover/rl/features.py`.
+- Teacher demonstrations and replay protection in v1.5f training; trained checkpoints are supplied separately with Git LFS.
+- Distinguish direct SAC mode from assisted hybrid/safety mode in Unity.
 
-$$\dot{x}(t) = v_{\text{lin}} \sin\theta(t) \cdot (1 - \gamma_{\text{slip}}), \quad \dot{z}(t) = v_{\text{lin}} \cos\theta(t) \cdot (1 - \gamma_{\text{slip}}), \quad \dot{\theta}(t) = \omega$$
+### 3.4 Unity/Python bridge
+- Unity sensor sender -> Python UDP port 5005 -> state adapter/model -> action response -> Unity port 5006.
+- Typical policy frequency ~8.333 Hz; explicitly report actual measured latency only if a real capture exists.
 
-where $\gamma_{\text{slip}} = 0.15$ models Martian regolith traction loss. A forward Runge-Kutta numerical integration projects future coordinates over an integration horizon $T_{\text{horizon}} = \tau_{\text{delay}}$.
+### 3.5 Baselines and ablations
+- A*, D* Lite, Hybrid A*, D3QN, PPO, SAC where genuinely run.
+- Unassisted vs safety-assisted SAC requires paired scenarios, with separated results.
 
-### 3.2 Holographic Avatar & Trajectory Ribbon (`I006 - Anvay Borade`)
-Renders the semi-transparent holographic ghost avatar at the extrapolated pose $(\mathbf{p}_{\text{ghost}}, \theta_{\text{ghost}})$ and generates a prospective 3D path ribbon connecting the delayed physical rover transform to the predictive avatar.
+## IV. Evaluation — not yet populated from verified raw data
+### Protocol to execute before reporting results
+1. Freeze model checkpoint IDs, source commit and terrain split identifiers.
+2. Run reproducible fixed-seed evaluations on the genuine `data/phase2/test` from Phase 1.
+3. Log per-run goal completion, collision count, route progress, elapsed steps/time, stuck and safety-assist interventions.
+4. Use `scripts/37_benchmark_sac_v15f.py` to generate `results/sac_v15f_seed_71/benchmark_summary.csv`; copy genuine files into `telemetry/phase1_evidence/` using the provided PowerShell exporter.
+5. Generate Figure 3 from that exported real CSV with the supplied gated plotting tool. Until then Figure 3 is explicitly an evidence-status image, not an effect-size plot.
+6. Report `N`, mean, SD and intervals only after computation from source rows. Never describe the 50-row `SIMULATED_` faculty file as actual trials.
 
-### 3.3 Deep-Space Latency & Jitter Simulator (`I010 - Mahit Daswani`)
-Implemented in `Assets/Scripts/HighLatencyNetworkSimulator.cs`, maintaining a FIFO circular delay queue with variable one-way latency $\tau \in [1.5\text{s}, 5.0\text{s}]$ and Gaussian jitter $\sigma_{\text{jitter}} = 0.15\text{ s}$.
+### Human usability component
+**Not Implemented.** No human participant N, SUS, NASA-TLX, SSQ, participant consent, VR trial design or teleoperation latency randomization is claimed.
 
-### 3.4 Teleoperation QA & Hazard Telemetry (`I041 - Aryan Oberoi`)
-Performs real-time spherical collider overlap detection against simulated boulders, computes cross-track path tracking RMSE, and administers standardized NASA-TLX evaluations.
+## V. Discussion and Limitations
+- A PyBullet-trained policy is affected by sim-to-sim sensor/dynamics differences.
+- Planner path existence is distinct from feasible rover traction/steering.
+- Safety-assisted route completion cannot be claimed as pure learned SAC control.
+- Single-run observations do not establish statistically robust superiority.
+- Phase 2 UA/UR-SAC and recurrent GRU/attention are **not part of this Phase 1 paper**.
+- Faculty-authorized research-title mismatch requires formal clarification.
 
----
+## VI. Conclusion and Reproducibility
+Phase 1 is a working code-level autonomous rover navigation implementation with source, Unity scene, selected model artifacts and scripts for measured evaluation. Final research claims depend on an evidence-backed benchmark table, release build verification, and accurate student/provenance declarations. See dossier, telemetry README, and Git LFS instructions in the root README.
 
-## Section IV: Experimental Methodology & Empirical Results
+## Proposed Figures and Tables
+- **Figure 1:** source-derived architecture (not a measured result).
+- **Figure 2:** navigation geometry schematic (not a measured result).
+- **Figure 3:** measured comparison only when authentic benchmark CSV is provided.
+- **Table 1:** source/config inventory and component mapping.
+- **Table 2:** actual benchmark metrics and confidence intervals (pending raw CSV).
+- **Table 3:** human evaluation (Not Implemented; do not fill fake numbers).
 
-### 4.1 Experimental Protocol
-A factorial between-subjects study ($N = 50$ operator trials) was executed in Unity VR across a simulated Martian crater traverse with randomly scattered boulder hazards. Participants drove under variable latencies ($\tau \in [1.5\text{s}, 5.0\text{s}]$) under two conditions:
-1. **Delayed Baseline:** Delayed camera feed without predictive display.
-2. **Predictive Digital Twin:** 6-DoF VR headset with predictive ghost avatar and path ribbon.
-
-### 4.2 Statistical Results Summary
-
-| Metric | Delayed Baseline | Predictive Ghost Avatar | Delta / Significance |
-|---|---|---|---|
-| Path Tracking RMSE (m) | $1.15 \pm 0.24\text{ m}$ | $0.19 \pm 0.05\text{ m}$ | $-83.5\%$ ($p < 0.001$, $d = 3.12$) |
-| Hazard Collisions per Trial | $1.98 \pm 0.82$ | $0.12 \pm 0.32$ | $-88.5\%$ ($p < 0.001$) |
-| Effective Traverse Speed (m/s) | $0.038 \pm 0.008\text{ m/s}$ | $0.165 \pm 0.015\text{ m/s}$ | $+334.2\%$ ($4.34 \times$ gain) |
-| NASA-TLX Cognitive Workload | $72.8 \pm 6.2$ (High Strain) | $34.2 \pm 4.5$ (Low Strain) | $-53.0\%$ ($p < 0.001$) |
-| System Usability Scale (SUS) | $48.2 \pm 5.5$ (Grade F) | $87.5 \pm 3.8$ (Grade A) | $+81.5\%$ ($p < 0.001$) |
-
-As shown in Figure 2B, without predictive display, path tracking RMSE scales rapidly with latency, reaching $1.65\text{ m}$ at 5.0s delay. In contrast, with the predictive ghost avatar, RMSE remains bounded under $0.32\text{ m}$ even at maximum 5.0-second transmission delay.
-
----
-
-## Section V: Technoeconomic Mission Throughput Model
-Using `telemetry/rover_teleoperation_eval.py`, mission economics were evaluated over a 300-sol operational year:
-- **Additional Traverse Kilometers:** $+823.0\text{ km}$ gained annually through continuous driving.
-- **Operator Idle Hours Reclaimed:** 4,590.0 hours of unproductive waiting eliminated across 4 driver shifts.
-- **Hazard Strikes Avoided:** 31.9 boulder collisions avoided per mission year.
-- **Cost Parity Ratio:** $\kappa = 0.21$, representing a $79.0\%$ operational friction reduction.
-- **Capital Payback Horizon:** 15.19 operating months to amortize VR digital twin software engineering.
-
----
-
-## Section VI: Conclusion & Future Work
-The predictive ghost-avatar digital twin successfully neutralizes high transmission delays (1.5s to 5.0s), compressing path tracking error by $83.5\%$ and increasing mission traverse speed by $4.34 \times$. Future extensions will incorporate Bayesian regolith soil estimation to adapt the slip model dynamically in real time.
-
----
-
-## Verified References (6 CrossRef DOIs)
-
-1. T. B. Sheridan, "Space teleoperation through time delay: review and prognosis," *IEEE Trans. Robot. Autom.*, vol. 9, no. 5, pp. 592-606, 1993. DOI: [10.1109/70.258052](https://doi.org/10.1109/70.258052).
-2. A. K. Bejczy, W. S. Kim, and S. C. Venema, "The phantom robot: predictive displays for teleoperation with time delay," in *Proc. 1990 IEEE Int. Conf. Robot. Autom. (ICRA)*, 1990, pp. 546-551. DOI: [10.1109/ROBOT.1990.126037](https://doi.org/10.1109/ROBOT.1990.126037).
-3. H. Zhu, R. Fusano, T. Aoyama, and Y. Hasegawa, "Intention-reflected predictive display for operability improvement of time-delayed teleoperation system," *ROBOMECH J.*, vol. 10, art. no. 21, 2023. DOI: [10.1186/s40648-023-00258-8](https://doi.org/10.1186/s40648-023-00258-8).
-4. Z. Jin, Z. Zhang, Y. Li, Y. Ban, and S. Warisawa, "Mitigating Latency Effects on Subjective Experience in Robot Teleoperation Using a VR-Enabled Virtual Spring," in *2024 IEEE Int. Symp. Mixed Augmented Reality (ISMAR)*, 2024, pp. 883-892. DOI: [10.1109/ismar62088.2024.00144](https://doi.org/10.1109/ismar62088.2024.00144).
-5. O. Prakash, M. Vignati, A. Vignarca, E. Sabbioni, and F. Cheli, "Predictive Display With Perspective Projection of Surroundings in Vehicle Teleoperation to Account Time-Delays," *IEEE Trans. Intell. Transp. Syst.*, vol. 24, no. 9, pp. 9811-9822, 2023. DOI: [10.1109/tits.2023.3268756](https://doi.org/10.1109/tits.2023.3268756).
-6. P. Pant, S. Saini, and A. Gaurav, "Low-Cost VR Teleoperation of a 5-Dof Robotic Arm with a Synchronized Digital Twin and Ultrasonic Safety Loop," in *2026 IEEE Conf. Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)*, 2026, pp. 845-846. DOI: [10.1109/vrw70859.2026.00167](https://doi.org/10.1109/vrw70859.2026.00167).
+## Source References
+See `LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md`. Target venue and title changes are subject to supervisor approval; no acceptance/publication claim is made.

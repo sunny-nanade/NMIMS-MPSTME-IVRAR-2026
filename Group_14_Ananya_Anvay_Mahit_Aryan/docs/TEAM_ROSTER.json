@@ -8,7 +8,7 @@
       "roll_no": "I003",
       "sap_id": "70122400026",
       "name": "Ananya Baweja",
-      "role": "Tele-Robotics & Digital Twin Lead",
+      "role": "Terrain Assets & Simulation QA Coordinator (proposed)",
       "assigned_branch": "feat/i003-tele-robotics-digita",
       "github_username": ""
     },
@@ -16,15 +16,15 @@
       "roll_no": "I006",
       "sap_id": "70122400050",
       "name": "Anvay Borade",
-      "role": "XR Systems Architect",
+      "role": "Lead AI/RL Engineer, System Architect & Unity-Python Integration (proposed)",
       "assigned_branch": "feat/i006-xr-systems-architect",
-      "github_username": ""
+      "github_username": "anvayborade"
     },
     {
       "roll_no": "I010",
       "sap_id": "70122400075",
       "name": "Mahit Naresh Daswani Chanchlani",
-      "role": "Latency & Network Simulation Specialist",
+      "role": "LiDAR, Planning & Physics Integration Support (proposed)",
       "assigned_branch": "feat/i010-latency-network-simu",
       "github_username": ""
     },
@@ -32,68 +32,85 @@
       "roll_no": "I041",
       "sap_id": "70122400039",
       "name": "Aryan Oberoi",
-      "role": "Human Factors & Teleoperation QA Lead",
+      "role": "Evaluation, Results & Research Documentation Coordinator (proposed)",
       "assigned_branch": "feat/i041-human-factors-teleop",
       "github_username": ""
     }
   ],
   "foundational_papers": [
     {
-      "citation_key": "Sheridan1993",
-      "title": "Space teleoperation through time delay: review and prognosis",
-      "authors": "T. B. Sheridan",
-      "year": 1993,
-      "journal": "IEEE Transactions on Robotics and Automation, vol. 9, no. 5, pp. 592-606",
-      "doi": "10.1109/70.258052"
+      "citation_key": "Hart1968",
+      "title": "A Formal Basis for the Heuristic Determination of Minimum Cost Paths",
+      "authors": "P. E. Hart; N. J. Nilsson; B. Raphael",
+      "year": 1968,
+      "journal": "IEEE Transactions on Systems Science and Cybernetics",
+      "doi": "10.1109/TSSC.1968.300136"
     },
     {
-      "citation_key": "Bejczy1990",
-      "title": "The phantom robot: predictive displays for teleoperation with time delay",
-      "authors": "A. K. Bejczy, W. S. Kim, S. C. Venema",
-      "year": 1990,
-      "journal": "Proceedings of the 1990 IEEE International Conference on Robotics and Automation (ICRA), pp. 546-551",
-      "doi": "10.1109/ROBOT.1990.126037"
+      "citation_key": "Koenig2002",
+      "title": "D* Lite",
+      "authors": "S. Koenig; M. Likhachev",
+      "year": 2002,
+      "journal": "AAAI 2002",
+      "doi": "",
+      "url": "https://ocs.aaai.org/Library/AAAI/2002/aaai02-072.php"
     },
     {
-      "citation_key": "Zhu2023",
-      "title": "Intention-reflected predictive display for operability improvement of time-delayed teleoperation system",
-      "authors": "H. Zhu, R. Fusano, T. Aoyama, Y. Hasegawa",
-      "year": 2023,
-      "journal": "ROBOMECH Journal, vol. 10, art. no. 21",
-      "doi": "10.1186/s40648-023-00258-8"
+      "citation_key": "Dolgov2010",
+      "title": "Path Planning for Autonomous Vehicles in Unknown Semi-structured Environments",
+      "authors": "D. Dolgov; S. Thrun; M. Montemerlo; J. Diebel",
+      "year": 2010,
+      "journal": "International Journal of Robotics Research",
+      "doi": "10.1177/0278364909359210"
     },
     {
-      "citation_key": "Jin2024",
-      "title": "Mitigating Latency Effects on Subjective Experience in Robot Teleoperation Using a VR-Enabled Virtual Spring",
-      "authors": "Z. Jin, Z. Zhang, Y. Li, Y. Ban, S. Warisawa",
-      "year": 2024,
-      "journal": "2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR), pp. 883-892",
-      "doi": "10.1109/ismar62088.2024.00144"
+      "citation_key": "Haarnoja2018",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+      "authors": "T. Haarnoja; A. Zhou; P. Abbeel; S. Levine",
+      "year": 2018,
+      "journal": "ICML 2018, PMLR 80",
+      "doi": "",
+      "url": "https://proceedings.mlr.press/v80/haarnoja18b.html"
     },
     {
-      "citation_key": "Prakash2023",
-      "title": "Predictive Display With Perspective Projection of Surroundings in Vehicle Teleoperation to Account Time-Delays",
-      "authors": "O. Prakash, M. Vignati, A. Vignarca, E. Sabbioni, F. Cheli",
-      "year": 2023,
-      "journal": "IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 9, pp. 9811-9822",
-      "doi": "10.1109/tits.2023.3268756"
+      "citation_key": "Schulman2017",
+      "title": "Proximal Policy Optimization Algorithms",
+      "authors": "J. Schulman et al.",
+      "year": 2017,
+      "journal": "arXiv preprint",
+      "doi": "",
+      "url": "https://arxiv.org/abs/1707.06347"
     },
     {
-      "citation_key": "Pant2026",
-      "title": "Low-Cost VR Teleoperation of a 5-Dof Robotic Arm with a Synchronized Digital Twin and Ultrasonic Safety Loop",
-      "authors": "P. Pant, S. Saini, A. Gaurav",
-      "year": 2026,
-      "journal": "2026 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), pp. 845-846",
-      "doi": "10.1109/vrw70859.2026.00167"
+      "citation_key": "McEwen2007",
+      "title": "Mars Reconnaissance Orbiter’s High Resolution Imaging Science Experiment (HiRISE)",
+      "authors": "A. S. McEwen et al.",
+      "year": 2007,
+      "journal": "Journal of Geophysical Research: Planets",
+      "doi": "10.1029/2005JE002605"
+    },
+    {
+      "citation_key": "Raffin2021",
+      "title": "Stable-Baselines3: Reliable Reinforcement Learning Implementations",
+      "authors": "A. Raffin et al.",
+      "year": 2021,
+      "journal": "Journal of Machine Learning Research 22",
+      "doi": "",
+      "url": "https://www.jmlr.org/papers/volume22/20-1364/20-1364.pdf"
     }
   ],
-  "domain": "Predictive Ghost-Avatar Digital Twin in Unity VR for High-Latency Rover Teleoperation",
+  "domain": "Autonomous planetary rover navigation in Python/PyBullet and Unity desktop simulation (Phase 1)",
   "project_showcase": {
     "platform": "LinkedIn Video",
     "linkedin_url": "PENDING_SUBMISSION",
     "video_poster_path": "docs/figures/video_poster.png",
     "video_duration_target": "60-90 seconds",
     "submission_status": "PENDING",
-    "submission_instructions": "Paste your published LinkedIn post URL into 'linkedin_url' and submit a Pull Request"
-  }
+    "submission_instructions": "Fill genuine LinkedIn URL only after posting verified team demonstration; no video claim is made here."
+  },
+  "implemented_phase1_title": "Autonomous Mars Rover Navigation using A*/D* Lite Comparisons, SAC-CNN and Unity-Python Integration",
+  "implementation_status": "Phase 1 completed; human-latency VR teleoperation treatment and participant study not implemented in this phase",
+  "authorized_title_status": "Original faculty-issued title retained; request approval for any formal change",
+  "implementation_branch": "feat/group14-phase1",
+  "role_attribution_note": "Roles requested for this submission are proposed; each member must confirm actual work and sign individually."
 }

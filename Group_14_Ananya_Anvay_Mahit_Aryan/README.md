@@ -1,98 +1,72 @@
-# IVRAR Group 14: Predictive Ghost-Avatar Digital Twin in High-Latency Planetary Teleoperation
-**Course:** Introduction to Virtual Reality & Augmented Reality (IVRAR - Course Code: 702COI002)  
-**Academic Term:** Academic Year 2026–2027 | Semester V  
+# IVRAR Group 14: Autonomous Mars Rover Navigation — Phase 1 (Unity + Python)
+**Course:** Immersive Virtual Reality & Augmented Reality (IVRAR) — see official course dossier for code  
+**Academic Term:** AY 2026–27, Odd Semester  
 **Institution:** SVKM's NMIMS MPSTME, Mumbai  
+**Group:** 14 · Batch B2 · I003, I006, I010, I041
 
+## Authorized Research Title (faculty record retained)
+> To what extent does a predictive ghost-avatar digital twin in Unity VR mitigate teleoperation path tracking error and collision frequency for planetary rover operators under simulated high-latency (1.5-second to 5-second) transmission delays?
 
-## Authorized Research Title
-> **"To what extent does a predictive ghost-avatar digital twin in Unity VR mitigate teleoperation path tracking error and collision frequency for planetary rover operators under simulated high-latency (1.5-second to 5-second) transmission delays?"**
-
----
-
-> [!NOTE]
-> ### The Devil's Advocate: Reality Check & Theoretical Roast
-> *"Rendering a predictive ghost avatar in VR to overcome 3-second Mars teleoperation delay, giving the operator the comforting illusion of smooth real-time driving right up until the real rover rear-ends a boulder that the simulation forgot to render."*
+**Research-scope disclosure:** The title above is the original faculty-issued assignment. The code submitted for **Phase 1** implements **autonomous** rover navigation, not a completed experimental test of that teleoperation hypothesis. A formal replacement of the authorized title requires faculty approval. Starter scripts in `Assets/Scripts` are not proof that a full VR/teleoperation study is implemented.
 
 ---
 
 ## Executive Abstract & Problem Scope
-Unmanned robotic exploration of extraterrestrial planetary surfaces (e.g., Moon and Mars) is severely constrained by speed-of-light propagation delays and deep-space relay latency, typically introducing one-way transmission delays between 1.5 and 5.0 seconds. Under uncompensated communication latency, human teleoperation attempts trigger dangerous closed-loop operator oscillations ("hunting"), inducing high drift errors and catastrophic boulder collisions. To prevent hardware losses, space missions are forced to operate via conservative "move-and-wait" stop-and-go command execution, limiting rover advance to under $0.04\text{ m/s}$ and leaving human operators idle for over 70% of operational driving shifts.
+We implemented a terrain-aware autonomous planetary rover simulator integrating classical A*/D* Lite/Hybrid-A* path-planning benchmarks, deep reinforcement learning (D3QN, PPO and SAC) in Python/PyBullet, and a Unity rover demonstration. The final v1.5f inference path constructs a `(5,32,32)` terrain/occupancy observation and a 14-element rover state, uses a moving ~6 m A* lookahead, sends observations from Unity over UDP to a trained SAC-CNN policy in Python, and returns steering/throttle actions. The Unity scene adds six-wheel rover motion, LiDAR occupancy, runtime rocks, local detour guidance, safety checks and a HUD. The preserved Python artifacts include the seed-71 best SAC checkpoint and a final 1,000,000-step checkpoint. **Source presence does not establish a measured 100% success rate.**
 
-This project implements an **Immersive Virtual Reality Teleoperation Platform with a Predictive Ghost-Avatar Digital Twin** in Unity 2022.3 LTS. The system couples operator joystick inputs directly to an instantaneous forward differential-drive kinematic simulation ($[x(t+\tau), z(t+\tau), \theta(t+\tau)]$) while delayed physical vehicle telemetry updates asynchronously. A semi-transparent holographic "Ghost Avatar" and prospective 3D trajectory ribbon are rendered over a Martian terrain elevation model. In an empirical study ($N = 50$ operator trials under $1.5\text{s}$ to $5.0\text{s}$ latency), the predictive ghost avatar compressed mean path tracking root-mean-square error (RMSE) from $1.15 \pm 0.24\text{ m}$ (delayed baseline) to $0.19 \pm 0.05\text{ m}$ ($p < 0.001$, Cohen's $d = 3.12$). Hazard rock strikes were reduced by $88.5\%$, and effective traverse speed increased from $0.038\text{ m/s}$ to $0.165\text{ m/s}$ ($4.34 \times$ throughput enhancement). NASA-TLX operator workload dropped by $53.0\%$. Technoeconomic modeling across a 300-sol operational year indicates that the predictive system yields an additional 823.0 km of exploration traverse, reclaims 4,590.0 hours of idle operator wait time, avoids 31.9 severe boulder collisions, achieves a dimensionless cost parity ratio of $\kappa = 0.21$, and recovers capital deployment costs within 15.19 operating months.
-
----
-
-## Verified Foundational Literature (6 CrossRef DOIs)
-
-| # | Citation Key | Full Canonical Title | Journal / Conference | Year | Verified DOI |
-|---|---|---|---|---|---|
-| 1 | `Sheridan1993` | Space teleoperation through time delay: review and prognosis | IEEE Transactions on Robotics and Automation | 1993 | [10.1109/70.258052](https://doi.org/10.1109/70.258052) |
-| 2 | `Bejczy1990` | The phantom robot: predictive displays for teleoperation with time delay | IEEE ICRA | 1990 | [10.1109/ROBOT.1990.126037](https://doi.org/10.1109/ROBOT.1990.126037) |
-| 3 | `Zhu2023` | Intention-reflected predictive display for operability improvement of time-delayed teleoperation system | ROBOMECH Journal | 2023 | [10.1186/s40648-023-00258-8](https://doi.org/10.1186/s40648-023-00258-8) |
-| 4 | `Jin2024` | Mitigating Latency Effects on Subjective Experience in Robot Teleoperation Using a VR-Enabled Virtual Spring | IEEE ISMAR | 2024 | [10.1109/ismar62088.2024.00144](https://doi.org/10.1109/ismar62088.2024.00144) |
-| 5 | `Prakash2023` | Predictive Display With Perspective Projection of Surroundings in Vehicle Teleoperation to Account Time-Delays | IEEE T-ITS | 2023 | [10.1109/tits.2023.3268756](https://doi.org/10.1109/tits.2023.3268756) |
-| 6 | `Pant2026` | Low-Cost VR Teleoperation of a 5-Dof Robotic Arm with a Synchronized Digital Twin and Ultrasonic Safety Loop | IEEE VRW | 2026 | [10.1109/vrw70859.2026.00167](https://doi.org/10.1109/vrw70859.2026.00167) |
-
----
+Human participation, SUS/TLX/SSQ scoring, 1.5–5 s delayed-operator trials and high-latency predictive VR treatment: **Not Implemented**. Faculty `SIMULATED_*` CSVs and original synthetic figure files are not empirical results.
 
 ## Student Engineering Team & Task Matrix
 
-| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
-| :--- | :--- | :--- | :--- | :--- |
-| `I003` | **Ananya Baweja** | B.Tech / MBA (Tech) | Tele-Robotics & Digital Twin Lead | `feat/i003-tele-robotics-digita` |
-| `I006` | **Anvay Borade** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/i006-xr-systems-architect` |
-| `I010` | **Mahit Naresh Daswani Chanchlani** | B.Tech / MBA (Tech) | Latency & Network Simulation Specialist | `feat/i010-latency-network-simu` |
-| `I041` | **Aryan Oberoi** | B.Tech / MBA (Tech) | Human Factors & Teleoperation QA Lead | `feat/i041-human-factors-teleop` |
+| Roll | Name | Proposed project role (verify against actual work) | GitHub |
+|---|---|---|---|
+| I003 | Ananya Baweja | Terrain Assets & Simulation QA Coordinator | To be completed |
+| I006 | **Anvay Borade** | **Lead AI/RL Engineer, System Architect & Unity-Python Integration** | `anvayborade` |
+| I010 | Mahit Naresh Daswani Chanchlani | LiDAR, Planning & Physics Integration Support | To be completed |
+| I041 | Aryan Oberoi | Evaluation, Results & Research Documentation Coordinator | To be completed |
 
----
-
-
-### Student Engineering Commendation & Acknowledgments
-SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to Ananya Baweja (I003), Anvay Borade (I006), Mahit Naresh Daswani Chanchlani (I010), Aryan Oberoi (I041) for their disciplined commitment, late-night debugging, and technical craftsmanship throughout Semester V. Your rigorous engineering inquiry and dedication to immersive XR environments exemplify the highest standards of undergraduate technical research.
-
-> *"Scientists discover the world that exists; engineers create the world that never was."*  
-> — **Theodore von Kármán**
-
-> *"There is no substitute for hard work. Genius is one percent inspiration and ninety-nine percent perspiration."*  
-> — **Thomas A. Edison**
+The roles above are proposed task allocations, not independent verification of authorship or hours. Each member must confirm contributions in the official dossier.
 
 ---
 
 ## Core System Architecture & Egress Telemetry
 
-The platform comprises four interconnected software modules:
-1. **Digital Twin Kinematic Core (`Assets/Scripts/PredictiveGhostRoverManager.cs`, `I003 - Ananya Baweja`):** Instantaneous forward differential-drive kinematic integration, regolith wheel-slip modeling, and forward state extrapolation.
-2. **VR Operator Rig & Holographic Display (`I006 - Anvay Borade`):** 6-DoF XR cockpit view, dual-joystick teleoperation bindings, semi-transparent ghost shader rendering, and 3D projected trajectory ribbon.
-3. **Deep-Space Delay Channel (`Assets/Scripts/HighLatencyNetworkSimulator.cs`, `I010 - Mahit Daswani`):** Asynchronous FIFO transmission queue with variable $1.5\text{s} - 5.0\text{s}$ latency, Gaussian packet jitter, and deep-space link drop simulation.
-4. **Martian Surface Hazard QA & Telemetry (`telemetry/rover_teleoperation_eval.py`, `I041 - Aryan Oberoi`):** Real-time boulder collider proximity checking, cross-track path RMSE computation, NASA-TLX workload evaluations, and mission science throughput modeling.
+1. **Terrain and classical planners:** `Phase1/Python/mars_rover/terrain.py`, `planners.py`, `scripts/03_run_classical_benchmarks.py`, `04_dstar_dynamic_demo.py`.
+2. **Python RL simulator/training:** `mars_rover/envs/rover_env.py`, `mars_rover/rl/features.py`, `scripts/09_train_d3qn.py`, `10_train_ppo.py`, `36_train_sac_v15f.py`, `37_benchmark_sac_v15f.py`.
+3. **Unity simulation:** `Phase1/Unity/Assets/Scenes/SampleScene.unity`, `Assets/Scripts/RoverDrive.cs`, `LidarGridSensor.cs`, `DynamicGuidanceAvoidance.cs`, `RuntimePathRockSpawner.cs`.
+4. **UDP live inference:** `Phase1/Unity/Assets/Scripts/UnityUdpBridge.cs`, `Phase1/Python/unity_sac_bridge_v15f.py`. Unity sends sensor/goal state to local Python port **5005** and receives actions on Unity port **5006** at a nominal **8.333 Hz**.
+5. **Model input:** image-like spatial data `(5,32,32)` and state vector `(14,)`; this is **Phase 1** and must not be confused with the Phase 2 recurrent SAC observation contract.
 
-### Publication-Grade Figures (300 DPI)
-- `docs/figures/figure1_system_architecture.png`: Multi-tier system architecture diagram showing Operator VR Rig, Kinematic Core, Deep-Space Delay Channel, and Hazard QA.
-- `docs/figures/figure2_kinematic_telemetry.png`: 2D spatial surface trajectory tracking on Martian terrain and Path RMSE vs Latency curves across 1.5s to 5.0s.
-- `docs/figures/figure3_comparative_performance.png`: Empirical results across 4 subplots (Path RMSE, Hazard Collisions, Traverse Velocity, and NASA-TLX Workload).
+### Tested project version and dependency scope
+- **Unity editor specified in actual file:** `6000.3.23f1` (not 2022.3 LTS).
+- Python project files: `Phase1/Python/requirements_phase1.txt` and `pyproject.toml`.
+- Project is Unity **desktop simulation**. Standalone PCVR or Quest build, XRI interaction and measured human teleoperation trial: **Not Implemented / Not Supplied**.
 
----
+### Starting Phase 1 (Windows PowerShell)
 
----
+From the repository root:
 
-## Project Demonstration & Academic Showcase (LinkedIn)
+```powershell
+Set-Location .\Group_14_Ananya_Anvay_Mahit_Aryan\Phase1\Python
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements_phase1.txt
+.\.venv\Scripts\python.exe unity_sac_bridge_v15f.py --model checkpoints\sac_v15f\seed_71\best\best_model.zip --height-npy unity_hirise_export\height_m.npy --meta unity_hirise_export\heightmap_meta.json --device cpu --self-test
+```
 
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
+If that self-test passes, rerun without `--self-test` to open the bridge. Open `Phase1/Unity` in Unity `6000.3.23f1` and run `Assets/Scenes/SampleScene.unity`. Confirm the scene's actual Inspector references and `StreamingAssets/global_path.csv`, then press Play. CPU inference may be slower than GPU; use `--device cuda` when CUDA-compatible PyTorch is available. See source bridge's `--help` for additional flags.
 
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
-* **Student Presenters:** **Ananya Baweja** (I003), **Anvay Borade** (I006), **Mahit Naresh Daswani Chanchlani** (I010), **Aryan Oberoi** (I041)
-* **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
-* **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.
+**Important:** `unity_hirise_export/height_m.npy`, model files and Unity meshes are LFS assets. Install Git LFS and run `git lfs pull` for Group 14 before launching; don't treat pointer text as model binaries.
 
----
+## Figures, Evaluation and Provenance
 
-## Empirical Benchmark & Technoeconomic Highlights
-- **Path Tracking Error (RMSE):** Compressed from $1.15 \pm 0.24\text{ m}$ (delayed baseline) to $0.19 \pm 0.05\text{ m}$ with predictive ghost avatar ($83.5\%$ error reduction, $p < 0.001$, Cohen's $d = 3.12$).
-- **Hazard Collisions:** Reduced by $88.5\%$ across randomized Martian boulder field navigation.
-- **Traverse Velocity Multiplier:** Effective driving speed elevated from $0.038\text{ m/s}$ to $0.165\text{ m/s}$ ($4.34 \times$ throughput gain).
-- **NASA-TLX Operator Workload:** Slashed from $72.8$ (High Strain) to $34.2$ (Low Strain).
-- **System Usability Scale (SUS):** Reached $87.5 \pm 3.8$ (Grade A), compared to $48.2$ (Grade F) for uncompensated teleoperation.
-- **Additional Traverse Distance:** $+823.0\text{ km}$ gained annually across a 300-sol operational mission year.
-- **Operator Idle Hours Reclaimed:** 4,590.0 unproductive wait hours eliminated across ground station shifts.
-- **Severe Collisions Avoided:** 31.9 rock strikes prevented annually.
-- **Dimensionless Cost Parity Ratio:** $\kappa = 0.21$, yielding a capital payback horizon of 15.19 operating months.
+- `docs/figures/figure1_system_architecture.png` — source-derived architecture schematic; **not a performance result**.
+- `docs/figures/figure2_kinematic_telemetry.png` — illustrative path/obstacle geometry; **not measured telemetry**.
+- `docs/figures/figure3_comparative_performance.png` — evidence-status panel; real performance chart requires actual benchmark CSV.
+- `telemetry/README.md` and `telemetry/export_phase1_evidence.ps1` explain how to copy real result CSVs, preserving the faculty's original tools and `SIMULATED_*` examples as non-evidence.
+- `scripts/37_benchmark_sac_v15f.py` writes `results/sac_v15f_seed_71/benchmark_summary.csv` only when run on real local checkpoints and terrain data. Do not claim the CSV already exists unless verified.
+
+## Foundational Literature
+See `docs/LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md` for primary sources (Hart et al.; Koenig & Likhachev; Dolgov et al.; Haarnoja et al.; Schulman et al.; McEwen et al.) and project-specific method mapping.
+
+## Submission and Reproducibility
+Keep `docs/IVRAR_Group_14_Technical_Dossier.docx` and its PDF export with the same six-section faculty form. Complete real Git telemetry, authorship, individual learning, AI audit, peer scores, LinkedIn video URL and signatures yourself. Do not claim human study statistics or completed releases without evidence. The active contribution branch is `feat/group14-phase1`; final review/merge targets faculty `main`.
