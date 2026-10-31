@@ -1,0 +1,5 @@
+timesteps,stage,name,mission_min_m,mission_max_m,demo_fraction,learning_rate
+0,0,S0_SHORT_20_30M,20.0,30.0,0.25,0.0001
+100000,1,S1_SHORT_30_50M,30.0,50.0,0.25,0.0001
+200000,2,S2_MEDIUM_50_75M,50.0,75.0,0.2,0.0001
+300000,3,S3_FULL_75_110M,75.0,110.0,0.2,5e-05

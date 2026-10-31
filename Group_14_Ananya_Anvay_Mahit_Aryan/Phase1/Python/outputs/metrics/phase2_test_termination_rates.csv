@@ -1,0 +1,9 @@
+model,terminal_reason,count,episodes,rate
+A*+D3QN,collision,4,10,0.4
+A*+D3QN,goal,3,10,0.3
+A*+D3QN,stuck,3,10,0.3
+PPO-CNN,collision,8,10,0.8
+PPO-CNN,out_of_bounds,1,10,0.1
+PPO-CNN,stuck,1,10,0.1
+SAC-CNN,collision,5,10,0.5
+SAC-CNN,time_limit,5,10,0.5

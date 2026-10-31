@@ -1,0 +1,13 @@
+model,metric,events,episodes,rate,ci95_low,ci95_high
+A*+D3QN,success,3,10,0.3,0.1078,0.6032
+A*+D3QN,collision,4,10,0.4,0.1682,0.6873
+A*+D3QN,rollover,0,10,0.0,0.0,0.2775
+A*+D3QN,out_of_bounds,0,10,0.0,0.0,0.2775
+PPO-CNN,success,0,10,0.0,0.0,0.2775
+PPO-CNN,collision,8,10,0.8,0.4902,0.9433
+PPO-CNN,rollover,0,10,0.0,0.0,0.2775
+PPO-CNN,out_of_bounds,1,10,0.1,0.0179,0.4042
+SAC-CNN,success,0,10,0.0,0.0,0.2775
+SAC-CNN,collision,5,10,0.5,0.2366,0.7634
+SAC-CNN,rollover,0,10,0.0,0.0,0.2775
+SAC-CNN,out_of_bounds,0,10,0.0,0.0,0.2775
