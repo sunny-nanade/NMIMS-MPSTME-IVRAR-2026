@@ -76,3 +76,12 @@ overwritten every time the scene is rebuilt.
 ## Not in the repo (on purpose)
 
 `Library/` (Unity cache, rebuilt automatically), `Builds/` (APKs and test output), `Logs/`, `Temp/`, `UserSettings/`.
+
+
+---
+
+## Project Demonstration & Academic Showcase (LinkedIn)
+
+* **LinkedIn Video Demonstration:** [Watch CyberQuest VR Security Showcase on LinkedIn](https://lnkd.in/p/dAnJfxbr)
+* **Student Presenters:** **Samarth Pande** (B069), **Ishan Choudhary** (B148), **Aarush Mishra** (B155), **Sachi Kumar** (K031)
+* **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies

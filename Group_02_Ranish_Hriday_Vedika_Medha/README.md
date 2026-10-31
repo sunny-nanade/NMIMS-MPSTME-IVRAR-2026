@@ -71,9 +71,9 @@ For the exhaustive literature analysis, mathematical derivations, and viva defen
 
 ## 4. Project Demonstration & Academic Showcase (LinkedIn)
 
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
+[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://lnkd.in/p/d8KrGKAJ)
 
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
+* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://lnkd.in/p/d8KrGKAJ) *(Click thumbnail above to open LinkedIn post)*
 * **Student Presenters:** **Ranish Devadiga** (N024), **Hriday Jain** (N042), **Vedika Kaki** (N047), **Medha Mishra** (N062)
 * **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
 * **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.
