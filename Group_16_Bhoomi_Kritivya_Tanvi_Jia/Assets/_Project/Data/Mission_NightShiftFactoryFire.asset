@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86b52515103a44048cbd7497208e4d1, type: 3}
+  m_Name: Mission_NightShiftFactoryFire
+  m_EditorClassIdentifier: RescueSim.Runtime::RescueSim.Core.MissionDefinition
+  missionId: factory-fire-night-shift
+  title: Factory Fire Rescue
+  tagline: A transformer fire and a gas leak have trapped your crew in Hall 1.
+  briefing: 'A transformer fire and a gas leak have started in Hall 1. Part of the
+    wall has collapsed and three workers are unaccounted for.
+
+
+    1. Point at the
+    main breaker (orange marker) and squeeze GRIP to cut power.
+
+    2. Hold GRIP
+    on the gas valve wheel until it is shut.
+
+    3. Grab the extinguisher with GRIP,
+    squeeze TRIGGER and sweep the flames.
+
+    4. Grab the fallen debris and pull
+    it out of the gap.
+
+    5. Find every worker. Hold GRIP to check, keep holding
+    to lift, carry them to the green assembly point and release GRIP.
+
+
+    Raise
+    your left wrist for the checklist. Smoke builds up exposure, so keep moving.'
+  stageIndex: 0
+  sceneName: FactoryRescue
+  cardBlurb: Cut the power, shut off the gas, put out the fire and lead three workers
+    out of the smoke.
+  accent: {r: 1, g: 0.5, b: 0.1, a: 1}
+  usesExposure: 1
+  timeLimitSeconds: 600
+  exposureRecoveryPerSecond: 0.04
+  objectives:
+  - id: power
+    title: Cut main power
+    hint: Throw the main breaker on the east wall.
+    required: 1
+  - id: gas
+    title: Close the gas valve
+    hint: Hold grip on the valve wheel.
+    required: 1
+  - id: fire
+    title: Extinguish both fires
+    hint: Isolate power first for the electrical fire.
+    required: 1
+  - id: route
+    title: Clear the collapsed passage
+    hint: Grab debris and move it out of the gap.
+    required: 1
+  - id: locate
+    title: Locate survivors
+    hint: Look for the beacons and listen for whistles.
+    required: 1
+  - id: evacuate
+    title: Evacuate everyone
+    hint: Carry survivors to the assembly point; release GRIP inside it.
+    required: 1
+  scoring:
+    survivorPoints: 500
+    hazardPoints: 300
+    timeBonusPoints: 200
+    maxExposurePenalty: 150
+    mistakePenalty: 25
+    maxScore: 1000

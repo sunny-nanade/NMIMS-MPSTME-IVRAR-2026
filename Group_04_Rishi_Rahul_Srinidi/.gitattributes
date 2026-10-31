@@ -1,0 +1,4 @@
+Final[[:space:]]Build[[:space:]]APK/*.apk filter=lfs diff=lfs merge=lfs -text
+
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+Gameplay[[:space:]]Video/gameplay-preview.gif -filter -diff -merge -text

@@ -1,0 +1,1 @@
+participant_id,consent_form_signed_and_filed,date_of_session,build_commit,device,prior_triage_training,prior_vr_experience,sus_q1,sus_q2,sus_q3,sus_q4,sus_q5,sus_q6,sus_q7,sus_q8,sus_q9,sus_q10,sus_score,nasa_tlx_mental,nasa_tlx_physical,nasa_tlx_temporal,nasa_tlx_performance,nasa_tlx_effort,nasa_tlx_frustration,ssq_nausea,ssq_oculomotor,ssq_disorientation,notes

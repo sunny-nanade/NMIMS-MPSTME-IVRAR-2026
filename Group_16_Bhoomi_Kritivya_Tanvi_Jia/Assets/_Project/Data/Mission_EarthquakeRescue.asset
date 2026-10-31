@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86b52515103a44048cbd7497208e4d1, type: 3}
+  m_Name: Mission_EarthquakeRescue
+  m_EditorClassIdentifier: RescueSim.Runtime::RescueSim.Core.MissionDefinition
+  missionId: earthquake-search-rescue
+  title: Earthquake Search and Rescue
+  tagline: An earthquake has cracked a small building. Two people are still inside.
+  briefing: 'An earthquake has damaged a small office building. A corridor is blocked
+    by rubble and two people are waiting for help.
+
+
+    1. Follow the yellow arrows
+    into the building.
+
+    2. Walk down the corridor to the blocked section.
+
+    3.
+    Grab the fallen blocks with GRIP and move them out of the corridor.
+
+    4. Find
+    both survivors. Hold GRIP on each one to check them, keep holding to lift them.
+
+    5.
+    Carry each one to the green RESCUE ZONE and release GRIP there.
+
+
+    There is
+    no timer pressure: take your time and follow the glowing markers.'
+  stageIndex: 1
+  sceneName: EarthquakeRescue
+  cardBlurb: Follow the safe route, clear the fallen debris and guide two survivors
+    to the rescue zone.
+  accent: {r: 1, g: 0.78, b: 0.15, a: 1}
+  usesExposure: 0
+  timeLimitSeconds: 900
+  exposureRecoveryPerSecond: 0.1
+  objectives:
+  - id: enter
+    title: Enter the damaged building
+    hint: Follow the yellow arrows to the door.
+    required: 1
+  - id: safe-route
+    title: Follow the safe route
+    hint: Stay on the marked corridor.
+    required: 1
+  - id: route
+    title: Clear the blocked corridor
+    hint: Grab the blocks and move them aside.
+    required: 1
+  - id: locate
+    title: Find both survivors
+    hint: Look in the side rooms.
+    required: 1
+  - id: evacuate
+    title: Carry them to the rescue zone
+    hint: Keep GRIP held to carry. Release it inside the green zone.
+    required: 1
+  scoring:
+    survivorPoints: 500
+    hazardPoints: 300
+    timeBonusPoints: 200
+    maxExposurePenalty: 150
+    mistakePenalty: 25
+    maxScore: 1000

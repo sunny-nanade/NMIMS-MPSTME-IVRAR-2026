@@ -1,13 +1,11 @@
 # docs/: Group_13_Kartik_Soha_Atharv_Ojaswi
 
-Before submitting, complete all 6 sections of `IVRAR_Group_13_Technical_Dossier.docx`, export to PDF, and commit BOTH the completed .docx and .pdf to this folder.
-
 | File | What it is |
 |---|---|
-| `IVRAR_Group_13_Technical_Dossier.docx` | Your pre-filled Technical Dossier. Fill it in **Microsoft Word** using the "Select ▾" drop-downs and "type here" fields. |
-| `IVRAR_Group_13_Technical_Dossier.pdf` | The PDF export of your completed dossier (you add this). The same PDF is turned in on MS Teams by **every** member. |
-| `figures/` | Starter figures built on **synthetic** data. Re-plot them from your real trial CSV. |
-| `TEAM_ROSTER.json` | Your roster, roles and GitHub usernames. |
-
-**Due: Monday, 26-Oct-2026, 23:59 IST · Studio Showcase, Expo & Viva Voce: Saturday, 31-Oct-2026**
-Guide: [`/IVRAR_LinkedIn_and_GitHub_Showcase_Guide.pdf`](../../IVRAR_LinkedIn_and_GitHub_Showcase_Guide.pdf)
+| `IVRAR_Group_13_Technical_Dossier.docx` | Completed Technical Dossier (Word). |
+| `IVRAR_Group_13_Technical_Dossier.pdf` | PDF export of the dossier (turned in on MS Teams by every member). |
+| `paper/` | Research paper (PDF + IEEE LaTeX source, analysis scripts and derived data). |
+| `figures/` | Figures re-plotted from our real headset data (`telemetry/real_participants/`) plus the paper's simulation figures, labelled in the paper. |
+| `EXPO_SCENARIOS.md`, `DEMO_RUNBOOK.md` | Demonstration scenarios and runbook for the Studio Showcase. |
+| `LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md` | Verified literature with DOIs. |
+| `TEAM_ROSTER.json` | Roster, roles and GitHub usernames. |

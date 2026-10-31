@@ -105,10 +105,10 @@
   ],
   "project_showcase": {
     "platform": "LinkedIn Video",
-    "linkedin_url": "PENDING_SUBMISSION",
+    "linkedin_url": "https://www.linkedin.com/posts/amogh-gupta-4245001b7_virtualreality-metaquest-openxr-ugcPost-7520530878360645632-acu5/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADJxLlwB3McXXW2dtI7T_jSKEvwQ8kASEXw",
     "video_poster_path": "docs/figures/video_poster.png",
     "video_duration_target": "60-90 seconds",
-    "submission_status": "PENDING",
+    "submission_status": "SUBMITTED",
     "submission_instructions": "Paste your published LinkedIn post URL into 'linkedin_url' and submit a Pull Request"
   }
 }

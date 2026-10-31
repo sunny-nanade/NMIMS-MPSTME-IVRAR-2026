@@ -1,0 +1,20 @@
+# Disable delta compression for large binary game assets to keep Git fast and prevent high RAM usage
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj -delta
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 -delta
+*.ogg -delta
+*.mp4 -delta
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+
+# Poly Haven source textures are small (~15 MB total) and do not need LFS.
+# GitHub refuses new LFS objects on a public fork, so these are plain blobs.
+Assets/Textures/** !filter !diff !merge
+
+# Ritual audio: ~25 MB total, and GitHub refuses new LFS objects on a public fork.
+Assets/Audio/** !filter !diff !merge

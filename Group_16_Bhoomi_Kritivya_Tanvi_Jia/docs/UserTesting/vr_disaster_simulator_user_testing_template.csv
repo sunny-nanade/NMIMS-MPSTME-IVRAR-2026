@@ -1,0 +1,11 @@
+participant_id,participant_name,test_date,device_used,interaction_mode,scenes_tested,factory_task_completed,earthquake_task_completed,flood_task_completed,triage_task_completed,victim_selection_success,victim_grab_success,victim_carry_success,safe_zone_delivery_success,triage_tagging_success,task_completion_time_seconds,interaction_errors,navigation_errors,ease_of_use_rating,interaction_satisfaction_rating,overall_experience_rating,rating_scale,participant_feedback,tester_notes,data_source,data_confidence
+P01,,,,,,,,,,,,,,,,,,,,,,,,,
+P02,,,,,,,,,,,,,,,,,,,,,,,,,
+P03,,,,,,,,,,,,,,,,,,,,,,,,,
+P04,,,,,,,,,,,,,,,,,,,,,,,,,
+P05,,,,,,,,,,,,,,,,,,,,,,,,,
+P06,,,,,,,,,,,,,,,,,,,,,,,,,
+P07,,,,,,,,,,,,,,,,,,,,,,,,,
+P08,,,,,,,,,,,,,,,,,,,,,,,,,
+P09,,,,,,,,,,,,,,,,,,,,,,,,,
+P10,,,,,,,,,,,,,,,,,,,,,,,,,

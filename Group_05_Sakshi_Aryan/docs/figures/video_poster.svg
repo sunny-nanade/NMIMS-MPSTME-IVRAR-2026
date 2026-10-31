@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="VoiceVR project demonstration video on LinkedIn">
+  <rect width="1200" height="640" rx="28" fill="#0b1220"/>
+  <rect x="40" y="40" width="1120" height="560" rx="20" fill="#0e1628" stroke="#1d2b4a" stroke-width="2"/>
+  <text x="80" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#c9d4ea">SVKM'S NMIMS MPSTME | IVRAR (702TG0C003) | AY 2026-27</text>
+  <line x1="80" y1="120" x2="1120" y2="120" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="80" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#38b6ff">IVRAR GROUP 05 · VOICEVR · VOICE-DRIVEN ACCESSIBLE VR</text>
+  <text x="80" y="235" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">How can voice-driven spatial NLP commands in Unity VR</text>
+  <text x="80" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">reduce task completion latency and interaction failure</text>
+  <text x="80" y="321" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">rates for motor-impaired users facing controller barriers?</text>
+  <circle cx="600" cy="440" r="58" fill="#2563eb"/>
+  <polygon points="582,412 582,468 632,440" fill="#ffffff"/>
+  <text x="600" y="530" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#8794b3">Project walkthrough and user testing: click to watch on LinkedIn</text>
+  <line x1="80" y1="555" x2="1120" y2="555" stroke="#1d2b4a" stroke-width="2"/>
+  <text x="80" y="585" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#c9d4ea">Student Researchers: Sakshi Sharma (A057), Aryan Kanungo (I077)</text>
+  <text x="1120" y="585" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#38b6ff">Watch Demonstration on LinkedIn →</text>
+</svg>

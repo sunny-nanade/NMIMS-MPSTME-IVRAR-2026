@@ -81,7 +81,7 @@
       "type": "recent",
       "authors": "Rutkowski et al.",
       "year": 2024,
-      "title": "Training using a commercial immersive virtual reality system on hand–eye coordination and reaction time in students: a randomized controlled trial",
+      "title": "Training using a commercial immersive virtual reality system on hand\u2013eye coordination and reaction time in students: a randomized controlled trial",
       "venue": "Virtual Reality",
       "doi": "https://doi.org/10.1007/s10055-023-00898-6",
       "lead": "Hriday Jain (N042) & Vedika Kaki (N047)"
@@ -109,10 +109,10 @@
   ],
   "project_showcase": {
     "platform": "LinkedIn Video",
-    "linkedin_url": "PENDING_SUBMISSION",
+    "linkedin_url": "https://lnkd.in/p/d8KrGKAJ",
     "video_poster_path": "docs/figures/video_poster.png",
     "video_duration_target": "60-90 seconds",
-    "submission_status": "PENDING",
+    "submission_status": "SUBMITTED",
     "submission_instructions": "Paste your published LinkedIn post URL into 'linkedin_url' and submit a Pull Request"
   }
 }

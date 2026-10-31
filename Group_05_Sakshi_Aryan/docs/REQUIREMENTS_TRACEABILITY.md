@@ -41,7 +41,7 @@ Inspected in full: `README.md`, `RESEARCH_AND_IMPLEMENTATION_GUIDE.md`, `docs/RE
 | DEL-13 | Individual learning record + sign-off | Dossier §6 | Each | — | Entries | Filled | Manual | — | NOT TESTED |
 | DEL-14 | 4-page IEEE paper (Track A) | Dossier "Track A"; guide Sprint 4; manuscript blueprint | Shared | Blueprint with synthetic starter numbers | Real data, text | PDF | Manual | — | NOT TESTED |
 | DEL-15 | Re-plot figures from real CSV; replace starter figures | `docs/figures/README.md` | Shared | Generator does **not** read any CSV; PNGs are LFS pointers | New plotting code, real data | Regenerable plots | Manual | — | BLOCKED (no real data; LFS) |
-| DEL-16 | Tell the course faculty by 20-Oct of any wrong name/ID/role | Dossier note | Each | — | Message | Sent | Manual | — | NOT TESTED |
+| DEL-16 | Tell Dr. Nanade by 20-Oct of any wrong name/ID/role | Dossier note | Each | — | Message | Sent | Manual | — | NOT TESTED |
 
 ## 3. Technical requirements (Professor)
 

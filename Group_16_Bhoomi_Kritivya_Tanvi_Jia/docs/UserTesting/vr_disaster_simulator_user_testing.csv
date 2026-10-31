@@ -1,0 +1,11 @@
+participant_id,participant_name,test_date,device_used,interaction_mode,scenes_tested,factory_task_completed,earthquake_task_completed,flood_task_completed,triage_task_completed,victim_selection_success,victim_grab_success,victim_carry_success,safe_zone_delivery_success,triage_tagging_success,task_completion_time_seconds,interaction_errors,navigation_errors,ease_of_use_rating,interaction_satisfaction_rating,overall_experience_rating,rating_scale,participant_feedback,tester_notes,data_source,data_confidence
+P01,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P02,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P03,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P04,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P05,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P06,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P07,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P08,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P09,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)
+P10,,,,,,,,,,,,,,,,,,,,,,,,Project owner statement that 10 people tested the game; no per-participant records exist in the repository,Participant count only (no measurements)

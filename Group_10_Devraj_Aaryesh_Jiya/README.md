@@ -1,95 +1,139 @@
-# IVRAR Group 10: Low-Latency OpenCV Optical Hand-Tracking for VR BIM Reviews
-**Course:** Introduction to Virtual Reality & Augmented Reality (IVRAR - Course Code: 702COI002)  
-**Academic Term:** Academic Year 2026–2027 | Semester V  
-**Institution:** SVKM's NMIMS MPSTME, Mumbai  
+# IVRAR Group 10: Controller-Free Architectural Room Authoring in VR Using Markerless MediaPipe Hand Tracking and Gesture-Driven Interaction
 
-
-## Authorized Research Title
-> **"How can an OpenCV-based color and fiducial hand-tracking pipeline integrated with Unity VR achieve sub-15ms latency and gesture recognition accuracy for architectural 3D model reviews without dedicated 6-DoF controllers?"**
+**Course:** Immersive Virtual Reality & Augmented Reality (IVRAR, 702TG0C003) | AY 2026-27, Semester V  
+**Institution:** SVKM's NMIMS, Mukesh Patel School of Technology Management & Engineering (MPSTME), Mumbai  
+**Batch:** B2
 
 ---
 
-> [!NOTE]
-> ### The Devil's Advocate: Reality Check & Theoretical Roast
-> *"Engineering a camera-based fiducial hand-tracking pipeline to avoid buying 6-DoF controllers, forcing architects to wear brightly colored finger gloves and hold their hands stiffly within a 45-degree webcam cone like a mime trapped in an invisible box."*
+## Research Question
+> **How do first-time users experience building three-dimensional architectural structures (rooms) in VR using bare-hand gestures alone, in terms of perceived usability, workload and interaction breakdowns?**
+
+*The earlier colour-marker / fiducial title was dropped after the course faculty approved a change of topic.*
 
 ---
 
-## Executive Abstract & Problem Scope
-Collaborative review of complex architectural Building Information Modeling (BIM) assemblies within immersive virtual reality (VR) has traditionally required dedicated, battery-powered 6-DoF handheld motion controllers. While capable, physical controllers impose substantial ergonomics penalties during extended multi-hour design sessions, suffer from frequent drop damage when users manipulate virtual structural assemblies, and introduce severe capital replacement costs across multi-station enterprise architectural studios. Meanwhile, standalone headset optical hand tracking often suffers from computational latency exceeding $30\text{ ms}$, tracking jitter, and frequent finger occlusion failures.
+## Problem Statement
+Constructing and editing three-dimensional structures in immersive VR conventionally depends on handheld controllers, which give the user a physical trigger for selecting and confirming points in space. Removing the controller removes that discrete confirmation signal. A bare-hand system must instead infer intent from continuous, noisy hand-pose estimates: a pinch has no tactile click, depth has to be recovered from a two-dimensional camera image or inferred from headset tracking, and the filtering that suppresses jitter introduces perceptible lag.
 
-This project implements an ultra-low-latency **OpenCV-Based Optical Color and Fiducial Hand-Tracking Pipeline** integrated with Unity 2022.3 LTS over an asynchronous binary UDP socket bridge. By pairing a high-speed monocular camera feed with color-segmented fingertip markers and Kalman-filtered contour centroids, the pipeline achieves an end-to-end motion-to-interaction latency of $12.1 \pm 0.8\text{ ms}$, strictly beneath the critical sub-15ms human motor performance threshold. In a controlled empirical study ($N = 50$ architectural and engineering students), bare-hand gesture manipulation (Pinch, Fist Grab, Bilateral Rotate, Palm Freeze) yielded a $94.6 \pm 2.0\%$ gesture recognition accuracy, matching dedicated 6-DoF physical controllers ($96.4\%$). Mean BIM model review task completion time dropped from $265.4\text{ s}$ to $218.6\text{ s}$ ($p < 0.001$), while NASA-TLX physical fatigue decreased by $42.9\%$. Technoeconomic modeling indicates that replacing active controllers with passive optical tracking eliminates 2100.0 hours of annual hardware upkeep, prevents controller breakage losses, and achieves a dimensionless cost parity ratio of $\kappa = 0.20$ with a capital investment payback horizon of 15.0 operating months.
+Prior work has shown hand-based sketching in VR and hand tracking as a controller alternative. Evidence is still limited on whether first-time users can complete an open-ended architectural construction workflow (defining a floor footprint, raising walls, editing and colouring the result) using only a small set of hand gestures, and on where such interaction breaks down in practice. This project addresses that gap by building a controller-free room-authoring system for VR and evaluating it with first-time users.
+
+### Sub-questions
+- **RQ1 (Usability):** What System Usability Scale (SUS) score do novice users give the system?
+- **RQ2 (Workload):** What perceived workload (NASA-TLX) does bare-hand construction impose?
+- **RQ3 (Breakdowns):** Which interaction failures (missed or double-fired pinches, tracking loss, lighting and frame-rate effects) occur most often, and how do users describe them?
+- **RQ4 (Feasibility):** What pipeline latency and frame rate does the webcam hand-tracking route sustain, and do the main outcomes hold on both tracking sources (webcam and Meta Quest 2 built-in hand tracking)?
+
+### Hypotheses (exploratory)
+- **H1:** Novice users rate usability above the commonly cited SUS benchmark of 68.
+- **H2:** Perceived workload (raw NASA-TLX) is at or below the scale midpoint.
+- **H3:** Users complete a structure of their own design without assistance; the completion rate is reported as [n]/[N].
+
+> **Status after the user sessions:** SUS and NASA-TLX were not collected, so **RQ1, RQ2, H1 and H2 were not tested**. The 10 recorded sessions support **RQ3 and H3** (completion and breakdowns, counted from the videos). RQ4 rests on development-time HUD observations only (see Results).
+
+### Why it is harder than it looks
+- **2D to 3D.** A webcam gives a flat image, but placing a wall corner needs a position in 3D room space, and the camera frame has to be aligned with the headset's frame.
+- **A pinch has no click.** Thumb-index distance is noisy, so one pinch can fire twice or not at all. We normalise by palm size, use hysteresis (enter 0.35, exit 0.50) and a 3-frame debounce.
+- **Smoothing versus lag.** Raw landmarks jitter; a One Euro filter removes it, but with wrong parameters the hand felt about half a second late. Our first settings did exactly that and were retuned.
+- **Latency and frame rate.** Early builds showed 60-100 ms on the HUD, and dim yellow room light dropped the camera to about 15 fps.
+- **Differences between people.** Pinch detection that works for one user can fail for another.
+
+### What is and is not claimed
+Hand tracking, controller-free VR and MediaPipe are established, and hand-based sketching in VR has been studied before. We do **not** claim to be first. The contribution is a complete bare-hand footprint-to-walls-to-paint workflow built from open components, evaluated with first-time users, with an honest account of where it breaks down.
+
+### Contributions
+1. A controller-free architectural room-authoring workflow for VR that runs on a standard webcam as well as on Meta Quest 2 hand tracking.
+2. A user-centred account of its usability, workload and failure modes with first-time users.
+3. Design lessons on thresholds, filtering and latency for controller-free selection.
 
 ---
 
-## Verified Foundational Literature (6 CrossRef DOIs)
+## What Was Built
+```
+Webcam -> Python MediaPipe Hand Landmarker -> JSON over UDP (127.0.0.1:5005) -> Unity WebcamHandProvider
+                                                                                      |
+Meta Quest 2 hand tracking (Meta XR SDK) -> MetaXRHandProvider ------> HandProviderSelector (F1 switches source)
+                                                                                      |
+                                       One Euro HandFilter -> GestureRecognizer -> RoomBuilderController -> TrialLogger (CSV)
+```
+| Module | Location | Role |
+|---|---|---|
+| MediaPipe sender | `ARVR_Project/Group10Gestures~/tools/mediapipe_sender.py` | Webcam capture, 21 landmarks per hand, timestamped UDP packets |
+| Hand providers | `Assets/Group10Gestures/Providers/` | `WebcamHandProvider`, `MetaXRHandProvider`, `HandProviderSelector` |
+| Filtering | `Assets/Group10Gestures/Filtering/` | One Euro filter on every joint |
+| Gesture recognition | `Assets/Group10Gestures/Recognition/` | Geometric classifier: Pinch, Point, Fist, Open palm, Peace, Thumbs-up; two-hand open-palm mode switch |
+| Room builder | `Assets/Group10Gestures/Interaction/` | Pinch to place corners on a floor grid, close the room, raise walls, paint; Edit / Color / View modes; undo and delete |
+| XR guide panel | `Interaction/XRGuidePanel.cs` | In-headset instruction panel |
+| Trial logger | `Interaction/TrialLogger.cs` | One CSV row per trial |
 
-| # | Citation Key | Full Canonical Title | Journal / Conference | Year | Verified DOI |
+**Controls, left hand:** fist = undo, peace = delete room, thumbs-up = close room, point (hold 1 s) = next mode.  
+**Controls, right hand:** pinch thumb + index = place / confirm.
+
+**Stack:** Unity 6000.5.8f1, URP 17.5.0, Meta XR SDK 207.0.1, OpenXR 1.17.1, XR Management 4.7.0, Input System 1.20.0, Python with OpenCV and MediaPipe. Targets: Meta Quest 2 (standalone APK, and PC-VR via Quest Link).
+
+---
+
+## Build and Release
+| Item | Value |
+|---|---|
+| Release | [`group-10-v1.0`](https://github.com/Aaryupat10/NMIMS-MPSTME-IVRAR-2026/releases/tag/group-10-v1.0) |
+| Quest 2 build | `Group10_HandRoomBuilder_v1.0.apk` (standalone, Meta XR hand tracking; install with Meta Quest Developer Hub) |
+| Final code commit | `03c7d14b492c8c971ec65694eda705cf333b0931` |
+| Source | `ARVR_Project/` (Unity 6000.5.8f1). No build is committed to Git history; builds ship only through the Release. |
+
+The webcam route needs the PC, the Python sender and Unity or a PC build; it is not part of the Quest APK.
+
+---
+
+## Evaluation Protocol
+### As carried out (27 Oct 2026, AR/VR Lab)
+- **Participants:** 10 first-time users.
+- **Build:** the standalone Quest 2 build (`Group10_HandRoomBuilder_v1.0.apk`, Meta XR hand tracking).
+- **Task:** open-ended. Each participant built a structure of their own design in VR with their hands; there was no fixed target size.
+- **Evidence kept:** video recordings of the 10 sessions.
+- **Not collected:** the trial logger (`TrialData/g10_trials.csv`) starts only from the F2 key, and there is no keyboard in the headset build, so no per-trial CSV exists. SUS and NASA-TLX were not collected during the sessions.
+- **What the videos can support:** how many participants completed a structure unaided (H3) and which interaction breakdowns occurred (RQ3), reviewed and counted by the group.
+
+### Planned protocol (not fully executed)
+- SUS and NASA-TLX after each session; `g10_trials.csv` with time, completion, corners placed, undo count, rooms deleted, tracking-lost time, fps and webcam latency; short comments; consent forms (confirm they are held).
+- Analysis: descriptive statistics (mean, SD, median, IQR); SUS and TLX against the H1 and H2 benchmarks (one-sample Wilcoxon signed-rank); completion counts; themes from comments. With N of about 10 all inference would be exploratory.
+- `area_error_pct` and `height_error_pct` columns do not apply to the open-ended task.
+- Latency (Python timestamp to Unity receive, same PC clock) is webcam pipeline latency only, not motion-to-photon.
+
+## Results
+> **To be filled from the real data only.** The earlier figures (12.1 ms latency, 94.6 percent accuracy, 265.4 s vs 218.6 s, N = 50) belonged to the dropped colour-marker topic and came from generated sample data. They are not results of this project and must not be quoted.
+
+| Measure | Value |
+|---|---|
+| Participants (N) | 10 first-time users (27 Oct 2026, AR/VR Lab) |
+| Completed a structure unaided | [n] / 10, to be counted from the session videos |
+| SUS (mean, SD, median) | Not collected |
+| NASA-TLX raw (mean, SD) | Not collected |
+| Webcam pipeline latency and fps (logged) | Not logged. Development observations only (HUD, not a CSV): 60-100 ms and about 15 fps in dim light before fixes, about 30 fps after the lighting fix |
+| Most common breakdowns | [fill from the video review] |
+
+## Known Limitations
+- Webcam tracking depends on lighting and camera frame rate.
+- Pinch reliability differed between users during early testing; the cause is still under investigation.
+- Latency reported is pipeline latency only.
+- Small N and student participants limit generalisation.
+- The 10 user sessions were video-recorded only. No SUS, NASA-TLX or logged trial data exist, so usability and workload claims cannot be made.
+- The trial logger needs a keyboard (F2) and did not run in the Quest standalone build.
+- Left/right hand labels from the sender need re-checking after the final script edits.
+
+---
+
+## Literature
+See `docs/LITERATURE_REVIEW_AND_FOUNDATIONAL_PAPERS.md`. **Each DOI and author list must be re-checked on the publisher page before submission.** Closest prior work to cite and distinguish: hand-tracking sketching in VR for architectural design (TUM master's thesis) and Sketching with Hands (KAIST, UIST 2016).
+
+## Team
+| Roll No | Name | Role | GitHub | Agreed effort | Branch |
 |---|---|---|---|---|---|
-| 1 | `Wang2009` | Real-time hand-tracking with a color glove | ACM TOG (SIGGRAPH) | 2009 | [10.1145/1531326.1531369](https://doi.org/10.1145/1531326.1531369) |
-| 2 | `Rautaray2015` | Vision based hand gesture recognition for human computer interaction: a survey | Artificial Intelligence Review | 2015 | [10.1007/s10462-012-9356-9](https://doi.org/10.1007/s10462-012-9356-9) |
-| 3 | `Steed2025` | Comparison of hand tracking-based and controller-based interaction in a consumer virtual reality game | Virtual Reality | 2025 | [10.1007/s10055-025-01190-5](https://doi.org/10.1007/s10055-025-01190-5) |
-| 4 | `Pardo2026` | Analyzing the effectiveness and satisfaction of hand tracking vs. controllers among VR-experienced users | Virtual Reality | 2026 | [10.1007/s10055-026-01333-2](https://doi.org/10.1007/s10055-026-01333-2) |
-| 5 | `Coox2025` | Virtual reality rehabilitation using hand tracking: interaction system design and usability tests | Virtual Reality | 2025 | [10.1007/s10055-025-01253-7](https://doi.org/10.1007/s10055-025-01253-7) |
-| 6 | `Fidalgo2025` | Exploring AR hand augmentations as error feedback mechanisms for enhancing gesture-based tutorials | Frontiers in Virtual Reality | 2025 | [10.3389/frvir.2025.1574965](https://doi.org/10.3389/frvir.2025.1574965) |
+| R014 | Devraj Ghumare | Computer Vision Pipeline Lead | `devraj2712` | 33 % | `feat/r014-computer-vision-pipe` |
+| R045 | Aaryesh Pathare | XR Systems Architect | `Aaryupat10` | 34 % | `feat/r045-xr-systems-architect` (final work merged to `main` via `feat/r045-final-submission`) |
+| R054 | Jiya Saxena | Gesture Recognition Specialist | `JiyaSaxena` | 33 % | `feat/r054-gesture-recognition-` |
 
----
+Devraj's webcam pipeline was developed and tested on his own laptop; the files reached Git through R045's commits.
 
-## Student Engineering Team & Task Matrix
-
-| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
-| :--- | :--- | :--- | :--- | :--- |
-| `R014` | **Devraj Ghumare** | B.Tech / MBA (Tech) | Computer Vision Pipeline Lead | `feat/r014-computer-vision-pipe` |
-| `R045` | **Aaryesh Pathare** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/r045-xr-systems-architect` |
-| `R054` | **Jiya Saxena** | B.Tech / MBA (Tech) | Gesture Recognition Specialist | `feat/r054-gesture-recognition-` |
-
----
-
-
-### Student Engineering Commendation & Acknowledgments
-SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to Devraj Ghumare (R014), Aaryesh Pathare (R045), Jiya Saxena (R054) for their disciplined commitment, late-night debugging, and technical craftsmanship throughout Semester V. Your rigorous engineering inquiry and dedication to immersive XR environments exemplify the highest standards of undergraduate technical research.
-
-> *"Scientists discover the world that exists; engineers create the world that never was."*  
-> — **Theodore von Kármán**
-
-> *"There is no substitute for hard work. Genius is one percent inspiration and ninety-nine percent perspiration."*  
-> — **Thomas A. Edison**
-
----
-
-## Core System Architecture & Egress Telemetry
-
-The platform comprises four interconnected software modules:
-1. **OpenCV Video Ingestion & Segmentation Core (`R014 - Devraj Ghumare`):** 120 FPS USB camera stream ingestion, multi-channel HSV thresholding, subpixel contour extraction, and spatial Kalman filtering.
-2. **Sub-15ms UDP Pose Bridge (`Assets/Scripts/ColorMarkerHandTracker.cs`, `R045 - Aaryesh Pathare`):** Non-blocking binary struct serialization and low-jitter IPC connecting Python vision output to Unity VR camera space.
-3. **Architectural Gesture State Machine (`Assets/Scripts/ArchitecturalModelGestureController.cs`, `R054 - Jiya Saxena`):** Bare-hand gesture classification (Pinch, Fist Grab, Two-Hand Rotate, Palm Lock) driving 3D BIM model translation, scaling, and explosion.
-4. **Technoeconomic Hardware Parity Model (`telemetry/hand_tracking_ml_eval.py`):** Dimensionless cost parity model quantifying controller charging labor saved, breakage elimination, and studio scaling capacity.
-
-### Publication-Grade Figures (300 DPI)
-- `docs/figures/figure1_system_architecture.png`: Multi-tier system architecture layout.
-- `docs/figures/figure2_kinematic_telemetry.png`: Pipeline latency breakdown across stages (12.1 ms total) and gesture classification confusion matrix.
-- `docs/figures/figure3_comparative_performance.png`: Comparative trial results (task duration, accuracy, NASA-TLX workload, SUS usability).
-
----
-
----
-
-## Project Demonstration & Academic Showcase (LinkedIn)
-
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
-
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
-* **Student Presenters:** **Devraj Ghumare** (R014), **Aaryesh Pathare** (R045), **Jiya Saxena** (R054)
-* **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
-* **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.
-
----
-
-## Empirical Benchmark & Technoeconomic Highlights
-- **End-to-End Tracking Latency:** Measured at $12.1 \pm 0.8\text{ ms}$, strictly beneath the sub-15ms performance threshold.
-- **Gesture Classification Accuracy:** Reached $94.6 \pm 2.0\%$ across all 5 bare-hand interaction gestures.
-- **Architectural Review Duration:** Task completion time compressed from $265.4\text{ s}$ (physical controllers) to $218.6\text{ s}$ ($p < 0.001$).
-- **Ergonomic Fatigue Relief:** NASA-TLX physical demand dropped by 24 points, while System Usability Scale reached $87.6$ (Grade A+).
-- **Maintenance Labor Reclaimed:** 2100.0 hours of controller charging and pairing troubleshooting eliminated annually.
-- **Hardware Breakages Avoided:** Prevents 6.0 controller drop fractures per year across design studio workstations.
-- **Dimensionless Cost Parity Ratio:** $\kappa = 0.20$, resulting in a capital payback horizon of 15.0 operating months.
+## Project Demonstration (LinkedIn)
+Video: <https://lnkd.in/p/dtxyJCs7> (3 min 26 s, all three members appear). The URL is also in `docs/TEAM_ROSTER.json` (`linkedin_url`) and dossier Section 5.

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939e07d58bc74256b6cb58d86fe35a56, type: 3}
+  m_Name: OculusProjectSetupSettings
+  m_EditorClassIdentifier: Oculus.VR.Editor::OVRProjectSetupSettings
+  boolProperties:
+    keys:
+    - Meta.XR.SDK.31736735fee7ab217bea57cc359d9f23.Ignored.Android
+    - Meta.XR.SDK.edfb6eef6866b340551639f2f2c3213d.Ignored.Android
+    - Meta.XR.SDK.31736735fee7ab217bea57cc359d9f23.Ignored.Standalone
+    - Meta.XR.SDK.edfb6eef6866b340551639f2f2c3213d.Ignored.Standalone
+    - Meta.XR.SDK.31736735fee7ab217bea57cc359d9f23.Ignored.WebGL
+    - Meta.XR.SDK.edfb6eef6866b340551639f2f2c3213d.Ignored.WebGL
+    - Meta.XR.SDK.31736735fee7ab217bea57cc359d9f23.Ignored.Metro
+    - Meta.XR.SDK.edfb6eef6866b340551639f2f2c3213d.Ignored.Metro
+    - Meta.XR.SDK.db3015e9c6512f876f805e2f980c23f5.Ignored.WebGL
+    - Meta.XR.SDK.db3015e9c6512f876f805e2f980c23f5.Ignored.Metro
+    - Meta.XR.SDK.e958b7e7205af9907dee9c9d8e57b89a.Ignored.WebGL
+    - Meta.XR.SDK.36d4c38c1a9e8a369725c8d57a25daf8.Ignored.WebGL
+    - Meta.XR.SDK.e958b7e7205af9907dee9c9d8e57b89a.Ignored.Metro
+    - Meta.XR.SDK.36d4c38c1a9e8a369725c8d57a25daf8.Ignored.Metro
+    values: 0101010101010101010101010101y
+  intProperties:
+    keys: []
+    values: 

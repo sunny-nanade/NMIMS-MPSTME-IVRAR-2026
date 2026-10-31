@@ -76,9 +76,9 @@ The platform comprises four interconnected software modules:
 
 ## Project Demonstration & Academic Showcase (LinkedIn)
 
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
+[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://lnkd.in/p/d5z7zrWk)
 
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
+* **Project Demonstration:** [Watch Protocol: Deep Sleep Spatial HRTF Showcase on LinkedIn](https://lnkd.in/p/d5z7zrWk) *(Click thumbnail above to open LinkedIn post)*
 * **Student Presenters:** **Mohammed Saquib Rakhangi** (B077), **Shreyashi Srivastava** (B112), **Aditya Verma** (B118)
 * **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
 * **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.

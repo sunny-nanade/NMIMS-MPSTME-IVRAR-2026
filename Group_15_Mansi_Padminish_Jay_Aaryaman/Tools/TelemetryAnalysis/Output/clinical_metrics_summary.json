@@ -1,0 +1,21 @@
+{
+  "total_duration_s": 0.0,
+  "total_samples": 3,
+  "effective_sample_rate_hz": 30.0,
+  "max_height_m": 104.17,
+  "peak_tremor": 0.0,
+  "mean_tremor": 0.0,
+  "mean_gaze_avoidance": 0.0,
+  "total_tiers_reached": 1,
+  "tiers": {
+    "1": {
+      "samples": 3,
+      "max_height_m": 104.17,
+      "mean_tremor": 0.0,
+      "peak_tremor": 0.0,
+      "mean_gaze_avoidance": 0.0,
+      "downward_gaze_pct": 0.0,
+      "postural_freeze_pct": 0.0
+    }
+  }
+}

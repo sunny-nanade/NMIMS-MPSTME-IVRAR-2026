@@ -17,7 +17,7 @@ A systematic literature search was executed across CrossRef, IEEE Xplore, the AC
 
 | Citation Key | Canonical Title | Primary Focus & Domain | Mathematical / Algorithmic Core | Direct Integration in Project | Verified DOI |
 |---|---|---|---|---|---|
-| `Pfeuffer2019` | Behavioural Biometrics in VR: Identifying People from How They Look, Point and Walk | Multi-modal behavioral biometrics in VR environments | Feature extraction over temporal gaze, pointing, and head trajectory vectors | Core feature design in `ContinuousBiometricAuthManager.cs` | [10.1145/3290605.3300340](https://doi.org/10.1145/3290605.3300340) |
+| `Pfeuffer2019` | Behavioural Biometrics in VR: Identifying People from Body Motion and Relations in Virtual Reality | Multi-modal behavioral biometrics in VR environments | Feature extraction over temporal gaze, pointing, and head trajectory vectors | Core feature design in `ContinuousBiometricAuthManager.cs` | [10.1145/3290605.3300340](https://doi.org/10.1145/3290605.3300340) |
 | `Miller2020` | Personal identifiability of user tracking data during observation of 360-degree VR video | Machine learning re-identification from head and hand tracking | Random forest classification over rotational/translational velocity profiles | Baseline uniqueness bounds of 6-DoF tracking data | [10.1038/s41598-020-74486-y](https://doi.org/10.1038/s41598-020-74486-y) |
 | `Miller2022` | Temporal Effects in Motion Behavior for Virtual Reality (VR) Biometrics | Longitudinal stability of VR motion biometrics over time | Temporal drift modeling in biometric signatures: $\mathbf{f}(t) = \mathbf{f}_0 + \boldsymbol{\epsilon}(t)$ | Adaptive template updating mechanism to prevent false rejects | [10.1109/VR51125.2022.00076](https://doi.org/10.1109/VR51125.2022.00076) |
 | `Chen2024` | SSPRA: A Robust Approach to Continuous Authentication Amidst Real-World Adversarial Challenges | Continuous behavioral authentication and spoofing defense | Sequential probability ratio testing and adversarial perturbation bounds | Impostor detection state machine and lockout thresholding | [10.1109/TBIOM.2024.3369590](https://doi.org/10.1109/TBIOM.2024.3369590) |
@@ -50,7 +50,7 @@ A systematic literature search was executed across CrossRef, IEEE Xplore, the AC
 
 ### 3.6 Gyreyiri & Shukla (2025) - Head Movement Biometrics for Continuous Authentication in VR
 - **Core Contribution:** Established state-of-the-art benchmark methodologies for extracting continuous head rotation and angular acceleration signatures in commercial VR headsets, validating sub-5% EER over sliding windows under 3 seconds.
-- **Project Role:** Validates the feature pipeline and parameter calibration used in `ContinuousBiometricAuthManager.cs` to achieve an empirical Equal Error Rate of $4.12\%$.
+- **Project Role:** Validates the feature pipeline and parameter calibration used in `ContinuousBiometricAuthManager.cs` (our measured EER on the headset was 17.2–30.3 %; see docs/paper).
 
 ---
 

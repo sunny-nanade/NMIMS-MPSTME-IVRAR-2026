@@ -1,98 +1,105 @@
-# IVRAR Group 16: AI-Driven Immersive VR Simulation for Mass-Casualty Triage Under Dynamic Industrial Hazard Conditions
-**Course:** Introduction to Virtual Reality & Augmented Reality (IVRAR - Course Code: 702COI002)  
-**Academic Term:** Academic Year 2026–2027 | Semester V  
-**Institution:** SVKM's NMIMS MPSTME, Mumbai  
+# Disaster Response VR — Three-Stage Rescue Game
 
+A short VR disaster-response game built in Unity 6 (6000.3.21f1, URP) for Meta Quest 3/3S, tested in Meta XR Simulator.
+Pick a stage from the main menu, read the briefing, complete 3–6 objectives, get a score out of 100 and 1–3 stars, and unlock the next stage.
 
-## Authorized Research Title
-> **"How can an AI-driven VR mass-casualty triage simulation improve START protocol categorization accuracy and reduce assessment latency for emergency medical trainees under dynamic industrial hazard conditions?"**
+| # | Stage | Scene | Theme |
+|---|---|---|---|
+| 1 | Factory Rescue | `FactoryRescue` | Cut power, shut the gas valve, extinguish fires, clear the collapse, rescue 3 workers |
+| 2 | Earthquake Rescue | `EarthquakeRescue` | Check zones, clear debris, find survivors and guide them out of a damaged building |
+| 3 | Flood Evacuation | `FloodEvacuation` | Rising water: collect supplies, reach high ground, escort survivors to the evacuation point |
 
----
+> **Status honesty**: see [`Docs/AUDIT.md`](Docs/AUDIT.md). Everything here is *implemented* and *auto-tested* (EditMode + PlayMode). The PlayMode
+> playthroughs drive real XR Interaction Toolkit select events, not a headset; manual simulator use was only partial. **Nothing is verified on a
+> physical headset** — comfort and performance on a real Quest are unknown.
+> This is a game, not a safety-certified training tool.
 
-> [!NOTE]
-> ### The Devil's Advocate: Reality Check & Theoretical Roast
-> *"Simulating chemical factory explosions in VR to teach the START triage protocol, where emergency trainees will accurately triage twelve virtual mannequins in ten minutes, but would faint if an actual papercut occurred in the lab."*
+## Controls (same in every stage)
+| Action | Quest controllers | Meta XR Simulator (keyboard profile) |
+|---|---|---|
+| Point / press UI | ray + **trigger** | aim with arrows, **T** |
+| Select / hold to assess a survivor, then lift and carry | near or ray + **grip** held ~1 s; keep holding to carry; release in the green safe zone | T / U held |
+| Move | teleport and snap turn (thumbsticks) | W A S D / arrows |
+| Pause | left menu button | Esc |
 
----
+**Controller-free (Quest hand tracking):** point and **pinch** to press UI or hold a casualty; keep pinching until they lift, then you may relax your hand (they stay held); open the hand and **pinch again** to put them down (inside the green zone = delivered). Left-hand pinch-drag away from any object walks/turns. Details, limits and what is still untested on a headset: [`Docs/HUMANS_AND_HANDS_UPGRADE.md`](Docs/HUMANS_AND_HANDS_UPGRADE.md).
 
-## Executive Abstract & Problem Scope
-Mass-casualty incidents (MCIs) in industrial chemical facilities present severe sensory overload, toxic smoke occlusion, and extreme time pressure. Prehospital triage accuracy under the Simple Triage and Rapid Treatment (START) algorithm is crucial for prioritizing critical casualties and minimizing preventable mortality. However, conventional training modalities—such as tabletop didactics and live-actor disaster drills—suffer from prohibitive staging costs, low training frequency, subjective evaluation, and an inability to safely replicate toxic chemical leaks, structural collapses, or spreading fires.
+Help is also in the main menu (Controls). No hazard is an instant fail, and a waypoint guides you when you are lost.
+Stage 1 specifics: select the breaker lever to cut power, hold the gas valve wheel to close it, grab the extinguisher and squeeze the trigger to put out fires, carry debris out of the marked gap.
 
-This project delivers an **AI-Driven Immersive Virtual Reality Mass-Casualty Triage Simulation System** engineered in Unity 2022.3 LTS. The platform populates a photorealistic chemical refinery disaster zone with 50 autonomous casualties exhibiting realistic hemodynamics, respiratory patterns, open trauma, and psychological shock. A non-invasive telemetry pipeline continuously tracks trainee inspection latencies, physiological gate compliance, spatial traversal efficiency, and triage tag assignments. In a controlled empirical evaluation ($N = 50$ emergency medical trainees across didactic baseline vs. immersive VR arms), the system improved START categorization accuracy from $73.6\%$ to $92.4\%$ ($p < 0.001$, Cohen's $d = 2.45$) while reducing mean assessment latency per casualty from $48.2\text{ s}$ to $26.4\text{ s}$ (a $45.2\%$ reduction, $p < 0.001$). Most crucially, critical undertriage of Immediate Red casualties dropped from $18.5\%$ to $3.2\%$. Technoeconomic modeling indicates that the platform reclaims 2,010.0 labor hours annually for a 150-trainee regional EMS network, operates at a dimensionless cost parity ratio of $\kappa = 0.16$ relative to live drills, and amortizes deployment capital expenditure within 14.29 operating months.
+## Requirements
+- Unity **6000.3.21f1** (Unity 6.3 LTS) with **Android Build Support** (OpenJDK, SDK & NDK) for Quest builds.
+- Packages (already in `Packages/manifest.json`): URP 17.3, XR Hands 1.5.0, XR Interaction Toolkit 3.6.1, OpenXR 1.18, Unity OpenXR: Meta 2.6.1, Input System 1.20, AI Navigation 2.0, TextMeshPro.
+- **Git LFS** (the repo uses LFS for textures, models, audio). Run `git lfs install && git lfs pull` after cloning.
+- Optional for desktop testing: **Meta XR Simulator** (macOS app) — no Meta XR SDK package is required.
 
----
+## Quick start (editor + Meta XR Simulator)
+1. Open the project in Unity 6000.3.21f1. Let packages resolve and scripts compile (console should show 0 errors).
+2. (Re)generate scenes if needed: **Rescue Sim ▸ Build ▸ Everything**. This builds `MainMenu`, `FactoryRescue`, `EarthquakeRescue`, `FloodEvacuation`, prefabs, materials, the NavMesh and Build Settings.
+3. Install/enable Meta XR Simulator and turn on "XR Simulator runtime enabled" (toggle top-left of the simulator app).
+4. Open `Assets/_Project/Scenes/MainMenu.unity` (or any stage scene) and press **Play**. The simulator window launches automatically.
+5. Click once inside the simulator's headset view to give it keyboard focus.
 
-## Verified Foundational Literature (6 CrossRef DOIs)
+### Meta XR Simulator keyboard controls (Keyboard and mouse profile, "same input for both sides")
+| Action | Key |
+|---|---|
+| Move | W A S D (R/F up/down) |
+| Look | Arrow keys |
+| Tilt head | Q / E |
+| Index trigger | T |
+| Grip | U |
+| A/X, B/Y | B / N |
+| Thumbstick press | I |
+| Pause (editor shortcut) | Esc |
 
-| # | Citation Key | Full Canonical Title | Journal / Conference | Year | Verified DOI |
-|---|---|---|---|---|---|
-| 1 | `Benson1996` | Disaster Triage: START, then SAVE-A New Method of Dynamic Triage for Victims of a Catastrophic Earthquake | Prehospital and Disaster Medicine | 1996 | [10.1017/S1049023X0004276X](https://doi.org/10.1017/S1049023X0004276X) |
-| 2 | `Wilkerson2008` | Using Virtual Reality Simulation for Mass-Casualty Incident Triage Training | Academic Emergency Medicine | 2008 | [10.1111/j.1553-2712.2008.00191.x](https://doi.org/10.1111/j.1553-2712.2008.00191.x) |
-| 3 | `Baxter2026` | Mixed reality feature priorities for mass casualty incident triage simulation: a descriptive pre-post study | Virtual Reality | 2026 | [10.1007/s10055-026-01341-2](https://doi.org/10.1007/s10055-026-01341-2) |
-| 4 | `Eide2025` | Immersive Virtual Reality Simulation for Tactical Mass-Casualty Triage: An Observational Study of Usability, Realism, and Decision-Making in RAMP Training | Disaster Medicine and Public Health Preparedness | 2025 | [10.1017/dmp.2025.10289](https://doi.org/10.1017/dmp.2025.10289) |
-| 5 | `Chumvanichaya2025` | A comparison of SIEVE, SORT, and START triage training effectiveness between immersive interactive 3D learning materials using virtual reality (VR-SSST) and traditional methods in mass casualty incidents | International Journal of Emergency Medicine | 2025 | [10.1186/s12245-025-00850-2](https://doi.org/10.1186/s12245-025-00850-2) |
-| 6 | `Chen2025` | Bridging Simulation and Reality: Augmented Virtuality for Mass Casualty Triage Training - From Landscape Analysis to Empirical Insights | ACM CHI | 2025 | [10.1145/3706598.3713794](https://doi.org/10.1145/3706598.3713794) |
+Tips: aim the ray at a button by turning/pitching with the arrows (≈70°/s) or stepping back with S; clicking on a controller model in the simulator view selects that controller for manual posing, so click an empty area instead.
 
----
+## Campaign
+- **Main menu**: three stage cards (locked/unlocked, best score and stars), Controls, Settings (volume, comfort: snap/smooth turn, vignette), overall progress, and a **Demo: unlock all** option for assessors. Progress persists in PlayerPrefs.
+- **Each stage**: briefing panel → *Begin Mission* → consistent HUD (timer, objective checklist) → results screen with score /100, 1–3 stars and **Next / Retry / Menu**. Finishing stage 3 shows a campaign-complete screen.
+- **Stars** (`StageScoring`): ≥85 → 3, ≥60 → 2, otherwise 1; 0 if not completed. Completing stage N unlocks stage N+1.
 
-## Student Engineering Team & Task Matrix
+## START triage study (IVRAR capstone)
+A stand-alone scene, **Triage Study** on the main menu (`Assets/_Project/Scenes/TriageSimulation.unity`), is a ten-casualty mass-casualty exercise in a burning factory yard. It is separate from the three campaign stages.
 
-| Roll No | Student Name | Degree Programme | Technical Role | Assigned Git Branch |
-| :--- | :--- | :--- | :--- | :--- |
-| `I004` | **Bhoomi Bhandari** | B.Tech / MBA (Tech) | Triage Clinical Protocol Lead | `feat/i004-triage-clinical-prot` |
-| `I037` | **Kritivya Mishra** | B.Tech / MBA (Tech) | XR Systems Architect | `feat/i037-xr-systems-architect` |
-| `I044` | **Tanvi Paithankar** | B.Tech / MBA (Tech) | Spatial Telemetry & Confusion Matrix Specialist | `feat/i044-spatial-telemetry-co` |
-| `I069` | **Jia Jadhav** | B.Tech / MBA (Tech) | Human Factors & Usability Engineer | `feat/i069-human-factors-usabil` |
+- **Flow:** Begin Exercise -> approach a casualty, point and press the trigger to select it -> run the six START checks (walking, breathing, airway, respiratory rate, perfusion, mental status) -> tag Green / Yellow / Red / Black (final) -> results panel -> Restart or Main Menu.
+- **Protocol:** START adult with capillary refill > 2 s (default) or radial pulse, chosen explicitly and written to every CSV row. A training exercise, **not clinically validated**. Details and sources: `Docs/TECHNICAL_IMPLEMENTATION_REPORT.md`.
+- **Editor keys:** Enter begin, Tab next casualty, 1-6 checks, 7/8/9/0 (or F1-F4) tag Green/Yellow/Red/Black, F5 restart.
+- **Telemetry:** three CSV files per session in `persistentDataPath/TriageTelemetry/` (`*_records.csv` raw, `*_summary.csv` derived, `*_confusion.csv`). Participant IDs are anonymous (`P01`...), each row carries a provenance label (`SoftwareTest`, `Pilot`, `HumanParticipant`). Columns and equations: technical report. Blank templates and the human-study plan: `Docs/STUDY_PROTOCOL.md`, `Docs/templates/`.
+- **Status:** editor-tested only. No physical headset testing has been done. No human-study data exists.
 
----
+## Project layout
+```
+Assets/_Project/
+  Scripts/Runtime/{Core,Hazards,Interaction,Survivors,UI,Audio,Player,World,Triage}   # gameplay (assembly RescueSim.Runtime)
+  Scripts/Editor/                                                       # scene/prefab builder, XR+Android setup, Android build
+  Data/            one MissionDefinition ScriptableObject per stage
+  Scenes/          MainMenu, FactoryRescue, EarthquakeRescue, FloodEvacuation, TriageSimulation (+ baked NavMeshes)
+  Prefabs/ Materials/ Shaders/                                           # generated + authored
+  Tests/{EditMode,PlayMode}                                              # NUnit/Unity Test Framework suites
+Assets/_Project/Art/Characters/Rocketbox/   8 Microsoft Rocketbox avatars (MIT) used for casualties
+Assets/TirgamesAssets/   original factory pack (materials upgraded to URP Lit)
+Docs/                    TROUBLESHOOTING.md, CHANGES.md, AUDIT.md
+```
+Architecture: a data-driven shared framework. Each stage is a `MissionDefinition` asset (objectives, time, score weights) listed in `StageCatalog`; `MissionController` runs any of them; `CampaignProgress` (backed by `ICampaignStore`: PlayerPrefs, or in-memory for tests) owns unlocks, scores and stars. Stage scenes are generated by `SceneBuilder` (partials `.Campaign/.Earthquake/.Flood`) with one rig, one EventSystem and one mission per scene. No singletons — the scene builder wires references through serialized fields. `MissionController` owns state/objectives/score;
+`Hazard` subclasses (`FireHazard`, `GasLeakHazard`, `ElectricalHazard`) raise `Neutralized`; `PassageMonitor` polls debris; `Survivor` is a small state machine;
+`ScoreCalculator`/`ObjectiveTracker` are pure C# (unit-tested). VFX and audio are procedural (no extra audio/texture assets were added).
 
+## Tests
+Menu **Rescue Sim ▸ Tests** (or Window ▸ General ▸ Test Runner); results are written to `Builds/TestSummary.txt`.
+- **Latest run (2026-10-29, after the human-model / hand-tracking upgrade): EditMode 121/121, PlayMode 57/57.** The breakdown below is the earlier baseline.
+- **EditMode — 109 passing (earlier baseline)**: scoring, objectives, vitals, settings, mission data, campaign progress/unlocks/stars, stage catalog, Android config, plus 52 triage cases (START branches and boundaries, session, metrics, CSV, export, scenario).
+- **PlayMode — 31 passing (earlier baseline)** (23 campaign + 8 triage scene tests): all three scenes load clean (one rig/EventSystem/mission, no missing scripts, 3–6 objectives); menu lock behaviour; XRI-select-driven playthroughs of stage 1 → 2 → 3 with results, unlocks and campaign-complete; retry and return to menu.
+- Tip: do a Play/Stop warm-up after launching the editor before running PlayMode tests (the first run after launch crashed the editor here), and run the groups (Playthroughs / Scenes and menu / Mission flow) separately.
 
-### Student Engineering Commendation & Acknowledgments
-SVKM's NMIMS MPSTME conveys sincere appreciation and heartfelt gratitude to Bhoomi Bhandari (I004), Kritivya Mishra (I037), Tanvi Paithankar (I044), Jia Jadhav (I069) for their disciplined commitment, late-night debugging, and technical craftsmanship throughout Semester V. Your rigorous engineering inquiry and dedication to immersive XR environments exemplify the highest standards of undergraduate technical research.
+## Building for Quest
+See `Docs/TROUBLESHOOTING.md` and `Docs/AUDIT.md` (Android section). Menu: **Rescue Sim ▸ Configure XR and Android** (idempotent), switch platform to Android in Build Profiles, then **Rescue Sim ▸ Build ▸ Android APK (Quest)**. Output goes to `Builds/Android/DisasterResponseVR_HumansHands.apk` (the earlier `DisasterResponseVR.apk` is the previous build and is not overwritten) with a report in `Builds/android-build-report.txt`.
 
-> *"Scientists discover the world that exists; engineers create the world that never was."*  
-> — **Theodore von Kármán**
-
-> *"There is no substitute for hard work. Genius is one percent inspiration and ninety-nine percent perspiration."*  
-> — **Thomas A. Edison**
-
----
-
-## Core System Architecture & Egress Telemetry
-
-The platform comprises four interconnected software modules:
-1. **START Triage Simulation Manager (`Assets/Scripts/STARTTriageSimulationManager.cs`, `I004 - Bhoomi Bhandari`):** Clinical finite state machine implementing walking command verification, respiratory rate measurement, radial pulse / capillary refill evaluation, and mental command adherence.
-2. **Immersive XR Environment & Dynamic Hazards (`I037 - Kritivya Mishra`):** Photorealistic chemical refinery plant, volumetric smoke plumes, dynamic fire particle systems, and 85 dBA spatialized siren acoustics.
-3. **Spatial Telemetry & Confusion Matrix Core (`Assets/Scripts/TriageTelemetryLogger.cs`, `I044 - Tanvi Paithankar`):** Continuous logging of trainee 3D coordinates, gaze dwell vectors, time-to-tag latency, undertriage / overtriage error matrix, and automated CSV telemetry egress.
-4. **Human Factors & Technoeconomic Modeling (`telemetry/mci_triage_eval.py`, `I069 - Jia Jadhav`):** System Usability Scale (SUS) instrumentation, trainee self-efficacy profiling, and institutional labor reallocation modeling.
-
-### Publication-Grade Figures (300 DPI)
-- `docs/figures/figure1_system_architecture.png`: Multi-tier system architecture diagram showing Clinical Protocol Manager, XR Environment, Telemetry Engine, and Psychometric Analytics.
-- `docs/figures/figure2_kinematic_telemetry.png`: Trainee decision latency curves across sequential casualties and correlation between gaze dwell time and diagnostic accuracy.
-- `docs/figures/figure3_comparative_performance.png`: Empirical results across 4 subplots (START categorization accuracy, triage assessment latency, critical undertriage reduction, and System Usability Scale).
-
----
 
 ---
 
 ## Project Demonstration & Academic Showcase (LinkedIn)
 
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/)
-
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/) *(Click thumbnail above to open LinkedIn post)*
+* **LinkedIn Video Demonstration:** [Watch Disaster Rescue Simulation Showcase on LinkedIn](https://lnkd.in/p/dm4vBKsW)
 * **Student Presenters:** **Bhoomi Bhandari** (I004), **Kritivya Mishra** (I037), **Tanvi Paithankar** (I044), **Jia Jadhav** (I069)
 * **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
-* **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.
-
----
-
-## Empirical Benchmark & Technoeconomic Highlights
-- **START Categorization Accuracy:** Rose from $73.6 \pm 6.8\%$ to $92.4 \pm 4.1\%$ ($+18.8\%$ absolute gain, $p < 0.001$, Cohen's $d = 2.45$).
-- **Mean Assessment Latency per Casualty:** Slashed from $48.2\text{ s}$ to $26.4\text{ s}$ ($-45.2\%$ decision latency reduction).
-- **Critical Undertriage Rate:** Plummets from $18.5\%$ to $3.2\%$ ($82.7\%$ reduction in potentially fatal misclassifications).
-- **Overtriage Rate:** Reduced from $21.4\%$ to $8.6\%$, preventing hospital surge saturation.
-- **Trainee Disaster Self-Efficacy:** Improved from $5.2$ to $8.8$ on a 10-point validated disaster readiness scale.
-- **System Usability Scale (SUS):** Reached $86.8 \pm 4.2$ (Grade A, Excellent).
-- **Institutional Labor Reclaimed:** 2,010.0 hours saved annually across 150 medical personnel in a regional EMS network.
-- **Dimensionless Cost Parity Ratio:** $\kappa = 0.16$, reflecting an $84.0\%$ reduction in recurrent operational drill expenditure.
-- **Capital Payback Horizon:** 14.29 operating months to fully amortize simulation hardware and development costs.

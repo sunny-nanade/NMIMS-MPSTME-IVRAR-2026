@@ -56,9 +56,12 @@ Group_07_Shirin_Khushi_Pranjal/
 │   ├── toolchain_spec.md                              # Toolchain specifications
 │   ├── LITERATURE_REVIEW_AND_FORENSIC_FRAMEWORK.md    # 6 CrossRef verified DOI foundational papers
 │   ├── RESEARCH_PAPER_MANUSCRIPT_BLUEPRINT.md         # 4-page IEEE research manuscript blueprint
+│   ├── participant_evaluation_data.csv                # Empirical participant trial evaluation dataset (N=10)
 │   └── figures/                                       # Publication-grade 300 DPI evaluation figures
 └── telemetry/                                         # Empirical data processing & Python evaluators
-    ├── forensic_investigation_telemetry.csv           # Telemetry records
+    ├── participant_evaluation_data.csv                # Empirical participant evaluation dataset (N=10)
+    ├── SIMULATED_forensic_reconstruction_benchmark.csv# Simulated benchmark data
+    ├── SIMULATED_sample_experiment_data.csv           # Simulated experiment baseline
     ├── generate_paper_figures.py                      # Figure generation pipeline
     ├── kennedy_ssq_calculator.py                      # Simulator Sickness Questionnaire evaluator
     ├── nasa_tlx_calculator.py                         # NASA-TLX workload calculator
@@ -76,3 +79,5 @@ Group_07_Shirin_Khushi_Pranjal/
 - [x] **Automated Tests:** Comprehensive EditMode & PlayMode test coverage across interaction, Kendall-Tau, and rig calibration.
 - [x] **Git LFS Compliance:** Large 3D models and textures tracked through Git LFS rules; no binaries or APK committed to git history.
 - [x] **Runnable Executable:** Standalone Meta Quest build `group7.apk` generated (75.8 MB) and ready for GitHub Release `group-07-v1.0`.
+- [x] **LinkedIn Video Demonstration:** Published and linked at [https://lnkd.in/p/dayGJ8Jp](https://lnkd.in/p/dayGJ8Jp).
+- [x] **Technical Dossier Reference Data:** Empirical participant trial dataset (N=10) committed as reference to the Technical Dossier.

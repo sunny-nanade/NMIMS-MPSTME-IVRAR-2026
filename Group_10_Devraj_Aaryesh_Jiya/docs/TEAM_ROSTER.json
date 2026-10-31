@@ -2,7 +2,10 @@
   "group_id": "IVRAR_GROUP_10",
   "folder_name": "Group_10_Devraj_Aaryesh_Jiya",
   "batch": "Batch B2",
-  "authorized_title": "How can an OpenCV-based color and fiducial hand-tracking pipeline integrated with Unity VR achieve sub-15ms latency and gesture recognition accuracy for architectural 3D model reviews without dedicated 6-DoF controllers?",
+  "authorized_title": "Controller-Free Architectural Room Authoring in VR Using Markerless MediaPipe Hand Tracking and Gesture-Driven Interaction",
+  "research_question": "How do first-time users experience building three-dimensional architectural structures (rooms) in VR using bare-hand gestures alone, in terms of perceived usability, workload and interaction breakdowns?",
+  "previous_title": "How can an OpenCV-based color and fiducial hand-tracking pipeline integrated with Unity VR achieve sub-15ms latency and gesture recognition accuracy for architectural 3D model reviews without dedicated 6-DoF controllers?",
+  "title_change_note": "Topic changed from colour-marker/fiducial tracking to markerless hand tracking; change approved by course faculty.",
   "members": [
     {
       "roll_no": "R014",
@@ -10,7 +13,8 @@
       "name": "Devraj Ghumare",
       "role": "Computer Vision Pipeline Lead",
       "assigned_branch": "feat/r014-computer-vision-pipe",
-      "github_username": ""
+      "github_username": "devraj2712",
+      "agreed_effort_pct": 33
     },
     {
       "roll_no": "R045",
@@ -18,7 +22,8 @@
       "name": "Aaryesh Pathare",
       "role": "XR Systems Architect",
       "assigned_branch": "feat/r045-xr-systems-architect",
-      "github_username": ""
+      "github_username": "Aaryupat10",
+      "agreed_effort_pct": 34
     },
     {
       "roll_no": "R054",
@@ -26,7 +31,8 @@
       "name": "Jiya Saxena",
       "role": "Gesture Recognition Specialist",
       "assigned_branch": "feat/r054-gesture-recognition-",
-      "github_username": ""
+      "github_username": "JiyaSaxena",
+      "agreed_effort_pct": 33
     }
   ],
   "foundational_papers": [
@@ -36,7 +42,8 @@
       "authors": "R. Y. Wang, J. Popovic",
       "year": 2009,
       "journal": "ACM Transactions on Graphics (SIGGRAPH 2009), vol. 28, no. 3, art. no. 63",
-      "doi": "10.1145/1531326.1531369"
+      "doi": "10.1145/1531326.1531369",
+      "verified_by_group": false
     },
     {
       "citation_key": "Rautaray2015",
@@ -44,7 +51,8 @@
       "authors": "S. S. Rautaray, A. Agrawal",
       "year": 2015,
       "journal": "Artificial Intelligence Review, vol. 43, no. 1, pp. 1-54",
-      "doi": "10.1007/s10462-012-9356-9"
+      "doi": "10.1007/s10462-012-9356-9",
+      "verified_by_group": false
     },
     {
       "citation_key": "Steed2025",
@@ -52,7 +60,8 @@
       "authors": "A. Steed, R. J. R. Wolff, J. D. Smith",
       "year": 2025,
       "journal": "Virtual Reality, vol. 29, no. 1, art. 1190",
-      "doi": "10.1007/s10055-025-01190-5"
+      "doi": "10.1007/s10055-025-01190-5",
+      "verified_by_group": false
     },
     {
       "citation_key": "Pardo2026",
@@ -60,7 +69,8 @@
       "authors": "P. Pardo, M. Gonzalez, C. Ortiz",
       "year": 2026,
       "journal": "Virtual Reality, vol. 30, no. 1, art. 1333",
-      "doi": "10.1007/s10055-026-01333-2"
+      "doi": "10.1007/s10055-026-01333-2",
+      "verified_by_group": false
     },
     {
       "citation_key": "Coox2025",
@@ -68,7 +78,8 @@
       "authors": "C. Coox, L. Geurts, P. Becker",
       "year": 2025,
       "journal": "Virtual Reality, vol. 29, no. 2, art. 1253",
-      "doi": "10.1007/s10055-025-01253-7"
+      "doi": "10.1007/s10055-025-01253-7",
+      "verified_by_group": false
     },
     {
       "citation_key": "Fidalgo2025",
@@ -76,16 +87,67 @@
       "authors": "B. Fidalgo, M. Ribeiro, J. Santos",
       "year": 2025,
       "journal": "Frontiers in Virtual Reality, vol. 6, art. 1574965",
-      "doi": "10.3389/frvir.2025.1574965"
+      "doi": "10.3389/frvir.2025.1574965",
+      "verified_by_group": false
     }
   ],
-  "domain": "OpenCV-Based Color & Fiducial Hand-Tracking in Unity VR for Architectural Reviews",
+  "method_references": [
+    {
+      "citation_key": "Zhang2020",
+      "title": "MediaPipe Hands: On-device Real-time Hand Tracking",
+      "authors": "F. Zhang et al.",
+      "year": 2020,
+      "source": "arXiv:2006.10214",
+      "verified_by_group": false
+    },
+    {
+      "citation_key": "Casiez2012",
+      "title": "1 Euro Filter: A Simple Speed-based Low-pass Filter for Noisy Input in Interactive Systems",
+      "authors": "G. Casiez, N. Roussel, D. Vogel",
+      "year": 2012,
+      "source": "CHI 2012",
+      "verified_by_group": false
+    },
+    {
+      "citation_key": "Brooke1996",
+      "title": "SUS: A quick and dirty usability scale",
+      "authors": "J. Brooke",
+      "year": 1996,
+      "source": "Usability Evaluation in Industry, Taylor & Francis",
+      "verified_by_group": false
+    },
+    {
+      "citation_key": "Hart1988",
+      "title": "Development of NASA-TLX: Results of empirical and theoretical research",
+      "authors": "S. G. Hart, L. E. Staveland",
+      "year": 1988,
+      "source": "Advances in Psychology, vol. 52, pp. 139-183",
+      "verified_by_group": false
+    }
+  ],
+  "domain": "Controller-Free Architectural Room Authoring in Unity VR with Markerless MediaPipe Hand Tracking (Webcam and Meta Quest 2)",
   "project_showcase": {
     "platform": "LinkedIn Video",
-    "linkedin_url": "PENDING_SUBMISSION",
+    "linkedin_url": "https://lnkd.in/p/dtxyJCs7",
     "video_poster_path": "docs/figures/video_poster.png",
-    "video_duration_target": "60-90 seconds",
-    "submission_status": "PENDING",
-    "submission_instructions": "Paste your published LinkedIn post URL into 'linkedin_url' and submit a Pull Request"
+    "submission_status": "SUBMITTED",
+    "video_duration": "03:26"
+  },
+  "release": {
+    "tag": "group-10-v1.0",
+    "url": "https://github.com/Aaryupat10/NMIMS-MPSTME-IVRAR-2026/releases/tag/group-10-v1.0",
+    "asset": "Group10_HandRoomBuilder_v1.0.apk",
+    "final_code_commit": "03c7d14b492c8c971ec65694eda705cf333b0931"
+  },
+  "evaluation": {
+    "participants": 10,
+    "date": "2026-10-27",
+    "place": "AR/VR Lab",
+    "build": "Quest 2 standalone APK (Meta XR hand tracking)",
+    "task": "open-ended room building",
+    "evidence": "video recordings of 10 sessions",
+    "sus_collected": false,
+    "nasa_tlx_collected": false,
+    "trial_csv": "not recorded (trial logger needs a keyboard; not available in the Quest build)"
   }
 }

@@ -71,9 +71,9 @@ For the exhaustive literature analysis, mathematical derivations, and viva defen
 
 ## 4. Project Demonstration & Academic Showcase (LinkedIn)
 
-[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/posts/meahaan-sharma-ivrar-group01_immersive-acoustics-spatial-design-cedia-rp22)
+[![Watch Video Demonstration on LinkedIn](docs/figures/video_poster.png)](https://www.linkedin.com/posts/amogh-gupta-4245001b7_virtualreality-metaquest-openxr-ugcPost-7520530878360645632-acu5/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADJxLlwB3McXXW2dtI7T_jSKEvwQ8kASEXw)
 
-* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/posts/meahaan-sharma-ivrar-group01_immersive-acoustics-spatial-design-cedia-rp22) *(Click thumbnail above to open LinkedIn post)*
+* **Video Demonstration:** [Watch 60-Second Walkthrough on LinkedIn](https://www.linkedin.com/posts/amogh-gupta-4245001b7_virtualreality-metaquest-openxr-ugcPost-7520530878360645632-acu5/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADJxLlwB3McXXW2dtI7T_jSKEvwQ8kASEXw) *(Click thumbnail above to open LinkedIn post)*
 * **Student Presenters:** **Meahaan Sharma** (I066), **Amogh Gupta** (C034), **Harshit Rai** (N083), **Rannbir Sachdeva** (N087)
 * **Academic Institutional Tags:** SVKM's NMIMS MPSTME | Academic Directorate | Immersive VR/AR Technologies
 * **Submission Protocol:** Record a 60–90 second demonstration of your VR/AR interactive environment and telemetry. Publish on LinkedIn tagging MPSTME, Dean, and Course Faculty. Insert your live post URL in `docs/TEAM_ROSTER.json` under `"linkedin_url"`, and submit a pull request to update this project dossier and the cohort dashboard.

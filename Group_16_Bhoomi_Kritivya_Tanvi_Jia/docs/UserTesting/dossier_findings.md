@@ -1,0 +1,7 @@
+# Dossier-ready text: user evaluation
+
+**Evaluation scope.** The prototype was tried by ten volunteer testers (identified only as P01-P10; no personal data are stored). The project record confirms the number of testers but does not contain per-participant measurements: task outcomes, completion times, error counts, questionnaire ratings and free-text feedback were not captured in a form that can be reported. Accordingly, no task success rate, completion time or usability score is claimed, and no standardised instrument (SUS, NASA-TLX, SSQ) is reported as administered.
+
+**Verification actually performed.** Software behaviour was checked with automated editor tests (121 EditMode and 57 PlayMode tests, all passing on 2026-10-29), covering casualty grab, carry, release and delivery, hand-versus-controller input handling, and the START triage selection and tagging flow. These tests use scripted and simulated input; they are not evidence about human performance. Hand tracking and the human-model build have not been verified on a physical headset.
+
+**Limitations and next steps.** With ten participants and no recorded outcomes, the study supports no statistical or population-level conclusion. Future work should log, for each participant, the input mode, scenes played, task outcomes, completion time, interaction errors and ratings on a declared scale, and obtain consent, so that success rates can be reported with explicit denominators. Dataset and procedure: `Docs/UserTesting/`.
