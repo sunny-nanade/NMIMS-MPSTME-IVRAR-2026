@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f39949703d22cf4d88d2ea19bc2c8e5, type: 3}
+  m_Name: Facility_printing
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.FacilityData
+  facilityID: printing
+  fallbackName: Xerox / printing
+  roomID: 
+  floor: {fileID: 11400000, guid: e0c6ab80f16ecb24f95db34398d383f5, type: 2}
+  isVerified: 1
+  isPlaceholder: 0
+  learningText: The Xerox machine is in the rear corridor in front of the faculty
+    area, on your right when exiting the rear lift. Print notes here; prices and
+    actual procedures require confirmation.

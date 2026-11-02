@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e4805c23683f8428d1ecb5ac7b9a84, type: 3}
+  m_Name: Quiz_security_final
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.QuizQuestionData
+  questionID: security_final
+  facility: {fileID: 11400000, guid: 6afd5ef4b22971f45a45d28a074e6d1f, type: 2}
+  prompt: Which facility is immediately on your left when entering?
+  explanation: The CCTV security room is on your left as you enter.
+  answers:
+  - Library
+  - CCTV Security Room
+  - Dean's office
+  correctIndex: 1
+  isVerified: 1
+  isPlaceholder: 0

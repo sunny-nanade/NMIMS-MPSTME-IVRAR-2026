@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee6eba3306bbb3458e26138b233407c, type: 3}
+  m_Name: Floor_3
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.FloorConfig
+  layoutRevision: 5
+  level: 3
+  sceneName: Scene_03_Floor3
+  displayName: 3
+  layoutJSON: {fileID: 4900000, guid: f4cf4f87b7f2b3d498f557379a057ac0, type: 3}
+  rooms:
+  - id: left_0
+    label: Classroom 301
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 0
+    z: 17
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: left_1
+    label: Classroom 302
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 0
+    z: 24
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: left_2
+    label: Classroom 303
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 0
+    z: 31
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: right_0
+    label: Classroom 304
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 32
+    z: 17
+    width: 8
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: right_1
+    label: Classroom 305
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 32
+    z: 24
+    width: 8
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: inner_north_L
+    label: Classroom 308
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 11
+    z: 35
+    width: 9
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: inner_north_R
+    label: Classroom 309
+    category: Classroom
+    description: Exact room allocation requires review.
+    x: 20
+    z: 35
+    width: 9
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: front_corner_left
+    label: Classroom 310
+    category: Classroom
+    description: Room name/use and exact dimensions are provisional.
+    x: 0
+    z: 50
+    width: 8
+    depth: 6
+    doorSide: S
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: front_lab
+    label: "Front lab \u2014 type pending"
+    category: Lab
+    description: Room name/use and exact dimensions are provisional.
+    x: 8
+    z: 50
+    width: 8
+    depth: 6
+    doorSide: S
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: front_class
+    label: Classroom 311
+    category: Classroom
+    description: Room name/use and exact dimensions are provisional.
+    x: 24
+    z: 50
+    width: 8
+    depth: 6
+    doorSide: S
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: front_corner_right
+    label: Classroom 312
+    category: Classroom
+    description: Room name/use and exact dimensions are provisional.
+    x: 32
+    z: 50
+    width: 8
+    depth: 6
+    doorSide: S
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: rear_side_lab
+    label: "Rear side lab \u2014 type pending"
+    category: Lab
+    description: Room name/use and exact dimensions are provisional.
+    x: 0
+    z: 10
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: faculty_west
+    label: Faculty area
+    category: Faculty
+    description: Facility relationship supplied by the user; exact geometry and interior
+      fittings remain approximate.
+    x: 0
+    z: 0
+    width: 14
+    depth: 8
+    doorSide: N
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: faculty_east
+    label: Faculty area
+    category: Faculty
+    description: Facility relationship supplied by the user; exact geometry and interior
+      fittings remain approximate.
+    x: 32
+    z: 0
+    width: 8
+    depth: 8
+    doorSide: N
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: washroom_front_right
+    label: Front washrooms
+    category: Washroom
+    description: Facility relationship supplied by the user; exact geometry and interior
+      fittings remain approximate.
+    x: 32
+    z: 31
+    width: 8
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: washroom_rear
+    label: Rear washrooms
+    category: Washroom
+    description: Beside the rear staircase on the player's left when facing it from
+      the rear lifts. Present on every level, per user confirmation. Exact dimensions
+      approximate.
+    x: 24
+    z: 0
+    width: 8
+    depth: 8
+    doorSide: N
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  layoutApproximate: 1
+  excludedRoomIDs:
+  - inner_south_L
+  - inner_south_R

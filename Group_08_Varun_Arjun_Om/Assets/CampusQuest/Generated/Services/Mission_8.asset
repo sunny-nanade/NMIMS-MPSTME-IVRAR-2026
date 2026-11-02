@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9433dd4cd0c507f47b72aeed9afd2738, type: 3}
+  m_Name: Mission_8
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.MissionData
+  missionID: services_components
+  title: Borrow project components
+  briefing: Floor 6: exit the rear lift, turn right, enter the component library in front of faculty. Select a sample kit, request it at the issue desk, then collect it.
+  hint: Floor 6: exit the rear lift, turn right, enter the component library in front of faculty. Select a sample kit, request it at the issue desk, then collect it.
+  budgetSeconds: 120
+  allowedFloors:
+  - 7
+  - 6
+  objectives:
+  - eventID: 
+    facility: {fileID: 11400000, guid: f0515e227e776c8479cb8cc6207da97a, type: 2}
+    instruction: Find Component library
+  - eventID: components:borrowed
+    facility: {fileID: 0}
+    instruction: Select kit > request at desk > collect kit
+  question: {fileID: 0}
+  finalQuiz: 0

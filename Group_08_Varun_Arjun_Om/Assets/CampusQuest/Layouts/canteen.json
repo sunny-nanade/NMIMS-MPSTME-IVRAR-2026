@@ -1,0 +1,271 @@
+{
+  "id": "canteen",
+  "evidence": "User canteen drawing 28 October 2026 21:02: two front stairs, no rear stairs, restricted rear corner, three side entrances. All dimensions approximate; faculty access doorway provisional. User confirms canteen seating is open to the atrium above; ceiling opening follows the Ground void footprint. Floor heights remain approximate. User correction 29 October: AC/faculty canteens enclosed and roofed. Approximate shared boundary moved to z35, outside Ground atrium; original external entry locations retained.",
+  "width": 40,
+  "depth": 56,
+  "floorHeight": 3.6,
+  "wallHeight": 3,
+  "wallThickness": 0.15,
+  "dimensionsApproximate": true,
+  "hasAtrium": false,
+  "atrium": {
+    "x": 11,
+    "z": 21,
+    "width": 18,
+    "depth": 14
+  },
+  "rooms": [
+    {
+      "id": "canteen",
+      "label": "Student canteen",
+      "category": "Canteen",
+      "x": 11,
+      "z": 13,
+      "width": 18,
+      "depth": 22,
+      "doorSide": "E",
+      "doorOffset": 0.13636363636363635,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [
+        0.5
+      ],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate."
+    },
+    {
+      "id": "ac_canteen",
+      "label": "AC canteen",
+      "category": "Canteen",
+      "x": 18,
+      "z": 35,
+      "width": 11,
+      "depth": 7,
+      "doorSide": "E",
+      "doorOffset": 0.2857142857142857,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate. Fully enclosed outside the atrium opening; boundary and dimensions approximate. Internal entrance from main student canteen requested by user; exact position and width approximate.",
+      "additionalDoors": [
+        {
+          "side": "S",
+          "offset": 0.5,
+          "width": 1.6
+        }
+      ]
+    },
+    {
+      "id": "faculty_canteen",
+      "label": "Faculty canteen \u2014 doorway provisional",
+      "category": "Canteen",
+      "x": 11,
+      "z": 35,
+      "width": 7,
+      "depth": 7,
+      "doorSide": "S",
+      "doorOffset": 0.65,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": true,
+      "placementApproximate": true,
+      "description": "Faculty canteen identity and relative location supplied by user. Access doorway is provisional because it is not marked on the drawing. Dimensions and furniture approximate. Fully enclosed outside the atrium opening; boundary and dimensions approximate."
+    },
+    {
+      "id": "seminar",
+      "label": "Big seminar hall",
+      "category": "Classroom",
+      "x": 0,
+      "z": 15,
+      "width": 8,
+      "depth": 14,
+      "doorSide": "E",
+      "doorOffset": 0.5,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate."
+    },
+    {
+      "id": "washroom_front_left",
+      "label": "Washrooms beside front-left stairs",
+      "category": "Washroom",
+      "x": 0,
+      "z": 31,
+      "width": 8,
+      "depth": 7,
+      "doorSide": "S",
+      "doorOffset": 0.5,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate."
+    },
+    {
+      "id": "washroom_front_right",
+      "label": "Washrooms beside front-right stairs",
+      "category": "Washroom",
+      "x": 32,
+      "z": 31,
+      "width": 8,
+      "depth": 7,
+      "doorSide": "W",
+      "doorOffset": 0.5,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate."
+    },
+    {
+      "id": "mini_auditorium",
+      "label": "Mini auditorium",
+      "category": "Classroom",
+      "x": 32,
+      "z": 10,
+      "width": 8,
+      "depth": 11,
+      "doorSide": "W",
+      "doorOffset": 0.5,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate."
+    },
+    {
+      "id": "unnamed_room",
+      "label": "Room \u2014 use unconfirmed",
+      "category": "Unknown",
+      "x": 32,
+      "z": 25,
+      "width": 8,
+      "depth": 6,
+      "doorSide": "W",
+      "doorOffset": 0.5,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": false,
+      "isPlaceholder": true,
+      "placementApproximate": true,
+      "description": "Identity and relative placement supplied in the canteen drawing. Dimensions and furniture are approximate."
+    },
+    {
+      "id": "restricted",
+      "label": "Restricted area",
+      "category": "Restricted",
+      "x": 0,
+      "z": 0,
+      "width": 10,
+      "depth": 13,
+      "doorSide": "",
+      "doorOffset": 0.5,
+      "doorWidth": 1.6,
+      "extraDoorOffsets": [],
+      "isVerified": true,
+      "isPlaceholder": false,
+      "placementApproximate": true,
+      "description": "Restricted area shown on the drawing. No public entrance is provided in this prototype."
+    }
+  ],
+  "stairs": [
+    {
+      "id": "FrontLeft",
+      "x": 0,
+      "z": 38,
+      "entryEast": true,
+      "depth": 10,
+      "reverse": false,
+      "entrySide": "E"
+    },
+    {
+      "id": "FrontRight",
+      "x": 32,
+      "z": 38,
+      "entryEast": false,
+      "depth": 10,
+      "reverse": false,
+      "entrySide": "W"
+    }
+  ],
+  "lifts": [
+    {
+      "id": "1",
+      "x": 12,
+      "z": 10,
+      "northFacing": false
+    },
+    {
+      "id": "2",
+      "x": 15,
+      "z": 10,
+      "northFacing": false
+    },
+    {
+      "id": "3",
+      "x": 18,
+      "z": 10,
+      "northFacing": false
+    },
+    {
+      "id": "4",
+      "x": 21,
+      "z": 10,
+      "northFacing": false
+    },
+    {
+      "id": "5",
+      "x": 24,
+      "z": 10,
+      "northFacing": false
+    },
+    {
+      "id": "6",
+      "x": 12,
+      "z": 42,
+      "northFacing": true
+    },
+    {
+      "id": "7",
+      "x": 15,
+      "z": 42,
+      "northFacing": true
+    },
+    {
+      "id": "8",
+      "x": 18,
+      "z": 42,
+      "northFacing": true
+    },
+    {
+      "id": "9",
+      "x": 21,
+      "z": 42,
+      "northFacing": true
+    },
+    {
+      "id": "10",
+      "x": 24,
+      "z": 42,
+      "northFacing": true
+    }
+  ],
+  "ceilingOpenings": [
+    {
+      "x": 11,
+      "z": 13,
+      "width": 18,
+      "depth": 22
+    }
+  ]
+}

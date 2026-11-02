@@ -1,0 +1,29 @@
+{
+  "currency": "INR",
+  "items": [
+    {
+      "id": "vada",
+      "name": "Vada pav",
+      "price": 20,
+      "isPlaceholder": false
+    },
+    {
+      "id": "dosa",
+      "name": "Dosa",
+      "price": 50,
+      "isPlaceholder": false
+    },
+    {
+      "id": "maggi",
+      "name": "Maggi",
+      "price": 40,
+      "isPlaceholder": false
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "price": 20,
+      "isPlaceholder": false
+    }
+  ]
+}

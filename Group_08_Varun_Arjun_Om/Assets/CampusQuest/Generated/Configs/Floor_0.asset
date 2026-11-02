@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee6eba3306bbb3458e26138b233407c, type: 3}
+  m_Name: Floor_0
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.FloorConfig
+  layoutRevision: 5
+  level: 0
+  sceneName: Scene_00_GroundFloor
+  displayName: G
+  layoutJSON: {fileID: 4900000, guid: 699025bdba1728944ad3c5f0be31fdd2, type: 3}
+  rooms:
+  - id: left_0
+    label: Classroom 105
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 0
+    z: 17
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: left_1
+    label: Classroom 106
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 0
+    z: 24
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: left_2
+    label: Classroom 107
+    category: Classroom
+    description: Purpose and exact room allocation require review.
+    x: 0
+    z: 31
+    width: 8
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: front_0
+    label: Exam department
+    category: Office
+    description: Exam Department is on the player's left when exiting the rear lifts.
+      User-corrected side; exact dimensions approximate.
+    x: 32
+    z: 0
+    width: 8
+    depth: 7
+    doorSide: N
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: inner_north_L
+    label: Conference room
+    category: Office
+    description: 'Conference room: left behind the front lift bank, as confirmed
+      by the user. Dimensions remain approximate.'
+    x: 11
+    z: 35
+    width: 9
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: inner_north_R
+    label: Admin / Reception
+    category: Office
+    description: Admin and Reception are one facility, on the right behind the front
+      lift bank. User-confirmed relationship; services and dimensions need review.
+    x: 20
+    z: 35
+    width: 9
+    depth: 7
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: security
+    label: CCTV Security Room
+    category: Security
+    description: Security is immediately on the entering player's left, in the entrance-side
+      empty area. User-confirmed relationship; dimensions approximate.
+    x: 30
+    z: 49
+    width: 10
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: washroom_front_right
+    label: Washrooms
+    category: Washroom
+    description: Beside the front-right staircase, in the area previously labelled
+      Reception. User-confirmed relationship; dimensions and fixture arrangements
+      approximate.
+    x: 32
+    z: 31
+    width: 8
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: rear_left_room
+    label: Room opposite Exam Department
+    category: Classroom
+    description: Single room opposite the Exam Department on the player's left when
+      exiting the rear lifts. Name and use remain PLACEHOLDER; geometry approximate.
+    x: 32
+    z: 10
+    width: 8
+    depth: 7
+    doorSide: S
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: washroom_rear
+    label: Rear washrooms
+    category: Washroom
+    description: Beside the rear staircase on the player's left when facing it from
+      the rear lifts. Present on every level, per user confirmation. Exact dimensions
+      approximate.
+    x: 24
+    z: 0
+    width: 8
+    depth: 8
+    doorSide: N
+    doorOffset: 0.5
+    doorWidth: 1.2
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  layoutApproximate: 1
+  excludedRoomIDs: []

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4eeb3ecf07e5943aa072d6c681a3d5, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.CampusVisualSettings
+  doorsStartOpen: 1
+  addComputersToGenericLabs: 1
+  showSamplePosters: 1
+  textureResolution: 512
+  accuracyNote: Dimensions, surface finishes, furniture and poster content are approximate
+    or placeholders. Room footprints follow existing source layouts. Canteen is open
+    to the atrium, confirmed by user.

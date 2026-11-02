@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f39949703d22cf4d88d2ea19bc2c8e5, type: 3}
+  m_Name: Facility_faculty
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.FacilityData
+  facilityID: faculty
+  fallbackName: Faculty area
+  roomID: faculty_east
+  floor: {fileID: 11400000, guid: 8ac4581179d902148a5c79bbb0974191, type: 2}
+  isVerified: 1
+  isPlaceholder: 0
+  learningText: 'Faculty areas are at the back of the floor beside the rear washrooms.
+    General guidance: seek course-related academic help from the appropriate faculty
+    member; availability needs confirmation.'

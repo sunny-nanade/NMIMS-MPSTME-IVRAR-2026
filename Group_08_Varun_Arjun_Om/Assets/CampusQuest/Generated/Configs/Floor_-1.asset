@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee6eba3306bbb3458e26138b233407c, type: 3}
+  m_Name: Floor_-1
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.FloorConfig
+  layoutRevision: 6
+  level: -1
+  sceneName: Scene_09_Canteen
+  displayName: C
+  layoutJSON: {fileID: 4900000, guid: 4316f1b98da88c948bd0575aed38e2ae, type: 3}
+  rooms:
+  - id: canteen
+    label: Student canteen
+    category: Canteen
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 11
+    z: 13
+    width: 18
+    depth: 19
+    doorSide: E
+    doorOffset: 0.15789473
+    doorWidth: 1.6
+    extraDoorOffsets:
+    - 0.57894737
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: ac_canteen
+    label: AC canteen
+    category: Canteen
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 18
+    z: 32
+    width: 11
+    depth: 10
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: faculty_canteen
+    label: "Faculty canteen \u2014 doorway provisional"
+    category: Canteen
+    description: Faculty canteen identity and relative location supplied by user.
+      Access doorway is provisional because it is not marked on the drawing. Dimensions
+      and furniture approximate.
+    x: 11
+    z: 32
+    width: 7
+    depth: 10
+    doorSide: S
+    doorOffset: 0.65
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: seminar
+    label: Big seminar hall
+    category: Classroom
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 0
+    z: 15
+    width: 8
+    depth: 14
+    doorSide: E
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: washroom_front_left
+    label: Washrooms beside front-left stairs
+    category: Washroom
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 0
+    z: 31
+    width: 8
+    depth: 7
+    doorSide: S
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: washroom_front_right
+    label: Washrooms beside front-right stairs
+    category: Washroom
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 32
+    z: 31
+    width: 8
+    depth: 7
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: mini_auditorium
+    label: Mini auditorium
+    category: Classroom
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 32
+    z: 10
+    width: 8
+    depth: 11
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  - id: unnamed_room
+    label: "Room \u2014 use unconfirmed"
+    category: Unknown
+    description: Identity and relative placement supplied in the canteen drawing.
+      Dimensions and furniture are approximate.
+    x: 32
+    z: 25
+    width: 8
+    depth: 6
+    doorSide: W
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 0
+    isPlaceholder: 1
+    placementApproximate: 1
+  - id: restricted
+    label: Restricted area
+    category: Restricted
+    description: Restricted area shown on the drawing. No public entrance is provided
+      in this prototype.
+    x: 0
+    z: 0
+    width: 10
+    depth: 13
+    doorSide: 
+    doorOffset: 0.5
+    doorWidth: 1.6
+    extraDoorOffsets: []
+    isVerified: 1
+    isPlaceholder: 0
+    placementApproximate: 1
+  layoutApproximate: 1
+  excludedRoomIDs: []

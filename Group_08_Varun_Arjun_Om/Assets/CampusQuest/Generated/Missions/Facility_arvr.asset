@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f39949703d22cf4d88d2ea19bc2c8e5, type: 3}
+  m_Name: Facility_arvr
+  m_EditorClassIdentifier: Assembly-CSharp::CampusQuest.FacilityData
+  facilityID: arvr
+  fallbackName: AR/VR lab
+  roomID: front_lab
+  floor: {fileID: 11400000, guid: 3195a16e7d1ff7d45ad1e00e57e961a0, type: 2}
+  isVerified: 0
+  isPlaceholder: 1
+  learningText: AR/VR labs support immersive computing and interactive experiments.
+    The facility is on Floor 7, but this prototype's room placement is provisional.
+    Do not learn this room position as verified campus navigation.
