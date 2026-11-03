@@ -15,3 +15,11 @@
 **Still requiring human input:** author/commit breakdown, Git metrics, release build link, consent/study evidence (if later done), actual student learning records, peer reviews, LinkedIn video, and all sign-offs. These are blank or marked Not Implemented, never fabricated.
 
 **Due date recorded in original faculty template:** 26-Oct-2026, 23:59 IST; showcase 31-Oct-2026. Confirm late-document revisions directly with faculty.
+
+---
+
+## Project Demonstration Showcase
+* **Live Video Demonstration:** [Watch Autonomous Mars Rover Navigation Demonstration on LinkedIn](https://lnkd.in/p/dcx6F2MW)
+* **Team:** Mahit Naresh Daswani (I010), Anvay Borade (I006), Aryan Oberoi (I041), Ananya Baweja (I003)
+* **Status:** Verified Live Showcase
+

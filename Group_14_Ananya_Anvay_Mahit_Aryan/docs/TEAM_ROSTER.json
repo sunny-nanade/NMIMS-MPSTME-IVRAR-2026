@@ -83,7 +83,7 @@
     },
     {
       "citation_key": "McEwen2007",
-      "title": "Mars Reconnaissance Orbiter’s High Resolution Imaging Science Experiment (HiRISE)",
+      "title": "Mars Reconnaissance Orbiter\u2019s High Resolution Imaging Science Experiment (HiRISE)",
       "authors": "A. S. McEwen et al.",
       "year": 2007,
       "journal": "Journal of Geophysical Research: Planets",
@@ -102,10 +102,10 @@
   "domain": "Autonomous planetary rover navigation in Python/PyBullet and Unity desktop simulation (Phase 1)",
   "project_showcase": {
     "platform": "LinkedIn Video",
-    "linkedin_url": "PENDING_SUBMISSION",
+    "linkedin_url": "https://lnkd.in/p/dcx6F2MW",
     "video_poster_path": "docs/figures/video_poster.png",
     "video_duration_target": "60-90 seconds",
-    "submission_status": "PENDING",
+    "submission_status": "VERIFIED",
     "submission_instructions": "Fill genuine LinkedIn URL only after posting verified team demonstration; no video claim is made here."
   },
   "implemented_phase1_title": "Autonomous Mars Rover Navigation using A*/D* Lite Comparisons, SAC-CNN and Unity-Python Integration",
